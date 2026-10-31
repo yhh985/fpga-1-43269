@@ -1,0 +1,358 @@
+{
+  "experimental_only": true,
+  "deployed": false,
+  "split": "synthetic_validation_candidates",
+  "test_used_for_selection": false,
+  "real_capture_used_for_training": false,
+  "metric_unit": "endpoint candidates, not complete clips or human accuracy",
+  "baseline": {
+    "confusion": [
+      [
+        1633,
+        6,
+        2
+      ],
+      [
+        107,
+        206,
+        12
+      ],
+      [
+        154,
+        1,
+        169
+      ]
+    ],
+    "correct_commands": 375,
+    "wrong_direction": 13,
+    "false_accepts": 8,
+    "commands": 649,
+    "negatives": 1641
+  },
+  "dtw": {
+    "confusion": [
+      [
+        1634,
+        1,
+        6
+      ],
+      [
+        315,
+        9,
+        1
+      ],
+      [
+        311,
+        0,
+        13
+      ]
+    ],
+    "correct_commands": 22,
+    "wrong_direction": 1,
+    "false_accepts": 7,
+    "commands": 649,
+    "negatives": 1641
+  },
+  "threshold": 4.5,
+  "margin": 1.125,
+  "templates_per_class": 24,
+  "estimated_template_bytes": 27648,
+  "estimated_cell_band_operations_per_utterance": 359424,
+  "sources": {
+    "voice\\tools\\evaluate_dtw_candidate.py": "7fa2aaa3c155aa1a243d5f8a83e74b66d2820213e1c3c91df092110162784bf7",
+    "voice\\experiments\\robust_normalized\\train_dataset.npz": "26faaba6e4605e876352e93604bc01460e9733941449c3002a4d82766b34880f",
+    "voice\\experiments\\robust_normalized\\validation_dataset.npz": "b7fa2cacd25899a92737540473b5e5633a733666ad014fd07f7fbe4382b5e371",
+    "voice\\experiments\\robust_normalized\\model\\weights.mem": "040bc3b532bec5d055608b5af9d2604bcdc947978a0e664736b0c0b18872fa87",
+    "voice\\experiments\\robust_normalized\\model\\bias.mem": "1e47e3df1453f9b5edf9dea5b6531e7f4d977488461ce9b676c8cd71430a6a89"
+  },
+  "unlabelled_hardware_candidates": [
+    {
+      "capture": "voice_capture_20261023_140757.bin",
+      "sequence": 385,
+      "start_seconds": 2.88,
+      "distance_per_class": [
+        7.529947916666667,
+        8.717447916666666,
+        8.22265625
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_140757.bin",
+      "sequence": 392,
+      "start_seconds": 12.864,
+      "distance_per_class": [
+        5.430989583333333,
+        4.854166666666667,
+        4.80859375
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_140757.bin",
+      "sequence": 397,
+      "start_seconds": 16.768,
+      "distance_per_class": [
+        7.251302083333333,
+        7.373697916666667,
+        6.350260416666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141019.bin",
+      "sequence": 492,
+      "start_seconds": 6.08,
+      "distance_per_class": [
+        6.697916666666667,
+        6.528645833333333,
+        5.944010416666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141019.bin",
+      "sequence": 499,
+      "start_seconds": 15.584,
+      "distance_per_class": [
+        7.2421875,
+        6.380208333333333,
+        7.3203125
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141019.bin",
+      "sequence": 500,
+      "start_seconds": 18.016,
+      "distance_per_class": [
+        6.092447916666667,
+        10.135416666666666,
+        6.311197916666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141019.bin",
+      "sequence": 501,
+      "start_seconds": 19.424,
+      "distance_per_class": [
+        5.924479166666667,
+        5.791666666666667,
+        5.170572916666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141019.bin",
+      "sequence": 504,
+      "start_seconds": 21.824,
+      "distance_per_class": [
+        6.803385416666667,
+        5.811197916666667,
+        6.221354166666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141019.bin",
+      "sequence": 508,
+      "start_seconds": 24.992,
+      "distance_per_class": [
+        7.967447916666667,
+        10.309895833333334,
+        9.451822916666666
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141019.bin",
+      "sequence": 513,
+      "start_seconds": 30.592,
+      "distance_per_class": [
+        7.171875,
+        5.2734375,
+        6.565104166666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 648,
+      "start_seconds": 1.248,
+      "distance_per_class": [
+        6.141927083333333,
+        6.412760416666667,
+        5.783854166666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 652,
+      "start_seconds": 6.112,
+      "distance_per_class": [
+        8.819010416666666,
+        10.485677083333334,
+        8.94140625
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 653,
+      "start_seconds": 7.776,
+      "distance_per_class": [
+        7.790364583333333,
+        8.428385416666666,
+        6.424479166666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 656,
+      "start_seconds": 10.112,
+      "distance_per_class": [
+        6.55078125,
+        7.45703125,
+        7.12890625
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 660,
+      "start_seconds": 15.392,
+      "distance_per_class": [
+        8.260416666666666,
+        7.73828125,
+        6.907552083333333
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 661,
+      "start_seconds": 17.152,
+      "distance_per_class": [
+        6.04296875,
+        6.786458333333333,
+        6.5078125
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 663,
+      "start_seconds": 22.528,
+      "distance_per_class": [
+        6.799479166666667,
+        6.338541666666667,
+        6.932291666666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 664,
+      "start_seconds": 23.808,
+      "distance_per_class": [
+        8.4765625,
+        10.23828125,
+        8.701822916666666
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 665,
+      "start_seconds": 27.808,
+      "distance_per_class": [
+        8.096354166666666,
+        6.403645833333333,
+        7.815104166666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 666,
+      "start_seconds": 30.112,
+      "distance_per_class": [
+        8.087239583333334,
+        8.782552083333334,
+        9.192708333333334
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 667,
+      "start_seconds": 34.4,
+      "distance_per_class": [
+        5.76171875,
+        7.39453125,
+        7.147135416666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 668,
+      "start_seconds": 36.0,
+      "distance_per_class": [
+        6.23046875,
+        4.274739583333333,
+        5.279947916666667
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 669,
+      "start_seconds": 37.056,
+      "distance_per_class": [
+        6.546875,
+        6.549479166666667,
+        6.49609375
+      ],
+      "prediction": 0,
+      "label": null
+    },
+    {
+      "capture": "voice_capture_20261023_141445.bin",
+      "sequence": 671,
+      "start_seconds": 38.464,
+      "distance_per_class": [
+        7.08203125,
+        6.703125,
+        6.279947916666667
+      ],
+      "prediction": 0,
+      "label": null
+    }
+  ]
+}

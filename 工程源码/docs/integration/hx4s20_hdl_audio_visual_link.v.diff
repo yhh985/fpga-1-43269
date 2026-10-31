@@ -1,0 +1,39 @@
+--- voice_test/hx4s20/hdl/audio_visual_link.v
+
++++ integrated/hx4s20/hdl/audio_visual_link.v
+
+@@ -51,3 +51,33 @@
+
+     end
+ end
+ endmodule
++
++// Compact frequency-band estimator: count positive hysteretic crossings in
++// 1024 accepted samples. +/-8 PCM12 deadband rejects small zero-point jitter.
++// Frequency bands <300, <600, <1200 and >=1200 Hz at nominal 48kHz.
++// This is waveform crossing density, not FFT/dominant spectral frequency.
++module music_frequency_probe(input clk,rst,sample_valid,input signed [11:0] sample_in,
++ output reg result_valid,output wire result_overflow,output reg [1:0] peak_index,
++ output reg [31:0] peak_power);
++ reg [9:0] count;reg [4:0] crossings;reg armed;reg loud;
++ wire crossing=armed && sample_in>12'sd8;
++ // Only the <7/<13/<26 decisions are used; saturate instead of counting
++ // beyond the highest band. The consumer needs a silence gate, not power.
++ wire [4:0] total_crossings=crossings==5'd26 ? crossings : crossings+crossing;
++ wire loud_now=loud || sample_in>=12'sd32 || sample_in<=-12'sd32;
++ assign result_overflow=1'b0;
++ always @(posedge clk or posedge rst)begin
++  if(rst)begin count<=0;crossings<=0;armed<=0;loud<=0;result_valid<=0;peak_index<=0;peak_power<=0;end
++  else begin
++   result_valid<=0;
++   if(sample_valid)begin
++    if(sample_in< -12'sd8)armed<=1;else if(crossing)armed<=0;
++    if(count==1023)begin
++     peak_index<=total_crossings<7?0:total_crossings<13?1:total_crossings<26?2:3;
++     peak_power<=loud_now ? 32'd8192 : 32'd0;
++     result_valid<=1;count<=0;crossings<=0;loud<=0;
++    end else begin count<=count+1'b1;crossings<=total_crossings;loud<=loud_now;end
++   end
++  end
++ end
++endmodule

@@ -1,0 +1,611 @@
+{
+  "cpu_reference_only": true,
+  "fpga_deployed": false,
+  "pretrained_model": "Chinese WenetSpeech Zipformer 3.3M, official int8 epoch12",
+  "settings_selected_before_real_replay": true,
+  "training_on_real_recording": false,
+  "threshold_search": false,
+  "parameters": {
+    "keywords_threshold": 0.25,
+    "keywords_score": 1,
+    "trailing_blanks": 1,
+    "paths": 4
+  },
+  "sherpa_version": "1.13.8",
+  "real": {
+    "native48k": {
+      "hits": [
+        {
+          "command": "PREV",
+          "audio_available_seconds": 1.72
+        },
+        {
+          "command": "NEXT",
+          "audio_available_seconds": 3.0
+        }
+      ],
+      "cpu_seconds": 0.11953530000027968,
+      "audio_seconds": 3.006666666666667
+    },
+    "fpga_box8k": {
+      "hits": [
+        {
+          "command": "PREV",
+          "audio_available_seconds": 1.72
+        },
+        {
+          "command": "NEXT",
+          "audio_available_seconds": 3.0
+        }
+      ],
+      "cpu_seconds": 0.10792179999771179,
+      "audio_seconds": 3.006625
+    },
+    "gain_quarter": {
+      "hits": [
+        {
+          "command": "PREV",
+          "audio_available_seconds": 1.72
+        },
+        {
+          "command": "NEXT",
+          "audio_available_seconds": 3.0
+        }
+      ],
+      "cpu_seconds": 0.1234294999994745,
+      "audio_seconds": 3.006666666666667
+    },
+    "synthetic_noise": {
+      "hits": [
+        {
+          "command": "PREV",
+          "audio_available_seconds": 1.72
+        },
+        {
+          "command": "NEXT",
+          "audio_available_seconds": 3.0
+        }
+      ],
+      "cpu_seconds": 0.11704420000023674,
+      "audio_seconds": 3.006666666666667
+    },
+    "slow_resampled": {
+      "hits": [
+        {
+          "command": "PREV",
+          "audio_available_seconds": 2.04
+        }
+      ],
+      "cpu_seconds": 0.12837660000150208,
+      "audio_seconds": 3.7583333333333333
+    },
+    "fast_resampled": {
+      "hits": [
+        {
+          "command": "NEXT",
+          "audio_available_seconds": 2.36
+        }
+      ],
+      "cpu_seconds": 0.10226999999940745,
+      "audio_seconds": 2.4053333333333335
+    }
+  },
+  "synthetic_non_speech": {
+    "hits": [],
+    "cpu_seconds": 2.7581377000024077,
+    "audio_seconds": 120.0
+  },
+  "synthetic_test": {
+    "confusion": [
+      [
+        290,
+        0,
+        0
+      ],
+      [
+        39,
+        19,
+        0
+      ],
+      [
+        39,
+        0,
+        19
+      ]
+    ],
+    "correct": 38,
+    "wrong_direction": 0,
+    "false_accepts": 0,
+    "command_clips": 116,
+    "negative_clips": 290,
+    "errors": [
+      {
+        "path": "data\\s005_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s005_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s005_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s011_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s011_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s017_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s017_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s017_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s017_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s023_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s023_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s029_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s029_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s029_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s029_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s035_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s035_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s041_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s047_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s047_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s047_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s053_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s053_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s053_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s053_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s059_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s059_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s059_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s065_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s071_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s071_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s071_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s071_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s077_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s077_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s083_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s089_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s089_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s095_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s095_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s095_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s095_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s101_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s101_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s107_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s107_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s107_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s113_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s113_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s113_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s119_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s119_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s119_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s125_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s125_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s125_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s131_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s131_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s131_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s137_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s137_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s143_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s143_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s143_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s149_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s149_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s155_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s155_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s155_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s161_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s161_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s161_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s161_p01_1.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s167_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s167_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s173_p00_0.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s173_p00_1.wav",
+        "label": 1,
+        "prediction": 0,
+        "hits": []
+      },
+      {
+        "path": "data\\s173_p01_0.wav",
+        "label": 2,
+        "prediction": 0,
+        "hits": []
+      }
+    ]
+  },
+  "limitations": [
+    "Two labelled real utterances, not independent human validation.",
+    "CPU timings are not FPGA or screen response timings.",
+    "Synthetic waveform variants are correlated, not new recordings.",
+    "120s synthetic noise does not measure real room false alarms.",
+    "Pretrained Chinese model is not a bitstream for this FPGA."
+  ],
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\benchmark_open_kws.py": "27dcee5d68e74b8ea3c9a675bf9d88e69c87a38eebd3c2f24cb9404338b91966",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\verification\\real_voice_transient.json": "31a8979412e3d07e4d081ca13b0dbf45f430707316b5c1af5243056544cc7e09",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\open_kws_reference\\keywords.txt": "5ed32fa56899d58ff071d3745b0f15c9c168dc5139387b0442c7074d9cdc3ec7",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\research\\voice_sequence_20261023\\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01.tar.bz2": "b2f7c89690dc8ce4c6ed6afeab7cd800c36ad1421fb6b6302b4a4b194cf7f35f",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\research\\voice_sequence_20261023\\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\\tokens.txt": "72316508d9119696145abc6f1f8cdc46287535c34e5ce7e595f845cb1499cf2e",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\research\\voice_sequence_20261023\\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\\encoder-epoch-12-avg-2-chunk-16-left-64.int8.onnx": "dd784973fc9d2fabb3b800d6dcd20fc3b0ca84f8e2415afe54b032878e447f4d",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\research\\voice_sequence_20261023\\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\\decoder-epoch-12-avg-2-chunk-16-left-64.int8.onnx": "ed83454004d5bd16d831eaf00adcd181ed7734886aab6ef440f3ffa5aa3cfe3b",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\research\\voice_sequence_20261023\\sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01\\joiner-epoch-12-avg-2-chunk-16-left-64.int8.onnx": "f79760052b87239e325f0567c752ad3130b30d92effb847d4307743c20c59a24",
+    "E:\\anlo_project\\liantiao\\voice\\data\\manifest.json": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213"
+  }
+}

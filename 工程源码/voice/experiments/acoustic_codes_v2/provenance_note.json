@@ -1,0 +1,6 @@
+{
+  "source_changed_during_run": true,
+  "affected_source": "voice/tools/train_acoustic_codes.py",
+  "explanation": "The V3 optional boundary-shortcut prevention changes were added after V2 started. The source hash in report.json records the end-of-run file, not a captured startup source. Do not treat this source hash as an exact reproducibility record for V2.",
+  "deployment": "Offline diagnostic only; not installed on FPGA."
+}

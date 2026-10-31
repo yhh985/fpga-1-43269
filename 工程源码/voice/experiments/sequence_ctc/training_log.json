@@ -1,0 +1,392 @@
+[
+  {
+    "epoch": 0,
+    "margin": 0,
+    "validation": {
+      "correct": 0,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 4,
+    "margin": 0.25,
+    "validation": {
+      "correct": 0,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 9,
+    "margin": 0.25,
+    "validation": {
+      "correct": 16,
+      "wrong_direction": 3,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          345,
+          1,
+          2
+        ],
+        [
+          332,
+          1,
+          15
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 14,
+    "margin": 0.5,
+    "validation": {
+      "correct": 0,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 19,
+    "margin": 0.5,
+    "validation": {
+      "correct": 1,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          347,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 24,
+    "margin": 0.75,
+    "validation": {
+      "correct": 0,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 29,
+    "margin": 0.5,
+    "validation": {
+      "correct": 15,
+      "wrong_direction": 0,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          0,
+          8
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          333,
+          0,
+          15
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 34,
+    "margin": 1.5,
+    "validation": {
+      "correct": 0,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 39,
+    "margin": 0.75,
+    "validation": {
+      "correct": 6,
+      "wrong_direction": 1,
+      "false_accepts": 1,
+      "confusion": [
+        [
+          1739,
+          0,
+          1
+        ],
+        [
+          346,
+          1,
+          1
+        ],
+        [
+          343,
+          0,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 44,
+    "margin": 0.75,
+    "validation": {
+      "correct": 0,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 49,
+    "margin": 0.5,
+    "validation": {
+      "correct": 24,
+      "wrong_direction": 2,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          1,
+          6
+        ],
+        [
+          344,
+          2,
+          2
+        ],
+        [
+          326,
+          0,
+          22
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 54,
+    "margin": 0.75,
+    "validation": {
+      "correct": 9,
+      "wrong_direction": 1,
+      "false_accepts": 2,
+      "confusion": [
+        [
+          1738,
+          0,
+          2
+        ],
+        [
+          347,
+          0,
+          1
+        ],
+        [
+          339,
+          0,
+          9
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 59,
+    "margin": 0.75,
+    "validation": {
+      "correct": 7,
+      "wrong_direction": 1,
+      "false_accepts": 2,
+      "confusion": [
+        [
+          1738,
+          0,
+          2
+        ],
+        [
+          347,
+          0,
+          1
+        ],
+        [
+          341,
+          0,
+          7
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 64,
+    "margin": 0.75,
+    "validation": {
+      "correct": 3,
+      "wrong_direction": 0,
+      "false_accepts": 1,
+      "confusion": [
+        [
+          1739,
+          0,
+          1
+        ],
+        [
+          347,
+          1,
+          0
+        ],
+        [
+          346,
+          0,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 69,
+    "margin": 0.75,
+    "validation": {
+      "correct": 2,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          346,
+          0,
+          2
+        ]
+      ]
+    }
+  }
+]

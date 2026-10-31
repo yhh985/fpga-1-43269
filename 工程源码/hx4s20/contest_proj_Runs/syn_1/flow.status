@@ -1,0 +1,23 @@
+Location         : E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\contest_proj_Runs\syn_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : basic
+Setup            : WNS   222ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   471ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+  optimize_gate  |    1     |  54s(55%)   |    54(55%)    |        976        |        994        
+  optimize_rtl   |    1     |  43s(44%)   |    43(44%)    |        795        |        922        
+  import_device  |    1     |   0s(0%)    |     0(0%)     |        82         |        82         
+    read_adc     |    1     |   0s(0%)    |     0(0%)     |        375        |        375        
+    read_sdc     |    1     |   0s(0%)    |     0(0%)     |        375        |        375        
+--------------------------------------------------------------------------------------------------
+      total      |    5     |    1m37s    |      97       |        976        |        994        
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+{
+  "key": "28fb14e2ffaef67b8f00cfa0751a18941a30266fd11184adbf5044dbe4f7f014cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213291b75346bd907b5890d6a27c0256d0d286496e8cf54d465d30a19b811dcee40",
+  "splits": {
+    "train": {
+      "candidates": 9419,
+      "full_clip_trials": 9744
+    },
+    "validation": {
+      "candidates": 2373,
+      "full_clip_trials": 2436
+    },
+    "test": {
+      "candidates": 2316,
+      "full_clip_trials": 2436
+    }
+  }
+}

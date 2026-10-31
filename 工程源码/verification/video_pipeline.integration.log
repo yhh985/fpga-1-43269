@@ -1,0 +1,8 @@
+PASS actual top SD local reset: 320 hold + 3 destination clocks, asynchronous PLL unlock, repeated startup, independent of main POR
+PASS actual top startup automatic colorbars retain SD E6 C17 R00 frame diagnostics and red glyphs; manual SW3 suppresses them
+PASS actual top first-image raw-reader prefetch window retains colorbars through first delayed VS; second VS reveals image and validity is retained
+PASS actual top SW3 bounce rejection, frame-locked sources, 2400 test pixels immune to audio/buffer/no-card events
+PASS actual top only real picture changes fade, queued to VS once; audio/busy events cannot restart brightness
+ALL TESTS PASSED: actual top 10-stage RGB/HS/VS/DE, 614400 pixels, SOF/EOL, both bar modes off, 2048 PCM samples at 520-clock spacing, ACA spectrum tested separately
+sim\tb_top_video_pipeline.v:422: $finish called at 42796320000 (1ps)
+PASS actual top integration: tb_top_video_pipeline

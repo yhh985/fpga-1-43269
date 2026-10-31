@@ -1,0 +1,14 @@
+PASS external music return: 462 stereo frames, four effects, dynamic signed stereo samples; SLOT_BITS=64 phase=0 delay=0 ns
+E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_music_fx.v:46: $finish called at 14700502000 (1ps)
+ERROR: E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_playlist.v:48: $readmemh: Unable to open verification/music_fixtures/lbas.mem for reading.
+ERROR: E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_playlist.v:48: $readmemh: Unable to open verification/music_fixtures/sectors.mem for reading.
+FATAL: E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_playlist.v:27: Unexpected LBA          0
+       Time: 192000  Scope: tb_playlist
+
+tb_playlist failed
+At E:\anlo_project\liantiao\final_showcase_20261030\sim\run_music_tests.ps1:21 char:71
++ ...  0 -or $log -notmatch 'PASS'){Write-Output $log;throw "$name failed"}
++                                                     ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (tb_playlist failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : tb_playlist failed
+ 

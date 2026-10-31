@@ -1,0 +1,143 @@
+{
+  "split": "test",
+  "synthetic_only": true,
+  "policies": {
+    "baseline": {
+      "confusion": [
+        [
+          1734,
+          4,
+          2
+        ],
+        [
+          160,
+          188,
+          0
+        ],
+        [
+          183,
+          1,
+          164
+        ]
+      ],
+      "correct": 352,
+      "wrong_direction": 1,
+      "false_accepts": 6,
+      "real_recording": [
+        {
+          "start": 83,
+          "end": 121,
+          "prediction": 2,
+          "logits": [
+            [
+              -1445,
+              -1549,
+              1863
+            ],
+            [
+              -833,
+              -1523,
+              1073
+            ],
+            [
+              -654,
+              -1764,
+              1031
+            ]
+          ]
+        },
+        {
+          "start": 122,
+          "end": 157,
+          "prediction": 0,
+          "logits": [
+            [
+              154,
+              -670,
+              -496
+            ],
+            [
+              274,
+              -737,
+              -451
+            ],
+            [
+              804,
+              -1712,
+              -258
+            ]
+          ]
+        }
+      ]
+    },
+    "hysteresis": {
+      "confusion": [
+        [
+          1732,
+          5,
+          3
+        ],
+        [
+          134,
+          214,
+          0
+        ],
+        [
+          161,
+          1,
+          186
+        ]
+      ],
+      "correct": 400,
+      "wrong_direction": 1,
+      "false_accepts": 8,
+      "real_recording": [
+        {
+          "start": 83,
+          "end": 121,
+          "prediction": 2,
+          "logits": [
+            [
+              -1445,
+              -1549,
+              1863
+            ],
+            [
+              -833,
+              -1523,
+              1073
+            ],
+            [
+              -654,
+              -1764,
+              1031
+            ]
+          ]
+        },
+        {
+          "start": 122,
+          "end": 157,
+          "prediction": 0,
+          "logits": [
+            [
+              278,
+              -765,
+              -527
+            ],
+            [
+              372,
+              -802,
+              -463
+            ],
+            [
+              877,
+              -1780,
+              -232
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "real_not_used_for_selection": true
+}

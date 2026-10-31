@@ -1,0 +1,3 @@
+PASS frequency probe: 521 windows, crossing counts 0..512, saturation, silence threshold, signed extrema, deadband, sample gaps and reset
+E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_music_frequency_probe.v:48: $finish called at 5382410000 (1ps)
+

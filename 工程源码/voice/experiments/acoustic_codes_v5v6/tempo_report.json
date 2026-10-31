@@ -1,0 +1,62 @@
+{
+  "experimental_only": true,
+  "fpga_deployed": false,
+  "real_used_for_selection": false,
+  "test_previously_inspected": true,
+  "equal_model_weights": true,
+  "forward_passes_per_clip": 6,
+  "selected": {
+    "margin": 4,
+    "floor": -0.5,
+    "validation": {
+      "correct": 507,
+      "wrong_direction": 21,
+      "false_accepts": 6,
+      "confusion": [
+        [
+          1734,
+          1,
+          5
+        ],
+        [
+          83,
+          250,
+          15
+        ],
+        [
+          85,
+          6,
+          257
+        ]
+      ]
+    }
+  },
+  "test": {
+    "correct": 515,
+    "wrong_direction": 14,
+    "false_accepts": 12,
+    "confusion": [
+      [
+        1728,
+        9,
+        3
+      ],
+      [
+        75,
+        268,
+        5
+      ],
+      [
+        92,
+        9,
+        247
+      ]
+    ]
+  },
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\evaluate_model_consensus.py": "587157cbbd474de1b462ffab149684d4fe9f0c06df815f755d5bb5d62e34751c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v5\\candidate.pt": "f6a501fafd19107269a3ad7911d86139a095ab9510a32776e2ebeb01fb4d9093",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v6\\candidate.pt": "bc425cdfaa29a1a990141e52aa6e6639564a3e09b0951068a08bd6b3b4015ca7",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\evaluate_tempo_consensus.py": "6a006ecc9b5b6849f14eea3fe03b2b4c7c508059e40dc556bb26bbe8186012e7"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "epoch": 69,
+  "loss": 0.08908613592276139,
+  "margin": 0,
+  "validation": {
+    "correct": 470,
+    "wrong_direction": 36,
+    "false_accepts": 5,
+    "confusion": [
+      [
+        1735,
+        2,
+        3
+      ],
+      [
+        96,
+        224,
+        28
+      ],
+      [
+        94,
+        8,
+        246
+      ]
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+standard
+***Report Model: aca420_audio_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        28   out of    188   14.89%
+  #input                   11
+  #output                  16
+  #inout                    1
+
+Utilization Statistics
+#lut                    13687   out of  19600   69.83%
+#reg                     8738   out of  19600   44.58%
+#le                     15134
+  #lut only              6396   out of  15134   42.26%
+  #reg only              1447   out of  15134    9.56%
+  #lut&reg               7291   out of  15134   48.18%
+#bram                      62   out of     64   96.88%
+  #bram9k                  62
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       17   out of     29   58.62%
+#pad                       28   out of    188   14.89%
+  #ireg                    10
+  #oreg                     9
+  #treg                     0
+#pll                        1   out of      4   25.00%
+#gclk                       1   out of     16    6.25%
+
+
+Detailed IO Report
+
+      Name         Direction    Location    IOStandard    IOType    DriveStrength    PullType    PackReg  
+     I2S_DI          INPUT         P9        LVCMOS33      PAD           N/A           NONE       IREG    
+       clk           INPUT        K14        LVCMOS33      PAD           N/A           NONE       NONE    
+   key_demo_n        INPUT         T4        LVCMOS33      PAD           N/A          PULLUP      IREG    
+   key_learn_n       INPUT         P6        LVCMOS33      PAD           N/A          PULLUP      IREG    
+  key_monitor_n      INPUT         B1        LVCMOS33      PAD           N/A          PULLUP      IREG    
+   key_slot_n        INPUT        H14        LVCMOS33      PAD           N/A          PULLUP      IREG    
+     link_rx         INPUT        F13        LVCMOS33      PAD           N/A          PULLUP      IREG    
+   music_bclk        INPUT        F14        LVCMOS33      PAD           N/A         PULLDOWN     IREG    
+    music_in         INPUT        D14        LVCMOS33      PAD           N/A         PULLDOWN     IREG    
+   music_lrck        INPUT        D16        LVCMOS33      PAD           N/A         PULLDOWN     IREG    
+     reset_n         INPUT         P7        LVCMOS33      PAD           N/A           NONE       NONE    
+    I2S_BCLK        OUTPUT         L7        LVCMOS33      PAD            8            NONE       OREG    
+     I2S_DO         OUTPUT         L8        LVCMOS33      PAD            8            NONE       NONE    
+    I2S_MCLK        OUTPUT         P8        LVCMOS33      PAD            8            NONE       NONE    
+    I2S_RCLK        OUTPUT        L10        LVCMOS33      PAD            8            NONE       OREG    
+    iic_0_scl       OUTPUT         R5        LVCMOS33      PAD            8           PULLUP      OREG    
+     led[7]         OUTPUT         P4        LVCMOS33      PAD            8            NONE       OREG    
+     led[6]         OUTPUT         R2        LVCMOS33      PAD            8            NONE       NONE    
+     led[5]         OUTPUT         L3        LVCMOS33      PAD            8            NONE       OREG    
+     led[4]         OUTPUT         K1        LVCMOS33      PAD            8            NONE       NONE    
+     led[3]         OUTPUT         G6        LVCMOS33      PAD            8            NONE       NONE    
+     led[2]         OUTPUT         J3        LVCMOS33      PAD            8            NONE       OREG    
+     led[1]         OUTPUT         K3        LVCMOS33      PAD            8            NONE       OREG    
+     led[0]         OUTPUT         R1        LVCMOS33      PAD            8            NONE       NONE    
+     link_tx        OUTPUT        E15        LVCMOS33      PAD            8           PULLUP      OREG    
+    music_out       OUTPUT        E13        LVCMOS33      PAD            8          PULLDOWN     OREG    
+     uart_tx        OUTPUT         E3        LVCMOS33      PAD            8            NONE       NONE    
+    iic_0_sda        INOUT         M9        LVCMOS33      PAD            8           PULLUP      IREG    
+
+Report Clock Domain Luts:
+
+-----------------------------------------------------------------------------------------------------------------
+  Index   |  Name        |  Frequency   |  LUT As Logic   |  LUT As Shifter   |  LUT As Dram   |  BRAM   |  DSP
+-----------------------------------------------------------------------------------------------------------------
+  #1      |  audio_mclk  |  12MHz       |  23             |  0                |  0             |  0      |  0
+  #2      |  board_clk   |  50MHz       |  6288           |  0                |  280           |  62     |  17
+-----------------------------------------------------------------------------------------------------------------
+
+Clock Resource Statistics
+Index     ClockNet          Type               DriverType         Driver                  Fanout
+#1        clk_dup_1         Global             io                 clk_syn_2.di            5906
+#2        I2S_MCLK_dup_1    Global             pll                u_pll/pll_inst.clkc2    35
+#3        u_pll/clk0_buf    Global             pll                u_pll/pll_inst.clkc0    0
+
+Report Hierarchy Area:
++------------------------------------------------------------------------------------------------------+
+|Instance                |Module                 |le      |lut     |ripple  |seq     |bram    |dsp     |
++------------------------------------------------------------------------------------------------------+
+|top                     |aca420_audio_top       |15134   |11689   |1998    |8757    |62      |17      |
+|  u_analysis            |aca_analysis           |1939    |1389    |279     |1274    |0       |4       |
+|    u_bins              |audio_goertzel         |1272    |944     |147     |960     |0       |4       |
+|  u_audio_reset         |reset_release          |17      |6       |3       |13      |0       |0       |
+|  u_capture             |aca_i2s_capture        |48      |43      |5       |42      |0       |0       |
+|  u_detector            |aca_clap_detector      |680     |454     |205     |261     |0       |0       |
+|  u_feature_report      |aca_pcm_feature_report |739     |564     |35      |636     |1       |0       |
+|    u_tx                |aca_uart_tx            |37      |33      |4       |24      |0       |0       |
+|  u_init                |aca_es8388_init        |325     |257     |68      |97      |0       |0       |
+|    u_bus               |aca_i2c_control        |137     |133     |4       |44      |0       |0       |
+|      aca_i2c_bit_shift |aca_i2c_bit_shift      |64      |60      |4       |25      |0       |0       |
+|  u_keys                |aca_keys               |359     |157     |114     |148     |0       |0       |
+|  u_kws                 |aca_ctc_engine         |4800    |3893    |495     |2581    |53      |9       |
+|  u_kws_frontend        |aca_kws_frontend       |3462    |2750    |374     |1976    |1       |4       |
+|    u_bins              |kws_goertzel           |2685    |2079    |280     |1624    |1       |4       |
+|  u_link                |link_sensor            |1085    |906     |105     |816     |0       |0       |
+|    u_packet            |link_packet            |607     |503     |50      |459     |0       |0       |
+|      u_rx              |uart_rx                |54      |42      |9       |29      |0       |0       |
+|      u_tx              |uart_tx                |39      |30      |9       |25      |0       |0       |
+|  u_music_clock_route   |aca_music_clock_route  |293     |211     |82      |96      |0       |0       |
+|    normal              |aca_music_clock_probe  |146     |105     |41      |48      |0       |0       |
+|    reverse             |aca_music_clock_probe  |145     |104     |41      |46      |0       |0       |
+|  u_music_fx            |music_fx_return        |514     |452     |56      |319     |7       |0       |
+|    g_checked$u_checked |music_checked_fx       |514     |452     |56      |319     |7       |0       |
+|      rx                |music_checked_rx       |134     |115     |13      |85      |0       |0       |
+|        monitor         |music_link_monitor     |37      |27      |5       |27      |0       |0       |
+|      u_echo            |music_echo_delay       |95      |82      |13      |63      |7       |0       |
+|  u_pcm                 |aca_pcm_mailbox        |16      |14      |0       |16      |0       |0       |
+|  u_pll                 |aca_audio_pll          |2       |2       |0       |1       |0       |0       |
+|  u_report              |aca_uart_report        |198     |185     |8       |140     |0       |0       |
+|    u_tx                |aca_uart_tx            |74      |71      |3       |32      |0       |0       |
+|  u_rhythm              |aca_rhythm             |108     |63      |32      |44      |0       |0       |
+|  u_sys_reset           |reset_release          |13      |8       |3       |8       |0       |0       |
++------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets   
+    #1          1       14071  
+    #2          2       3505   
+    #3          3        998   
+    #4          4        740   
+    #5        5-10       975   
+    #6        11-50      813   
+    #7       51-100      91    
+    #8       101-500      8    
+    #9        >500        1    
+  Average     2.90             

@@ -1,0 +1,51 @@
+{
+  "next_only_binary": true,
+  "margin_q6_sum": 0,
+  "floor_q6_sum_times10": 1024,
+  "results": {
+    "validation": {
+      "correct": 318,
+      "wrong_direction": 0,
+      "false_accepts": 342,
+      "confusion": [
+        [
+          1746,
+          342,
+          0
+        ],
+        [
+          30,
+          318,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "test": {
+      "correct": 305,
+      "wrong_direction": 0,
+      "false_accepts": 337,
+      "confusion": [
+        [
+          1751,
+          337,
+          0
+        ],
+        [
+          43,
+          305,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  }
+}

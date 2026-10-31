@@ -1,0 +1,99 @@
+{
+  "split": "test",
+  "synthetic_only": true,
+  "policies": {
+    "original": {
+      "policy": [
+        "legacy",
+        false,
+        109,
+        -2147483648
+      ],
+      "correct": 380,
+      "wrong_direction": 53,
+      "false_accepts": 74,
+      "confusion": [
+        [
+          1666,
+          36,
+          38
+        ],
+        [
+          135,
+          195,
+          18
+        ],
+        [
+          128,
+          35,
+          185
+        ]
+      ]
+    },
+    "selected": {
+      "policy": [
+        "guard",
+        true,
+        109,
+        0
+      ],
+      "correct": 367,
+      "wrong_direction": 37,
+      "false_accepts": 54,
+      "confusion": [
+        [
+          1686,
+          22,
+          32
+        ],
+        [
+          152,
+          182,
+          14
+        ],
+        [
+          140,
+          23,
+          185
+        ]
+      ]
+    }
+  },
+  "real_recording_report_only": [
+    {
+      "start": 83,
+      "end": 121,
+      "logits": [
+        -656,
+        -596,
+        314
+      ],
+      "winner": 2,
+      "margin": 910
+    },
+    {
+      "start": 122,
+      "end": 157,
+      "logits": [
+        -390,
+        -416,
+        -20
+      ],
+      "winner": 2,
+      "margin": 370
+    }
+  ],
+  "real_consulted_during_design": true,
+  "real_independent_validation": false,
+  "numeric_policy_selected_on_validation": true,
+  "production_changed": false,
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\audit_sensitive_guard.py": "e58dc239d799648a9598c44be69858541c87266e54f84f2b30db15e4dfeb62ee",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\kws_common.py": "ab57151072c622a8d907525572638a78c40a3f13709414e24111dbf1faf0223c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\robust_common.py": "2411cac0111e58b81afbffb68c2af2d790d6e55274cc0b2571b9ea4b421d512c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\probe_vad_continuity.py": "291b75346bd907b5890d6a27c0256d0d286496e8cf54d465d30a19b811dcee40",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\model\\weights.mem": "431bce25f395111c1d06896726ce561e85a1faba4fffa74ab542583ad38f71dc",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\model\\bias.mem": "f2a371f657573f2b90d51cf5e1343cf827d4ef7915081ef3f5e4b0e41b9b8fd9",
+    "E:\\anlo_project\\liantiao\\voice\\data\\manifest.json": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213"
+  }
+}

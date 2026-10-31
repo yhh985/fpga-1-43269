@@ -1,0 +1,73 @@
+{
+  "experimental_only": true,
+  "fpga_deployed": false,
+  "real_used_for_selection": false,
+  "test_previously_inspected": true,
+  "margin": 3,
+  "min_log_probability_per_frame": -0.2,
+  "validation": {
+    "correct": 456,
+    "wrong_direction": 14,
+    "false_accepts": 7,
+    "confusion": [
+      [
+        1733,
+        2,
+        5
+      ],
+      [
+        103,
+        240,
+        5
+      ],
+      [
+        123,
+        9,
+        216
+      ]
+    ]
+  },
+  "test": {
+    "correct": 468,
+    "wrong_direction": 15,
+    "false_accepts": 9,
+    "confusion": [
+      [
+        1731,
+        5,
+        4
+      ],
+      [
+        89,
+        258,
+        1
+      ],
+      [
+        124,
+        14,
+        210
+      ]
+    ]
+  },
+  "real_reused_development": [
+    {
+      "expected": 2,
+      "command": 0,
+      "text": "上一张",
+      "gap": 0.4082592725753784,
+      "log_probability_per_frame": -0.015683528035879135
+    },
+    {
+      "expected": 1,
+      "command": 1,
+      "text": "下一张",
+      "gap": 3.9995651245117188,
+      "log_probability_per_frame": -0.0068816980347037315
+    }
+  ],
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\evaluate_masked_ctc_paths.py": "1e0f83b47481dcfa4223e847a7e3e51e7c07589ef4f306bb80b50daac4d52d82",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v4\\candidate.pt": "577f92e0acafe9a6898e28fb0d1d45f2108457878c5cec0c5aabd4b6ec05f68c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3"
+  }
+}

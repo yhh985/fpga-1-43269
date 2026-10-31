@@ -1,0 +1,5 @@
+E:\anlo_project\liantiao\final_showcase_20261030\aca420\rtl\kws_goertzel.v:4: warning: timescale for kws_goertzel inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\aca420\rtl\audio_goertzel.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\aca420\sim\tb_audio_top.v:23: warning: Instantiating module aca420_audio_top with dangling input port 1 (music_bclk) floating.
+E:\anlo_project\liantiao\final_showcase_20261030\aca420\sim\tb_audio_top.v:23: warning: Instantiating module aca420_audio_top with dangling input port 2 (music_lrck) floating.
+E:\anlo_project\liantiao\final_showcase_20261030\aca420\sim\tb_audio_top.v:23: warning: Instantiating module aca420_audio_top with dangling input port 3 (music_in) floating.

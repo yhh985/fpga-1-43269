@@ -1,0 +1,12 @@
+{
+  "inputs": 768,
+  "frames": 48,
+  "bands": 16,
+  "hidden": 48,
+  "shift": 8,
+  "margin": 791,
+  "architecture": "conv",
+  "normalization": "utterance_nearest_38_40_42_v1",
+  "feature_version": "mel63_q8_v3",
+  "synthetic_only": true
+}

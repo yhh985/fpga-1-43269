@@ -1,0 +1,144 @@
+{
+  "experimental_only": true,
+  "fpga_deployed": false,
+  "real_used_for_training": false,
+  "prevent_boundary_shortcut": true,
+  "test_previously_inspected": true,
+  "selected": {
+    "epoch": 44,
+    "loss": 0.12981246074138603,
+    "margin": 0.5,
+    "validation": {
+      "correct": 456,
+      "wrong_direction": 25,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          111,
+          219,
+          18
+        ],
+        [
+          104,
+          7,
+          237
+        ]
+      ]
+    }
+  },
+  "tokens": [
+    "<blank>",
+    "一",
+    "上",
+    "下",
+    "不",
+    "乐",
+    "了",
+    "今",
+    "你",
+    "几",
+    "切",
+    "听",
+    "图",
+    "在",
+    "声",
+    "大",
+    "天",
+    "好",
+    "家",
+    "张",
+    "很",
+    "想",
+    "我",
+    "把",
+    "换",
+    "气",
+    "点",
+    "照",
+    "片",
+    "现",
+    "的",
+    "看",
+    "要",
+    "请",
+    "调",
+    "谢",
+    "这",
+    "音",
+    "首"
+  ],
+  "results": {
+    "validation": {
+      "correct": 456,
+      "wrong_direction": 25,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          111,
+          219,
+          18
+        ],
+        [
+          104,
+          7,
+          237
+        ]
+      ]
+    },
+    "test": {
+      "correct": 446,
+      "wrong_direction": 13,
+      "false_accepts": 9,
+      "confusion": [
+        [
+          1731,
+          5,
+          4
+        ],
+        [
+          111,
+          232,
+          5
+        ],
+        [
+          126,
+          8,
+          214
+        ]
+      ]
+    }
+  },
+  "real_development": [
+    {
+      "start": 147,
+      "end": 185,
+      "prediction": 2,
+      "text": "上一张",
+      "gap": 0.7804462909698486
+    },
+    {
+      "start": 186,
+      "end": 221,
+      "prediction": 0,
+      "text": "上下一片",
+      "gap": -1
+    }
+  ],
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_acoustic_codes.py": "1f7dae029f1328323943319def1482374482578937f398d551115af3ab253f2a",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v3\\candidate.pt": "21ea8c72369cd83cb92bf044737613de99a6232a718619493839e20d36dabbf9",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v3\\full_clips.npz": "2bef389fd8dacd375aa1db44b67172421e0343d0aed8be8822376f38c205703c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v3\\selected.json": "dbc133d2700b2b6bccd34f64f562d809caa638652d88a4ce0c3b8e062e0f0293"
+  }
+}

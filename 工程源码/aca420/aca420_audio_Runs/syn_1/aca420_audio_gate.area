@@ -1,0 +1,70 @@
+standard
+***Report Model: aca420_audio_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        28   out of    188   14.89%
+  #input                   11
+  #output                  16
+  #inout                    1
+
+LUT Statistics
+#Total_luts              8504
+  #lut4                  7455
+  #lut5                   957
+  #lut6                    92
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                    13012   out of  19600   66.39%
+#reg                     8595   out of  19600   43.85%
+#bram                      62   out of     64   96.88%
+  #bram9k                  62
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       17   out of     29   58.62%
+#pad                       28   out of    188   14.89%
+  #ireg                    10
+  #oreg                     9
+  #treg                     0
+#pll                        1   out of      4   25.00%
+#gclk                       1   out of     16    6.25%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------+
+|Instance                |Module                 |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------------------+
+|top                     |aca420_audio_top       |11014   |1998    |8614    |62      |17      |
+|  u_analysis            |aca_analysis           |1348    |279     |1300    |0       |4       |
+|    u_bins              |audio_goertzel         |796     |147     |984     |0       |4       |
+|  u_audio_reset         |reset_release          |7       |3       |12      |0       |0       |
+|  u_capture             |aca_i2s_capture        |31      |5       |42      |0       |0       |
+|  u_detector            |aca_clap_detector      |459     |205     |249     |0       |0       |
+|  u_feature_report      |aca_pcm_feature_report |488     |35      |641     |1       |0       |
+|    u_tx                |aca_uart_tx            |31      |4       |21      |0       |0       |
+|  u_init                |aca_es8388_init        |256     |68      |93      |0       |0       |
+|    u_bus               |aca_i2c_control        |128     |4       |43      |0       |0       |
+|      aca_i2c_bit_shift |aca_i2c_bit_shift      |68      |4       |21      |0       |0       |
+|  u_keys                |aca_keys               |139     |114     |151     |0       |0       |
+|  u_kws                 |aca_ctc_engine         |3640    |495     |2495    |53      |9       |
+|  u_kws_frontend        |aca_kws_frontend       |2586    |374     |1905    |1       |4       |
+|    u_bins              |kws_goertzel           |1574    |280     |1615    |1       |4       |
+|  u_link                |link_sensor            |845     |105     |813     |0       |0       |
+|    u_packet            |link_packet            |397     |50      |461     |0       |0       |
+|      u_rx              |uart_rx                |36      |9       |32      |0       |0       |
+|      u_tx              |uart_tx                |37      |9       |23      |0       |0       |
+|  u_music_clock_route   |aca_music_clock_route  |201     |82      |90      |0       |0       |
+|    normal              |aca_music_clock_probe  |99      |41      |44      |0       |0       |
+|    reverse             |aca_music_clock_probe  |99      |41      |44      |0       |0       |
+|  u_music_fx            |music_fx_return        |421     |56      |316     |7       |0       |
+|    g_checked$u_checked |music_checked_fx       |421     |56      |316     |7       |0       |
+|      rx                |music_checked_rx       |86      |13      |96      |0       |0       |
+|        monitor         |music_link_monitor     |23      |5       |30      |0       |0       |
+|      u_echo            |music_echo_delay       |78      |13      |58      |7       |0       |
+|  u_pcm                 |aca_pcm_mailbox        |1       |0       |20      |0       |0       |
+|  u_pll                 |aca_audio_pll          |1       |0       |0       |0       |0       |
+|  u_report              |aca_uart_report        |176     |8       |143     |0       |0       |
+|    u_tx                |aca_uart_tx            |104     |3       |23      |0       |0       |
+|  u_rhythm              |aca_rhythm             |68      |32      |44      |0       |0       |
+|  u_sys_reset           |reset_release          |8       |3       |14      |0       |0       |
++---------------------------------------------------------------------------------------------+

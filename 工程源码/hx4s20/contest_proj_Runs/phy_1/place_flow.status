@@ -1,0 +1,21 @@
+Location         : E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\contest_proj_Runs\phy_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : manhattan
+Setup            : WNS -1134ps  TNS    -1134ps  NUM_FEPS     1
+Hold             : WNS   -11ps  TNS      -77ps  NUM_FEPS     7
+
+Flow Statistics  :
+---------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+---------------------------------------------------------------------------------------------------
+      place      |    1     |  1m48s(99%)  |   116(100%)   |        866        |        866        
+    import_db    |    1     |    1s(0%)    |     0(0%)     |        336        |        336        
+  import_device  |    1     |    0s(0%)    |     0(0%)     |        99         |        99         
+---------------------------------------------------------------------------------------------------
+      total      |    3     |    1m49s     |      116      |        866        |        866        
+---------------------------------------------------------------------------------------------------

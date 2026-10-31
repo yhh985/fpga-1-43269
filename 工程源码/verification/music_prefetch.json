@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "simulation_only": true,
+  "sources": {
+    "hx4s20\\hdl\\SD\\fat32_bmp_source.v": "6265af35dc411ce85f410d9639dfbc0c85b87a13bdde3b6324eef5a08721a386",
+    "hx4s20\\hdl\\SD\\sd_media_arbiter.v": "e5fc5a924ef15e51311f8ae2333884891cfb2335f395351b8bb6bb0e69c54326",
+    "hx4s20\\hdl\\SD\\wav_sector_reader.v": "f849dbab422d57087d1fe8356e56c19b004223c71ae0ccc92b91dda7a8205241",
+    "hx4s20\\hdl\\wav_pcm_parser.v": "d39f0c2c3628ffc13fb8e1a51ae85f2ad58a4ab542ec58ca616920ae58b6e499",
+    "hx4s20\\hdl\\audio_pcm_fifo.v": "2eedc09acc4232a659021fa8d5180ddceb0f19138b817112cceeea31ff0af354",
+    "hx4s20\\hdl\\SD\\sd_card_bmp.v": "63584599e93b60cbde2fc344998d5727083e373304015ecd39670f0db75c4dcd",
+    "hx4s20\\hdl\\SD\\bmp_read.v": "629c2d97c677bc9ecfb0c2286e92212172e49d9dda94b5c03e4594f4c42d8bc9",
+    "hx4s20\\hdl\\image_resizer.v": "c645834365234bace7a8ac584259020958b181cd0b1e945ce2d065540ed560e5",
+    "hx4s20\\hdl\\image_resizer_sd_quality.v": "f10b3029ac72452b4a7849a77eeded3945c28f7cd9548c3737cb5f5b6e6b7c71",
+    "hx4s20\\hdl\\SD\\sd_card_top.v": "bbb120bbf339a8f5aa0ba735b01322f772990694a25917631cb205149319ecad",
+    "hx4s20\\hdl\\SD\\sd_card_cmd.v": "d625c0d6d45045d944c49a002de7f67a0765edbbfe5c8fcdcc3ca954deab64f4",
+    "hx4s20\\hdl\\SD\\sd_card_sec_read_write.v": "41fd4bb7fe640c02b5b2cdbf2987410f7085100ba0119340c9fff5d2d07ee9fd",
+    "hx4s20\\hdl\\SD\\spi_master.v": "37f7a21144fa5cca3cc5c3b5f68a5ad40b3108336b600e45a1367734ac61403c",
+    "sim\\tb_music_prefetch.v": "0440864f7636e468b39baa459840ca8ead7bd34af761b8d971ac39348a8bc44b"
+  },
+  "log_sha256": "37a53b97ad7c8bd4ce47e780a146351f922389302505f9e79c3f835493c0521d"
+}

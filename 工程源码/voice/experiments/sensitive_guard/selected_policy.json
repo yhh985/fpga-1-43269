@@ -1,0 +1,39 @@
+{
+  "name": "guard_iso1_m109_s0",
+  "policy": [
+    "guard",
+    true,
+    109,
+    0
+  ],
+  "selection_split": "validation",
+  "validation": {
+    "policy": [
+      "guard",
+      true,
+      109,
+      0
+    ],
+    "correct": 380,
+    "wrong_direction": 54,
+    "false_accepts": 48,
+    "confusion": [
+      [
+        1692,
+        24,
+        24
+      ],
+      [
+        127,
+        198,
+        23
+      ],
+      [
+        135,
+        31,
+        182
+      ]
+    ]
+  },
+  "selection_rule": "Correct-count loss <=1% of command trials; no more direction errors; >=20% fewer background accepts than sensitive baseline."
+}

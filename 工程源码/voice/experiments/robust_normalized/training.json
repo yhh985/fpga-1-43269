@@ -1,0 +1,52 @@
+{
+  "selected_epoch": 299,
+  "validation_confusion": [
+    [
+      1633,
+      6,
+      2
+    ],
+    [
+      107,
+      206,
+      12
+    ],
+    [
+      154,
+      1,
+      169
+    ]
+  ],
+  "validation_score": [
+    336,
+    375,
+    -13
+  ],
+  "synthetic_only": true,
+  "test_used_for_selection": false,
+  "real_recording_used_for_training": false,
+  "waveform_noise": "uniform +-500 PCM16 plus 120/240 Hz hum; gain 0.7",
+  "speed_factors": [
+    0.55,
+    1.65
+  ],
+  "config": {
+    "inputs": 768,
+    "frames": 48,
+    "bands": 16,
+    "hidden": 48,
+    "shift": 8,
+    "margin": 791,
+    "architecture": "conv",
+    "normalization": "utterance_nearest_38_40_42_v1",
+    "feature_version": "mel63_q8_v3",
+    "synthetic_only": true
+  },
+  "weight_sha256": "040bc3b532bec5d055608b5af9d2604bcdc947978a0e664736b0c0b18872fa87",
+  "data_manifest_sha256": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213",
+  "sources": {
+    "voice\\tools\\train_robust.py": "4e49f9e402b0b4440d96a819aa6f1a4560353c0d6be17e6fd54e9181d5f894bb",
+    "voice\\tools\\robust_common.py": "c0056f427a0b18b16d281399ccb581c146be08e499708d60ae2125d9ecd29850",
+    "voice\\tools\\kws_common.py": "f3e55e081dfde9fc5fd1f551fc170c9f38a8402fda66745742f9af467dd154b2"
+  }
+}

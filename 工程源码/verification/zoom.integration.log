@@ -1,0 +1,90 @@
+VERIFIED visual zoom 1x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 9x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x5 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 33x25 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 64x48 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x3 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 3x1024 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x1024 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 9x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x5 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 33x25 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 64x48 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x3 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 3x1024 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x1024 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 9x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x5 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 33x25 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 64x48 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x3 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 3x1024 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x1024 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 9x1 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x5 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 33x25 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 64x48 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x3 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 3x1024 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1024x1024 -> 32x24: 768 exact pixels
+PASS visual zoom scaler: 40 sizes, 30720 pixels; bilinear independent oracle, exact endpoints, RGB888 identity, random source/sink stalls and final-pixel completion
+sim/tb_zoom_scaler.v:112: $finish called at 62551430000 (1ps)
+VERIFIED visual zoom 640x480 -> 640x480: 307200 exact pixels
+VERIFIED visual zoom 7x19 -> 640x480: 307200 exact pixels
+VERIFIED visual zoom 640x480 -> 640x480: 307200 exact pixels
+VERIFIED visual zoom 7x19 -> 640x480: 307200 exact pixels
+VERIFIED visual zoom 640x480 -> 640x480: 307200 exact pixels
+VERIFIED visual zoom 7x19 -> 640x480: 307200 exact pixels
+VERIFIED visual zoom 640x480 -> 640x480: 307200 exact pixels
+VERIFIED visual zoom 7x19 -> 640x480: 307200 exact pixels
+PASS visual zoom scaler: 8 sizes, 2457600 pixels; bilinear independent oracle, exact endpoints, RGB888 identity, random source/sink stalls and final-pixel completion
+sim/tb_zoom_scaler.v:112: $finish called at 465783280000 (1ps)
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x19 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x19 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x19 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 7x19 -> 32x24: 768 exact pixels
+PASS visual zoom scaler: 8 sizes, 6144 pixels; bilinear independent oracle, exact endpoints, RGB888 identity, random source/sink stalls and final-pixel completion
+sim/tb_zoom_scaler.v:112: $finish called at 1670970000 (1ps)
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 19x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x17 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 37x29 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 19x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x17 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 37x29 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x17 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 37x29 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 19x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 37x29 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 32x24 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 19x7 -> 32x24: 768 exact pixels
+VERIFIED visual zoom 1x17 -> 32x24: 768 exact pixels
+PASS visual zoom scaler: 16 sizes, 12288 pixels; bilinear independent oracle, exact endpoints, RGB888 identity, random source/sink stalls and final-pixel completion
+sim/tb_zoom_scaler.v:112: $finish called at 2537430000 (1ps)
+PASS zoom scheduler: same-file redraw, both completion orders, committed status, correct/wrong reader ACK, coalesced requests, pause/failure recovery, NEXT/PREV with simultaneous zoom
+sim/tb_zoom_scheduler.v:83: $finish called at 4080000 (1ps)
+iverilog.exe : sim/tb_zoom_osd.v:20: vvp.tgt sorry: procedural continuous assignments are not yet fully supported. The 
+RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
+At E:\anlo_project\liantiao\final_showcase_20261030\sim\run_zoom_tests.ps1:22 char:3
++   & $IverilogPath -g2012 -I hx4s20/hdl -I hx4s20/hdl/include -s $case ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (sim/tb_zoom_osd...nt is executed.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

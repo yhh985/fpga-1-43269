@@ -1,0 +1,33 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = E:/Anlogic_fpga/bin/run.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     yhh
+   Run Date =   Sat Oct 31 00:20:49 2026
+
+   Run on =     LAPTOP-D7Q0PF8I
+============================================================
+HDL-5373 WARNING: identifier 'rst_sys' is used before its declaration in ../../rtl/aca420_audio_top.v(45)
+HDL-5373 WARNING: identifier 'sample_alive' is used before its declaration in ../../rtl/aca420_audio_top.v(196)
+HDL-5007 WARNING: using initial value of 'lengths' since it is never assigned in ../../rtl/aca_ctc_engine.v(18)
+HDL-5314 WARNING: net 'weights' does not have a driver in ../../rtl/aca_ctc_engine.v(13)
+HDL-5314 WARNING: net 'biases' does not have a driver in ../../rtl/aca_ctc_engine.v(14)
+HDL-5314 WARNING: net 'shifts' does not have a driver in ../../rtl/aca_ctc_engine.v(14)
+HDL-5314 WARNING: net 'logadd_rom' does not have a driver in ../../rtl/aca_ctc_engine.v(17)
+HDL-5314 WARNING: net 'codes' does not have a driver in ../../rtl/aca_ctc_engine.v(17)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "u_kws/ramread11_syn_4" in ../../rtl/aca_ctc_engine.v(59) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "u_kws/ramread11_syn_4" in ../../rtl/aca_ctc_engine.v(59) / pin "beb[0]"
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "u_music_fx/g_checked$u_checked/u_echo/ramread0_syn_4" in ../../../common/music_fx_return.v(231) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "u_music_fx/g_checked$u_checked/u_echo/ramread0_syn_4" in ../../../common/music_fx_return.v(231) / pin "beb[0]"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "key_sync_reg[0]" in ../../rtl/aca420_audio_top.v(222) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "u_music_clock_route/normal/bs_reg[0]" in ../../rtl/aca_music_clock_probe.v(21) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "u_music_clock_route/normal/ls_reg[0]" in ../../rtl/aca_music_clock_probe.v(21) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "aca420_audio_top" / inst "u_music_fx/g_checked$u_checked/rx/ds_reg[0]" in ../../../common/music_fx_return.v(126) / pin "clk"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets

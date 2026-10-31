@@ -1,0 +1,343 @@
+{
+  "candidate_only": true,
+  "deployed_model_changed": false,
+  "real_training_utterances": 2,
+  "independent_real_validation_utterances": 0,
+  "synthetic_test_not_used": true,
+  "baseline_validation": {
+    "correct": 410,
+    "wrong_direction": 13,
+    "false_accepts": 7,
+    "confusion": [
+      [
+        1733,
+        5,
+        2
+      ],
+      [
+        112,
+        224,
+        12
+      ],
+      [
+        161,
+        1,
+        186
+      ]
+    ]
+  },
+  "history": [
+    {
+      "ridge": 0.01,
+      "penalty": 1.0,
+      "validation": {
+        "correct": 413,
+        "wrong_direction": 19,
+        "false_accepts": 6,
+        "confusion": [
+          [
+            1734,
+            3,
+            3
+          ],
+          [
+            127,
+            203,
+            18
+          ],
+          [
+            137,
+            1,
+            210
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "ridge": 0.01,
+      "penalty": 10.0,
+      "validation": {
+        "correct": 413,
+        "wrong_direction": 17,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            2,
+            3
+          ],
+          [
+            121,
+            211,
+            16
+          ],
+          [
+            145,
+            1,
+            202
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        0
+      ]
+    },
+    {
+      "ridge": 0.1,
+      "penalty": 0.0001,
+      "validation": {
+        "correct": 394,
+        "wrong_direction": 28,
+        "false_accepts": 7,
+        "confusion": [
+          [
+            1733,
+            4,
+            3
+          ],
+          [
+            139,
+            183,
+            26
+          ],
+          [
+            135,
+            2,
+            211
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "ridge": 0.1,
+      "penalty": 0.01,
+      "validation": {
+        "correct": 395,
+        "wrong_direction": 27,
+        "false_accepts": 7,
+        "confusion": [
+          [
+            1733,
+            4,
+            3
+          ],
+          [
+            138,
+            185,
+            25
+          ],
+          [
+            136,
+            2,
+            210
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "ridge": 0.1,
+      "penalty": 1.0,
+      "validation": {
+        "correct": 412,
+        "wrong_direction": 26,
+        "false_accepts": 8,
+        "confusion": [
+          [
+            1732,
+            5,
+            3
+          ],
+          [
+            128,
+            196,
+            24
+          ],
+          [
+            130,
+            2,
+            216
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "ridge": 0.1,
+      "penalty": 10.0,
+      "validation": {
+        "correct": 412,
+        "wrong_direction": 19,
+        "false_accepts": 7,
+        "confusion": [
+          [
+            1733,
+            4,
+            3
+          ],
+          [
+            120,
+            210,
+            18
+          ],
+          [
+            145,
+            1,
+            202
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        0
+      ]
+    },
+    {
+      "ridge": 1.0,
+      "penalty": 0.0001,
+      "validation": {
+        "correct": 348,
+        "wrong_direction": 41,
+        "false_accepts": 68,
+        "confusion": [
+          [
+            1672,
+            65,
+            3
+          ],
+          [
+            171,
+            147,
+            30
+          ],
+          [
+            136,
+            11,
+            201
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "ridge": 1.0,
+      "penalty": 0.01,
+      "validation": {
+        "correct": 343,
+        "wrong_direction": 39,
+        "false_accepts": 63,
+        "confusion": [
+          [
+            1677,
+            60,
+            3
+          ],
+          [
+            181,
+            137,
+            30
+          ],
+          [
+            133,
+            9,
+            206
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "ridge": 1.0,
+      "penalty": 1.0,
+      "validation": {
+        "correct": 397,
+        "wrong_direction": 31,
+        "false_accepts": 22,
+        "confusion": [
+          [
+            1718,
+            19,
+            3
+          ],
+          [
+            133,
+            189,
+            26
+          ],
+          [
+            135,
+            5,
+            208
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        0
+      ]
+    },
+    {
+      "ridge": 1.0,
+      "penalty": 10.0,
+      "validation": {
+        "correct": 403,
+        "wrong_direction": 15,
+        "false_accepts": 8,
+        "confusion": [
+          [
+            1732,
+            5,
+            3
+          ],
+          [
+            109,
+            226,
+            13
+          ],
+          [
+            169,
+            2,
+            177
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        0
+      ]
+    }
+  ],
+  "eligible_candidate_found": false,
+  "sources": {
+    "voice\\tools\\adapt_user_logits.py": "880cee66303a2e1719b87aa75c8934b8352ad8fb5228637c62d38303b958737e",
+    "voice\\tools\\kws_common.py": "ab57151072c622a8d907525572638a78c40a3f13709414e24111dbf1faf0223c",
+    "voice\\tools\\robust_common.py": "2411cac0111e58b81afbffb68c2af2d790d6e55274cc0b2571b9ea4b421d512c",
+    "voice\\tools\\probe_vad_continuity.py": "291b75346bd907b5890d6a27c0256d0d286496e8cf54d465d30a19b811dcee40",
+    "voice\\experiments\\robust_normalized\\model\\weights.mem": "040bc3b532bec5d055608b5af9d2604bcdc947978a0e664736b0c0b18872fa87",
+    "voice\\experiments\\robust_normalized\\model\\bias.mem": "1e47e3df1453f9b5edf9dea5b6531e7f4d977488461ce9b676c8cd71430a6a89",
+    "verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3",
+    "verification\\real_voice_transient.json": "31a8979412e3d07e4d081ca13b0dbf45f430707316b5c1af5243056544cc7e09"
+  },
+  "synthetic_manifest_sha256": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213"
+}

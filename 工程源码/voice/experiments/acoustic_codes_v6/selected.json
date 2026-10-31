@@ -1,0 +1,50 @@
+{
+  "epoch": 19,
+  "loss": 0.8436514834562937,
+  "margin": 6,
+  "floor": -0.2,
+  "validation": {
+    "correct": 440,
+    "wrong_direction": 10,
+    "false_accepts": 3,
+    "confusion": [
+      [
+        1737,
+        0,
+        3
+      ],
+      [
+        117,
+        223,
+        8
+      ],
+      [
+        129,
+        2,
+        217
+      ]
+    ]
+  },
+  "validation_feature_stress": {
+    "correct": 173,
+    "wrong_direction": 3,
+    "false_accepts": 6,
+    "confusion": [
+      [
+        1734,
+        1,
+        5
+      ],
+      [
+        251,
+        95,
+        2
+      ],
+      [
+        269,
+        1,
+        78
+      ]
+    ]
+  }
+}

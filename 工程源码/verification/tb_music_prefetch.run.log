@@ -1,0 +1,2 @@
+PASS music prefetch: busy requests retained/coalesced; actual picture 0->1->2; source+SDRAM completion; no reload; mode exit and pause cancel
+E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_music_prefetch.v:60: $finish called at 2820000 (1ps)

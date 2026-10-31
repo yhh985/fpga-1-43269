@@ -1,0 +1,341 @@
+{
+  "experimental_only": true,
+  "deployed": false,
+  "real_used_for_training": false,
+  "selected": {
+    "epoch": 11,
+    "margin": 4,
+    "floor": -0.1,
+    "validation": {
+      "confusion": [
+        [
+          343,
+          5
+        ],
+        [
+          2086,
+          2
+        ]
+      ],
+      "correct": 2,
+      "false_accepts": 5,
+      "rejected": 2086
+    },
+    "mean_loss": 1.8697110917292485
+  },
+  "results": {
+    "validation": {
+      "confusion": [
+        [
+          343,
+          5
+        ],
+        [
+          2086,
+          2
+        ]
+      ],
+      "correct": 2,
+      "false_accepts": 5,
+      "rejected": 2086
+    },
+    "test": {
+      "confusion": [
+        [
+          346,
+          2
+        ],
+        [
+          2088,
+          0
+        ]
+      ],
+      "correct": 0,
+      "false_accepts": 2,
+      "rejected": 2088
+    }
+  },
+  "parameters": 29811,
+  "source_hashes": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_next_specialist_ctc.py": "38fedc40da6daf89b626f063427f9b9009095a8683d0603b257b2b74af6d0cac",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\sequence_ctc\\dataset.npz": "6ccc7c75c0d5964b82cce777d3f789933647c3b70aa697360f39832012d464b3",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v5\\candidate.pt": "f6a501fafd19107269a3ad7911d86139a095ab9510a32776e2ebeb01fb4d9093"
+  },
+  "checkpoint_sha256": "14b1f80d0c438252869bed4955c20c9353d06d4919fec99d6f257d752d30ee18",
+  "history": [
+    {
+      "epoch": 0,
+      "margin": 12,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            348,
+            0
+          ],
+          [
+            2088,
+            0
+          ]
+        ],
+        "correct": 0,
+        "false_accepts": 0,
+        "rejected": 2088
+      },
+      "mean_loss": 5.675065003284792
+    },
+    {
+      "epoch": 2,
+      "margin": 6,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            348,
+            0
+          ],
+          [
+            2088,
+            0
+          ]
+        ],
+        "correct": 0,
+        "false_accepts": 0,
+        "rejected": 2088
+      },
+      "mean_loss": 2.28952539656438
+    },
+    {
+      "epoch": 5,
+      "margin": 6,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            348,
+            0
+          ],
+          [
+            2088,
+            0
+          ]
+        ],
+        "correct": 0,
+        "false_accepts": 0,
+        "rejected": 2088
+      },
+      "mean_loss": 2.018732807263225
+    },
+    {
+      "epoch": 8,
+      "margin": 4,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            340,
+            8
+          ],
+          [
+            2087,
+            1
+          ]
+        ],
+        "correct": 1,
+        "false_accepts": 8,
+        "rejected": 2087
+      },
+      "mean_loss": 1.927034160717815
+    },
+    {
+      "epoch": 11,
+      "margin": 4,
+      "floor": -0.1,
+      "validation": {
+        "confusion": [
+          [
+            343,
+            5
+          ],
+          [
+            2086,
+            2
+          ]
+        ],
+        "correct": 2,
+        "false_accepts": 5,
+        "rejected": 2086
+      },
+      "mean_loss": 1.8697110917292485
+    },
+    {
+      "epoch": 14,
+      "margin": 4,
+      "floor": -0.1,
+      "validation": {
+        "confusion": [
+          [
+            346,
+            2
+          ],
+          [
+            2087,
+            1
+          ]
+        ],
+        "correct": 1,
+        "false_accepts": 2,
+        "rejected": 2087
+      },
+      "mean_loss": 1.8290555858287683
+    },
+    {
+      "epoch": 17,
+      "margin": 4,
+      "floor": -0.1,
+      "validation": {
+        "confusion": [
+          [
+            345,
+            3
+          ],
+          [
+            2087,
+            1
+          ]
+        ],
+        "correct": 1,
+        "false_accepts": 3,
+        "rejected": 2087
+      },
+      "mean_loss": 1.8077296732234307
+    },
+    {
+      "epoch": 20,
+      "margin": 6,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            348,
+            0
+          ],
+          [
+            2088,
+            0
+          ]
+        ],
+        "correct": 0,
+        "false_accepts": 0,
+        "rejected": 2088
+      },
+      "mean_loss": 1.7838557131436406
+    },
+    {
+      "epoch": 23,
+      "margin": 4,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            348,
+            0
+          ],
+          [
+            2088,
+            0
+          ]
+        ],
+        "correct": 0,
+        "false_accepts": 0,
+        "rejected": 2088
+      },
+      "mean_loss": 1.7676713754530666
+    },
+    {
+      "epoch": 26,
+      "margin": 4,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            344,
+            4
+          ],
+          [
+            2087,
+            1
+          ]
+        ],
+        "correct": 1,
+        "false_accepts": 4,
+        "rejected": 2087
+      },
+      "mean_loss": 1.7510560746906565
+    },
+    {
+      "epoch": 29,
+      "margin": 4,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            340,
+            8
+          ],
+          [
+            2087,
+            1
+          ]
+        ],
+        "correct": 1,
+        "false_accepts": 8,
+        "rejected": 2087
+      },
+      "mean_loss": 1.7381274104118347
+    },
+    {
+      "epoch": 32,
+      "margin": 4,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            347,
+            1
+          ],
+          [
+            2087,
+            1
+          ]
+        ],
+        "correct": 1,
+        "false_accepts": 1,
+        "rejected": 2087
+      },
+      "mean_loss": 1.72520001040024
+    },
+    {
+      "epoch": 35,
+      "margin": 4,
+      "floor": -0.05,
+      "validation": {
+        "confusion": [
+          [
+            346,
+            2
+          ],
+          [
+            2087,
+            1
+          ]
+        ],
+        "correct": 1,
+        "false_accepts": 2,
+        "rejected": 2087
+      },
+      "mean_loss": 1.7154231387741712
+    }
+  ],
+  "note": "Synthetic data only; test data was not used for selection."
+}

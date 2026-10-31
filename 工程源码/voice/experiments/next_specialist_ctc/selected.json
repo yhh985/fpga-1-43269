@@ -1,0 +1,21 @@
+{
+  "epoch": 11,
+  "margin": 4,
+  "floor": -0.1,
+  "validation": {
+    "confusion": [
+      [
+        343,
+        5
+      ],
+      [
+        2086,
+        2
+      ]
+    ],
+    "correct": 2,
+    "false_accepts": 5,
+    "rejected": 2086
+  },
+  "mean_loss": 1.8697110917292485
+}

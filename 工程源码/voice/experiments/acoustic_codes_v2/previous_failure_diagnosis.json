@@ -1,0 +1,180 @@
+{
+  "train": {
+    "label_audit": {
+      "candidates": 9419,
+      "command_candidates": 2642,
+      "fragment_label_other": 57,
+      "negative_candidates": 6777,
+      "negative_label_guessed_full_text": 6493
+    },
+    "candidate_text": {
+      "command_candidates": 2642,
+      "exact_correct_text": 1597,
+      "missing_or_wrong_first_character": 1005,
+      "empty_text": 0
+    },
+    "whole_clip_command_count": 2784,
+    "whole_clip_exact_correct": 845
+  },
+  "validation": {
+    "label_audit": {
+      "candidates": 2373,
+      "command_candidates": 667,
+      "fragment_label_other": 20,
+      "negative_candidates": 1706,
+      "negative_label_guessed_full_text": 1636
+    },
+    "candidate_text": {
+      "command_candidates": 667,
+      "exact_correct_text": 364,
+      "missing_or_wrong_first_character": 280,
+      "empty_text": 0
+    },
+    "whole_clip_command_count": 696,
+    "whole_clip_exact_correct": 195
+  },
+  "real_development": [
+    {
+      "frames": 41,
+      "layers": [
+        {
+          "zero_fraction": 0.3864329268292683,
+          "ceiling_fraction": 0.109375,
+          "mean_temporal_std": 0.6958527565002441,
+          "unique_frames": 37
+        },
+        {
+          "zero_fraction": 0.4611280487804878,
+          "ceiling_fraction": 0.265625,
+          "mean_temporal_std": 1.1066620349884033,
+          "unique_frames": 41
+        },
+        {
+          "zero_fraction": 0.49047256097560976,
+          "ceiling_fraction": 0.4016768292682927,
+          "mean_temporal_std": 0.7406905889511108,
+          "unique_frames": 41
+        }
+      ],
+      "xia_minus_shang_min": -8.177571296691895,
+      "xia_minus_shang_max": 0.5435447692871094,
+      "xia_minus_shang_std": 2.123933792114258,
+      "decoded": [
+        2,
+        0.1715564727783203,
+        "上一张"
+      ]
+    },
+    {
+      "frames": 38,
+      "layers": [
+        {
+          "zero_fraction": 0.3939144736842105,
+          "ceiling_fraction": 0.10361842105263158,
+          "mean_temporal_std": 0.6900602579116821,
+          "unique_frames": 34
+        },
+        {
+          "zero_fraction": 0.4535361842105263,
+          "ceiling_fraction": 0.2532894736842105,
+          "mean_temporal_std": 1.131552815437317,
+          "unique_frames": 38
+        },
+        {
+          "zero_fraction": 0.49712171052631576,
+          "ceiling_fraction": 0.40131578947368424,
+          "mean_temporal_std": 0.7851880192756653,
+          "unique_frames": 38
+        }
+      ],
+      "xia_minus_shang_min": -6.420793056488037,
+      "xia_minus_shang_max": 0.4447040557861328,
+      "xia_minus_shang_std": 2.0912630558013916,
+      "decoded": [
+        2,
+        0.1715564727783203,
+        "上一张"
+      ]
+    }
+  ],
+  "silence_emissions": {
+    "15": [
+      {
+        "frame": 0,
+        "token": "上",
+        "feature_mean": 0.0,
+        "gap": 0.1715564727783203
+      }
+    ],
+    "40": [
+      {
+        "frame": 0,
+        "token": "上",
+        "feature_mean": 0.0,
+        "gap": 0.1715564727783203
+      }
+    ],
+    "80": [
+      {
+        "frame": 0,
+        "token": "上",
+        "feature_mean": 0.0,
+        "gap": 0.1715564727783203
+      }
+    ]
+  },
+  "real_emission_timeline": [
+    [
+      {
+        "frame": 0,
+        "token": "上",
+        "feature_mean": 0.0,
+        "gap": 0.1715564727783203
+      },
+      {
+        "frame": 4,
+        "token": "一",
+        "feature_mean": 48.3125,
+        "gap": 3.9686665534973145
+      },
+      {
+        "frame": 5,
+        "token": "张",
+        "feature_mean": 46.75,
+        "gap": 1.564497470855713
+      }
+    ],
+    [
+      {
+        "frame": 0,
+        "token": "上",
+        "feature_mean": 0.0,
+        "gap": 0.1715564727783203
+      },
+      {
+        "frame": 4,
+        "token": "一",
+        "feature_mean": 36.4375,
+        "gap": 3.854306221008301
+      },
+      {
+        "frame": 6,
+        "token": "张",
+        "feature_mean": 36.125,
+        "gap": 2.2677841186523438
+      }
+    ]
+  ],
+  "limits": [
+    "Only two confirmed real utterances; reused development evidence.",
+    "Fragment labels use coverage or longest-fragment heuristics, not acoustic forced alignment.",
+    "Activation saturation can explain a failure without identifying its sole root cause."
+  ],
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\diagnose_sequence_failure.py": "0845da3eca7da1d820a6c4875c2331c964639baa3e214679ec975fbea26efc76",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\character_ctc\\candidate.pt": "28431220f26862857062fda83c75e2b0fb8538b952a4779bebca182b035d6d63",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_character_ctc.py": "f59cc20895a939c6cb022ae650ef5b2bdb0d48e27aa91531a348fc1b351edddd",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_sequence_ctc.py": "28fb14e2ffaef67b8f00cfa0751a18941a30266fd11184adbf5044dbe4f7f014"
+  }
+}

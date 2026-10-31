@@ -1,0 +1,1415 @@
+{
+  "split": "validation",
+  "synthetic_only": true,
+  "policies": {
+    "original": {
+      "policy": [
+        "legacy",
+        false,
+        109,
+        -2147483648
+      ],
+      "correct": 382,
+      "wrong_direction": 76,
+      "false_accepts": 62,
+      "confusion": [
+        [
+          1678,
+          31,
+          31
+        ],
+        [
+          118,
+          205,
+          25
+        ],
+        [
+          120,
+          51,
+          177
+        ]
+      ]
+    },
+    "guard_iso0_m109_s0": {
+      "policy": [
+        "guard",
+        false,
+        109,
+        0
+      ],
+      "correct": 384,
+      "wrong_direction": 55,
+      "false_accepts": 46,
+      "confusion": [
+        [
+          1694,
+          23,
+          23
+        ],
+        [
+          123,
+          201,
+          24
+        ],
+        [
+          134,
+          31,
+          183
+        ]
+      ]
+    },
+    "guard_iso0_m109_s128": {
+      "policy": [
+        "guard",
+        false,
+        109,
+        128
+      ],
+      "correct": 325,
+      "wrong_direction": 29,
+      "false_accepts": 37,
+      "confusion": [
+        [
+          1703,
+          18,
+          19
+        ],
+        [
+          160,
+          174,
+          14
+        ],
+        [
+          182,
+          15,
+          151
+        ]
+      ]
+    },
+    "guard_iso0_m109_s256": {
+      "policy": [
+        "guard",
+        false,
+        109,
+        256
+      ],
+      "correct": 242,
+      "wrong_direction": 22,
+      "false_accepts": 21,
+      "confusion": [
+        [
+          1719,
+          7,
+          14
+        ],
+        [
+          206,
+          130,
+          12
+        ],
+        [
+          226,
+          10,
+          112
+        ]
+      ]
+    },
+    "guard_iso0_m160_s0": {
+      "policy": [
+        "guard",
+        false,
+        160,
+        0
+      ],
+      "correct": 381,
+      "wrong_direction": 54,
+      "false_accepts": 40,
+      "confusion": [
+        [
+          1700,
+          20,
+          20
+        ],
+        [
+          125,
+          199,
+          24
+        ],
+        [
+          136,
+          30,
+          182
+        ]
+      ]
+    },
+    "guard_iso0_m160_s128": {
+      "policy": [
+        "guard",
+        false,
+        160,
+        128
+      ],
+      "correct": 323,
+      "wrong_direction": 29,
+      "false_accepts": 32,
+      "confusion": [
+        [
+          1708,
+          16,
+          16
+        ],
+        [
+          161,
+          173,
+          14
+        ],
+        [
+          183,
+          15,
+          150
+        ]
+      ]
+    },
+    "guard_iso0_m160_s256": {
+      "policy": [
+        "guard",
+        false,
+        160,
+        256
+      ],
+      "correct": 242,
+      "wrong_direction": 22,
+      "false_accepts": 18,
+      "confusion": [
+        [
+          1722,
+          6,
+          12
+        ],
+        [
+          206,
+          130,
+          12
+        ],
+        [
+          226,
+          10,
+          112
+        ]
+      ]
+    },
+    "guard_iso0_m220_s0": {
+      "policy": [
+        "guard",
+        false,
+        220,
+        0
+      ],
+      "correct": 365,
+      "wrong_direction": 46,
+      "false_accepts": 35,
+      "confusion": [
+        [
+          1705,
+          19,
+          16
+        ],
+        [
+          134,
+          191,
+          23
+        ],
+        [
+          151,
+          23,
+          174
+        ]
+      ]
+    },
+    "guard_iso0_m220_s128": {
+      "policy": [
+        "guard",
+        false,
+        220,
+        128
+      ],
+      "correct": 318,
+      "wrong_direction": 25,
+      "false_accepts": 29,
+      "confusion": [
+        [
+          1711,
+          15,
+          14
+        ],
+        [
+          165,
+          169,
+          14
+        ],
+        [
+          188,
+          11,
+          149
+        ]
+      ]
+    },
+    "guard_iso0_m220_s256": {
+      "policy": [
+        "guard",
+        false,
+        220,
+        256
+      ],
+      "correct": 240,
+      "wrong_direction": 20,
+      "false_accepts": 17,
+      "confusion": [
+        [
+          1723,
+          6,
+          11
+        ],
+        [
+          207,
+          129,
+          12
+        ],
+        [
+          229,
+          8,
+          111
+        ]
+      ]
+    },
+    "guard_iso0_m300_s0": {
+      "policy": [
+        "guard",
+        false,
+        300,
+        0
+      ],
+      "correct": 347,
+      "wrong_direction": 37,
+      "false_accepts": 28,
+      "confusion": [
+        [
+          1712,
+          17,
+          11
+        ],
+        [
+          143,
+          186,
+          19
+        ],
+        [
+          169,
+          18,
+          161
+        ]
+      ]
+    },
+    "guard_iso0_m300_s128": {
+      "policy": [
+        "guard",
+        false,
+        300,
+        128
+      ],
+      "correct": 307,
+      "wrong_direction": 24,
+      "false_accepts": 23,
+      "confusion": [
+        [
+          1717,
+          13,
+          10
+        ],
+        [
+          168,
+          166,
+          14
+        ],
+        [
+          197,
+          10,
+          141
+        ]
+      ]
+    },
+    "guard_iso0_m300_s256": {
+      "policy": [
+        "guard",
+        false,
+        300,
+        256
+      ],
+      "correct": 239,
+      "wrong_direction": 20,
+      "false_accepts": 15,
+      "confusion": [
+        [
+          1725,
+          6,
+          9
+        ],
+        [
+          207,
+          129,
+          12
+        ],
+        [
+          230,
+          8,
+          110
+        ]
+      ]
+    },
+    "guard_iso0_m400_s0": {
+      "policy": [
+        "guard",
+        false,
+        400,
+        0
+      ],
+      "correct": 319,
+      "wrong_direction": 29,
+      "false_accepts": 19,
+      "confusion": [
+        [
+          1721,
+          11,
+          8
+        ],
+        [
+          161,
+          172,
+          15
+        ],
+        [
+          187,
+          14,
+          147
+        ]
+      ]
+    },
+    "guard_iso0_m400_s128": {
+      "policy": [
+        "guard",
+        false,
+        400,
+        128
+      ],
+      "correct": 291,
+      "wrong_direction": 22,
+      "false_accepts": 17,
+      "confusion": [
+        [
+          1723,
+          10,
+          7
+        ],
+        [
+          178,
+          158,
+          12
+        ],
+        [
+          205,
+          10,
+          133
+        ]
+      ]
+    },
+    "guard_iso0_m400_s256": {
+      "policy": [
+        "guard",
+        false,
+        400,
+        256
+      ],
+      "correct": 235,
+      "wrong_direction": 19,
+      "false_accepts": 11,
+      "confusion": [
+        [
+          1729,
+          5,
+          6
+        ],
+        [
+          211,
+          126,
+          11
+        ],
+        [
+          231,
+          8,
+          109
+        ]
+      ]
+    },
+    "guard_iso0_m500_s0": {
+      "policy": [
+        "guard",
+        false,
+        500,
+        0
+      ],
+      "correct": 291,
+      "wrong_direction": 22,
+      "false_accepts": 12,
+      "confusion": [
+        [
+          1728,
+          6,
+          6
+        ],
+        [
+          177,
+          159,
+          12
+        ],
+        [
+          206,
+          10,
+          132
+        ]
+      ]
+    },
+    "guard_iso0_m500_s128": {
+      "policy": [
+        "guard",
+        false,
+        500,
+        128
+      ],
+      "correct": 275,
+      "wrong_direction": 19,
+      "false_accepts": 12,
+      "confusion": [
+        [
+          1728,
+          6,
+          6
+        ],
+        [
+          189,
+          148,
+          11
+        ],
+        [
+          213,
+          8,
+          127
+        ]
+      ]
+    },
+    "guard_iso0_m500_s256": {
+      "policy": [
+        "guard",
+        false,
+        500,
+        256
+      ],
+      "correct": 230,
+      "wrong_direction": 17,
+      "false_accepts": 10,
+      "confusion": [
+        [
+          1730,
+          4,
+          6
+        ],
+        [
+          216,
+          122,
+          10
+        ],
+        [
+          233,
+          7,
+          108
+        ]
+      ]
+    },
+    "guard_iso0_m600_s0": {
+      "policy": [
+        "guard",
+        false,
+        600,
+        0
+      ],
+      "correct": 254,
+      "wrong_direction": 15,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          4,
+          4
+        ],
+        [
+          200,
+          140,
+          8
+        ],
+        [
+          227,
+          7,
+          114
+        ]
+      ]
+    },
+    "guard_iso0_m600_s128": {
+      "policy": [
+        "guard",
+        false,
+        600,
+        128
+      ],
+      "correct": 246,
+      "wrong_direction": 14,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          4,
+          4
+        ],
+        [
+          206,
+          134,
+          8
+        ],
+        [
+          230,
+          6,
+          112
+        ]
+      ]
+    },
+    "guard_iso0_m600_s256": {
+      "policy": [
+        "guard",
+        false,
+        600,
+        256
+      ],
+      "correct": 219,
+      "wrong_direction": 13,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          3,
+          4
+        ],
+        [
+          222,
+          118,
+          8
+        ],
+        [
+          242,
+          5,
+          101
+        ]
+      ]
+    },
+    "guard_iso0_m800_s0": {
+      "policy": [
+        "guard",
+        false,
+        800,
+        0
+      ],
+      "correct": 190,
+      "wrong_direction": 6,
+      "false_accepts": 3,
+      "confusion": [
+        [
+          1737,
+          2,
+          1
+        ],
+        [
+          237,
+          108,
+          3
+        ],
+        [
+          263,
+          3,
+          82
+        ]
+      ]
+    },
+    "guard_iso0_m800_s128": {
+      "policy": [
+        "guard",
+        false,
+        800,
+        128
+      ],
+      "correct": 190,
+      "wrong_direction": 6,
+      "false_accepts": 3,
+      "confusion": [
+        [
+          1737,
+          2,
+          1
+        ],
+        [
+          237,
+          108,
+          3
+        ],
+        [
+          263,
+          3,
+          82
+        ]
+      ]
+    },
+    "guard_iso0_m800_s256": {
+      "policy": [
+        "guard",
+        false,
+        800,
+        256
+      ],
+      "correct": 180,
+      "wrong_direction": 6,
+      "false_accepts": 2,
+      "confusion": [
+        [
+          1738,
+          1,
+          1
+        ],
+        [
+          245,
+          100,
+          3
+        ],
+        [
+          265,
+          3,
+          80
+        ]
+      ]
+    },
+    "guard_iso1_m109_s0": {
+      "policy": [
+        "guard",
+        true,
+        109,
+        0
+      ],
+      "correct": 380,
+      "wrong_direction": 54,
+      "false_accepts": 48,
+      "confusion": [
+        [
+          1692,
+          24,
+          24
+        ],
+        [
+          127,
+          198,
+          23
+        ],
+        [
+          135,
+          31,
+          182
+        ]
+      ]
+    },
+    "guard_iso1_m109_s128": {
+      "policy": [
+        "guard",
+        true,
+        109,
+        128
+      ],
+      "correct": 321,
+      "wrong_direction": 28,
+      "false_accepts": 38,
+      "confusion": [
+        [
+          1702,
+          18,
+          20
+        ],
+        [
+          164,
+          171,
+          13
+        ],
+        [
+          183,
+          15,
+          150
+        ]
+      ]
+    },
+    "guard_iso1_m109_s256": {
+      "policy": [
+        "guard",
+        true,
+        109,
+        256
+      ],
+      "correct": 240,
+      "wrong_direction": 21,
+      "false_accepts": 20,
+      "confusion": [
+        [
+          1720,
+          6,
+          14
+        ],
+        [
+          209,
+          128,
+          11
+        ],
+        [
+          226,
+          10,
+          112
+        ]
+      ]
+    },
+    "guard_iso1_m160_s0": {
+      "policy": [
+        "guard",
+        true,
+        160,
+        0
+      ],
+      "correct": 377,
+      "wrong_direction": 53,
+      "false_accepts": 42,
+      "confusion": [
+        [
+          1698,
+          21,
+          21
+        ],
+        [
+          129,
+          196,
+          23
+        ],
+        [
+          137,
+          30,
+          181
+        ]
+      ]
+    },
+    "guard_iso1_m160_s128": {
+      "policy": [
+        "guard",
+        true,
+        160,
+        128
+      ],
+      "correct": 319,
+      "wrong_direction": 28,
+      "false_accepts": 33,
+      "confusion": [
+        [
+          1707,
+          16,
+          17
+        ],
+        [
+          165,
+          170,
+          13
+        ],
+        [
+          184,
+          15,
+          149
+        ]
+      ]
+    },
+    "guard_iso1_m160_s256": {
+      "policy": [
+        "guard",
+        true,
+        160,
+        256
+      ],
+      "correct": 240,
+      "wrong_direction": 21,
+      "false_accepts": 17,
+      "confusion": [
+        [
+          1723,
+          5,
+          12
+        ],
+        [
+          209,
+          128,
+          11
+        ],
+        [
+          226,
+          10,
+          112
+        ]
+      ]
+    },
+    "guard_iso1_m220_s0": {
+      "policy": [
+        "guard",
+        true,
+        220,
+        0
+      ],
+      "correct": 361,
+      "wrong_direction": 45,
+      "false_accepts": 37,
+      "confusion": [
+        [
+          1703,
+          20,
+          17
+        ],
+        [
+          138,
+          188,
+          22
+        ],
+        [
+          152,
+          23,
+          173
+        ]
+      ]
+    },
+    "guard_iso1_m220_s128": {
+      "policy": [
+        "guard",
+        true,
+        220,
+        128
+      ],
+      "correct": 314,
+      "wrong_direction": 24,
+      "false_accepts": 30,
+      "confusion": [
+        [
+          1710,
+          15,
+          15
+        ],
+        [
+          169,
+          166,
+          13
+        ],
+        [
+          189,
+          11,
+          148
+        ]
+      ]
+    },
+    "guard_iso1_m220_s256": {
+      "policy": [
+        "guard",
+        true,
+        220,
+        256
+      ],
+      "correct": 238,
+      "wrong_direction": 19,
+      "false_accepts": 16,
+      "confusion": [
+        [
+          1724,
+          5,
+          11
+        ],
+        [
+          210,
+          127,
+          11
+        ],
+        [
+          229,
+          8,
+          111
+        ]
+      ]
+    },
+    "guard_iso1_m300_s0": {
+      "policy": [
+        "guard",
+        true,
+        300,
+        0
+      ],
+      "correct": 343,
+      "wrong_direction": 36,
+      "false_accepts": 30,
+      "confusion": [
+        [
+          1710,
+          18,
+          12
+        ],
+        [
+          147,
+          183,
+          18
+        ],
+        [
+          170,
+          18,
+          160
+        ]
+      ]
+    },
+    "guard_iso1_m300_s128": {
+      "policy": [
+        "guard",
+        true,
+        300,
+        128
+      ],
+      "correct": 303,
+      "wrong_direction": 23,
+      "false_accepts": 24,
+      "confusion": [
+        [
+          1716,
+          13,
+          11
+        ],
+        [
+          172,
+          163,
+          13
+        ],
+        [
+          198,
+          10,
+          140
+        ]
+      ]
+    },
+    "guard_iso1_m300_s256": {
+      "policy": [
+        "guard",
+        true,
+        300,
+        256
+      ],
+      "correct": 237,
+      "wrong_direction": 19,
+      "false_accepts": 14,
+      "confusion": [
+        [
+          1726,
+          5,
+          9
+        ],
+        [
+          210,
+          127,
+          11
+        ],
+        [
+          230,
+          8,
+          110
+        ]
+      ]
+    },
+    "guard_iso1_m400_s0": {
+      "policy": [
+        "guard",
+        true,
+        400,
+        0
+      ],
+      "correct": 317,
+      "wrong_direction": 28,
+      "false_accepts": 18,
+      "confusion": [
+        [
+          1722,
+          11,
+          7
+        ],
+        [
+          164,
+          170,
+          14
+        ],
+        [
+          187,
+          14,
+          147
+        ]
+      ]
+    },
+    "guard_iso1_m400_s128": {
+      "policy": [
+        "guard",
+        true,
+        400,
+        128
+      ],
+      "correct": 289,
+      "wrong_direction": 21,
+      "false_accepts": 16,
+      "confusion": [
+        [
+          1724,
+          10,
+          6
+        ],
+        [
+          181,
+          156,
+          11
+        ],
+        [
+          205,
+          10,
+          133
+        ]
+      ]
+    },
+    "guard_iso1_m400_s256": {
+      "policy": [
+        "guard",
+        true,
+        400,
+        256
+      ],
+      "correct": 234,
+      "wrong_direction": 18,
+      "false_accepts": 9,
+      "confusion": [
+        [
+          1731,
+          4,
+          5
+        ],
+        [
+          213,
+          125,
+          10
+        ],
+        [
+          231,
+          8,
+          109
+        ]
+      ]
+    },
+    "guard_iso1_m500_s0": {
+      "policy": [
+        "guard",
+        true,
+        500,
+        0
+      ],
+      "correct": 289,
+      "wrong_direction": 21,
+      "false_accepts": 11,
+      "confusion": [
+        [
+          1729,
+          6,
+          5
+        ],
+        [
+          180,
+          157,
+          11
+        ],
+        [
+          206,
+          10,
+          132
+        ]
+      ]
+    },
+    "guard_iso1_m500_s128": {
+      "policy": [
+        "guard",
+        true,
+        500,
+        128
+      ],
+      "correct": 273,
+      "wrong_direction": 18,
+      "false_accepts": 11,
+      "confusion": [
+        [
+          1729,
+          6,
+          5
+        ],
+        [
+          192,
+          146,
+          10
+        ],
+        [
+          213,
+          8,
+          127
+        ]
+      ]
+    },
+    "guard_iso1_m500_s256": {
+      "policy": [
+        "guard",
+        true,
+        500,
+        256
+      ],
+      "correct": 229,
+      "wrong_direction": 16,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          3,
+          5
+        ],
+        [
+          218,
+          121,
+          9
+        ],
+        [
+          233,
+          7,
+          108
+        ]
+      ]
+    },
+    "guard_iso1_m600_s0": {
+      "policy": [
+        "guard",
+        true,
+        600,
+        0
+      ],
+      "correct": 252,
+      "wrong_direction": 14,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          3,
+          4
+        ],
+        [
+          203,
+          138,
+          7
+        ],
+        [
+          227,
+          7,
+          114
+        ]
+      ]
+    },
+    "guard_iso1_m600_s128": {
+      "policy": [
+        "guard",
+        true,
+        600,
+        128
+      ],
+      "correct": 244,
+      "wrong_direction": 13,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          3,
+          4
+        ],
+        [
+          209,
+          132,
+          7
+        ],
+        [
+          230,
+          6,
+          112
+        ]
+      ]
+    },
+    "guard_iso1_m600_s256": {
+      "policy": [
+        "guard",
+        true,
+        600,
+        256
+      ],
+      "correct": 218,
+      "wrong_direction": 12,
+      "false_accepts": 6,
+      "confusion": [
+        [
+          1734,
+          2,
+          4
+        ],
+        [
+          224,
+          117,
+          7
+        ],
+        [
+          242,
+          5,
+          101
+        ]
+      ]
+    },
+    "guard_iso1_m800_s0": {
+      "policy": [
+        "guard",
+        true,
+        800,
+        0
+      ],
+      "correct": 190,
+      "wrong_direction": 5,
+      "false_accepts": 2,
+      "confusion": [
+        [
+          1738,
+          1,
+          1
+        ],
+        [
+          238,
+          108,
+          2
+        ],
+        [
+          263,
+          3,
+          82
+        ]
+      ]
+    },
+    "guard_iso1_m800_s128": {
+      "policy": [
+        "guard",
+        true,
+        800,
+        128
+      ],
+      "correct": 190,
+      "wrong_direction": 5,
+      "false_accepts": 2,
+      "confusion": [
+        [
+          1738,
+          1,
+          1
+        ],
+        [
+          238,
+          108,
+          2
+        ],
+        [
+          263,
+          3,
+          82
+        ]
+      ]
+    },
+    "guard_iso1_m800_s256": {
+      "policy": [
+        "guard",
+        true,
+        800,
+        256
+      ],
+      "correct": 180,
+      "wrong_direction": 5,
+      "false_accepts": 1,
+      "confusion": [
+        [
+          1739,
+          0,
+          1
+        ],
+        [
+          246,
+          100,
+          2
+        ],
+        [
+          265,
+          3,
+          80
+        ]
+      ]
+    }
+  },
+  "real_recording_report_only": [
+    {
+      "start": 83,
+      "end": 121,
+      "logits": [
+        -656,
+        -596,
+        314
+      ],
+      "winner": 2,
+      "margin": 910
+    },
+    {
+      "start": 122,
+      "end": 157,
+      "logits": [
+        -390,
+        -416,
+        -20
+      ],
+      "winner": 2,
+      "margin": 370
+    }
+  ],
+  "real_consulted_during_design": true,
+  "real_independent_validation": false,
+  "numeric_policy_selected_on_validation": true,
+  "production_changed": false,
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\audit_sensitive_guard.py": "e58dc239d799648a9598c44be69858541c87266e54f84f2b30db15e4dfeb62ee",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\kws_common.py": "ab57151072c622a8d907525572638a78c40a3f13709414e24111dbf1faf0223c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\robust_common.py": "2411cac0111e58b81afbffb68c2af2d790d6e55274cc0b2571b9ea4b421d512c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\probe_vad_continuity.py": "291b75346bd907b5890d6a27c0256d0d286496e8cf54d465d30a19b811dcee40",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\model\\weights.mem": "431bce25f395111c1d06896726ce561e85a1faba4fffa74ab542583ad38f71dc",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\model\\bias.mem": "f2a371f657573f2b90d51cf5e1343cf827d4ef7915081ef3f5e4b0e41b9b8fd9",
+    "E:\\anlo_project\\liantiao\\voice\\data\\manifest.json": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "experimental_only": true,
+  "fpga_deployed": false,
+  "real_used_for_training": false,
+  "test_previously_inspected": true,
+  "selected": {
+    "epoch": 69,
+    "loss": 0.08908613592276139,
+    "margin": 0,
+    "validation": {
+      "correct": 470,
+      "wrong_direction": 36,
+      "false_accepts": 5,
+      "confusion": [
+        [
+          1735,
+          2,
+          3
+        ],
+        [
+          96,
+          224,
+          28
+        ],
+        [
+          94,
+          8,
+          246
+        ]
+      ]
+    }
+  },
+  "tokens": [
+    "<blank>",
+    "一",
+    "上",
+    "下",
+    "不",
+    "乐",
+    "了",
+    "今",
+    "你",
+    "几",
+    "切",
+    "听",
+    "图",
+    "在",
+    "声",
+    "大",
+    "天",
+    "好",
+    "家",
+    "张",
+    "很",
+    "想",
+    "我",
+    "把",
+    "换",
+    "气",
+    "点",
+    "照",
+    "片",
+    "现",
+    "的",
+    "看",
+    "要",
+    "请",
+    "调",
+    "谢",
+    "这",
+    "音",
+    "首"
+  ],
+  "results": {
+    "validation": {
+      "correct": 470,
+      "wrong_direction": 36,
+      "false_accepts": 5,
+      "confusion": [
+        [
+          1735,
+          2,
+          3
+        ],
+        [
+          96,
+          224,
+          28
+        ],
+        [
+          94,
+          8,
+          246
+        ]
+      ]
+    },
+    "test": {
+      "correct": 457,
+      "wrong_direction": 21,
+      "false_accepts": 4,
+      "confusion": [
+        [
+          1736,
+          2,
+          2
+        ],
+        [
+          107,
+          231,
+          10
+        ],
+        [
+          111,
+          11,
+          226
+        ]
+      ]
+    }
+  },
+  "real_development": [
+    {
+      "start": 147,
+      "end": 185,
+      "prediction": 0,
+      "text": "上一",
+      "gap": -1
+    },
+    {
+      "start": 186,
+      "end": 221,
+      "prediction": 1,
+      "text": "下一张",
+      "gap": 7.191773414611816
+    }
+  ],
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_acoustic_codes.py": "1f7dae029f1328323943319def1482374482578937f398d551115af3ab253f2a",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v2\\candidate.pt": "03a7f90f03bbc494c566cfb7d2097b4e48f55f2fe105e7d43f9f8082aa853ed2",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v2\\full_clips.npz": "2bef389fd8dacd375aa1db44b67172421e0343d0aed8be8822376f38c205703c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v2\\selected.json": "553d76478f0698f456ea1a63787dd4a82fbc0761dc48361de486fccc3de08060"
+  }
+}

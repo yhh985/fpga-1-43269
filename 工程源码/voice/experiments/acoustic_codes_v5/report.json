@@ -1,0 +1,92 @@
+{
+  "experimental_only": true,
+  "fpga_deployed": false,
+  "real_used_for_training": false,
+  "real_used_for_selection": false,
+  "test_previously_inspected": true,
+  "selected": {
+    "epoch": 14,
+    "loss": 0.2148058866461118,
+    "margin": 6,
+    "floor": -0.2,
+    "validation": {
+      "correct": 462,
+      "wrong_direction": 13,
+      "false_accepts": 5,
+      "confusion": [
+        [
+          1735,
+          1,
+          4
+        ],
+        [
+          108,
+          231,
+          9
+        ],
+        [
+          113,
+          4,
+          231
+        ]
+      ]
+    }
+  },
+  "results": {
+    "validation": {
+      "correct": 462,
+      "wrong_direction": 13,
+      "false_accepts": 5,
+      "confusion": [
+        [
+          1735,
+          1,
+          4
+        ],
+        [
+          108,
+          231,
+          9
+        ],
+        [
+          113,
+          4,
+          231
+        ]
+      ]
+    },
+    "test": {
+      "correct": 463,
+      "wrong_direction": 11,
+      "false_accepts": 4,
+      "confusion": [
+        [
+          1736,
+          3,
+          1
+        ],
+        [
+          95,
+          250,
+          3
+        ],
+        [
+          127,
+          8,
+          213
+        ]
+      ]
+    }
+  },
+  "input_hashes": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_directional_ctc.py": "20b70c1f9546e0941f534e1ad15fd46de3d6beda76ae20f2fefb81295253d4e0",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_masked_acoustic_codes.py": "38e62140f7d804d45da9d920cde883352093686fe97379f635bcfadfc93473dd",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_acoustic_codes.py": "1f7dae029f1328323943319def1482374482578937f398d551115af3ab253f2a",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v3\\full_clips.npz": "2bef389fd8dacd375aa1db44b67172421e0343d0aed8be8822376f38c205703c",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\sequence_ctc\\dataset.npz": "6ccc7c75c0d5964b82cce777d3f789933647c3b70aa697360f39832012d464b3",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v4\\candidate.pt": "577f92e0acafe9a6898e28fb0d1d45f2108457878c5cec0c5aabd4b6ec05f68c",
+    "E:\\anlo_project\\liantiao\\voice\\data\\manifest.json": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213"
+  },
+  "source_unchanged": true,
+  "checkpoint_sha256": "f6a501fafd19107269a3ad7911d86139a095ab9510a32776e2ebeb01fb4d9093"
+}

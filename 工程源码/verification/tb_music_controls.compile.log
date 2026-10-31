@@ -1,0 +1,41 @@
+E:\anlo_project\liantiao\final_showcase_20261030\aca420\rtl\kws_goertzel.v:4: warning: timescale for kws_goertzel inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\aca420\rtl\aca_uart_report.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\audio_arc_calculate.v:4: warning: timescale for audio_arc_calculate inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\common\uart_tx.v:27: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\hdmi_audio_tone_i2s_64fs.v:10: warning: timescale for hdmi_audio_tone_i2s_64fs inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\color_filter.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\I2S_receiver.v:3: warning: timescale for I2S_receiver inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\color_filter.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\SD\seg_decoder.v:2: warning: timescale for seg_decoder inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\reset_release.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\SD\seg_scan.v:2: warning: timescale for seg_scan inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\reset_release.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\startup_pulse.v:2: warning: timescale for startup_pulse inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\reset_release.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\test_pattern_gen.v:17: warning: timescale for test_pattern_gen inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\reset_release.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\top_tf_hdmi_audio.v:2: warning: timescale for top inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\reset_release.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\video_rgb_to_axis_640x480.v:2: warning: timescale for video_rgb_to_axis_640x480 inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:3: warning: timescale for sd_card_bmp inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:104: warning: timescale for frame_read_write inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:185: warning: timescale for sdram inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:214: warning: timescale for video_timing_data inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:235: warning: timescale for video_delay inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:260: warning: timescale for hdmi_1_4b_transmitter_core_wrapper inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:330: warning: timescale for hdmi_phy_wrapper inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:352: warning: timescale for sys_pll inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:372: warning: timescale for video_pll inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\sim\audit_work\top_peripheral_stubs.v:389: warning: timescale for PLL_HDMI_AUDIO inherited from another file.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\user_image_rom.v:1: ...: The inherited timescale is here.
+E:\anlo_project\liantiao\final_showcase_20261030\hx4s20\hdl\top_tf_hdmi_audio.v:1412: warning: Instantiating module frame_read_write with dangling input port 2 (write_rst) floating.

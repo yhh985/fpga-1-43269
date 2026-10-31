@@ -1,0 +1,569 @@
+[
+  {
+    "epoch": 0,
+    "loss": 18.00143363792908,
+    "margin": 0,
+    "validation": {
+      "correct": 0,
+      "wrong_direction": 0,
+      "false_accepts": 0,
+      "confusion": [
+        [
+          1740,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ],
+        [
+          348,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 4,
+    "loss": 0.8481890441748896,
+    "margin": 1,
+    "validation": {
+      "correct": 195,
+      "wrong_direction": 13,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          7,
+          0
+        ],
+        [
+          243,
+          96,
+          9
+        ],
+        [
+          245,
+          4,
+          99
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 9,
+    "loss": 0.42066491648481397,
+    "margin": 1,
+    "validation": {
+      "correct": 318,
+      "wrong_direction": 37,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          5,
+          3
+        ],
+        [
+          180,
+          132,
+          36
+        ],
+        [
+          161,
+          1,
+          186
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 14,
+    "loss": 0.3037964659811828,
+    "margin": 1,
+    "validation": {
+      "correct": 309,
+      "wrong_direction": 32,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          177,
+          141,
+          30
+        ],
+        [
+          178,
+          2,
+          168
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 19,
+    "loss": 0.24115302351307985,
+    "margin": 1,
+    "validation": {
+      "correct": 372,
+      "wrong_direction": 34,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          3,
+          5
+        ],
+        [
+          150,
+          166,
+          32
+        ],
+        [
+          140,
+          2,
+          206
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 24,
+    "loss": 0.19854495637669353,
+    "margin": 0.5,
+    "validation": {
+      "correct": 425,
+      "wrong_direction": 38,
+      "false_accepts": 6,
+      "confusion": [
+        [
+          1734,
+          0,
+          6
+        ],
+        [
+          123,
+          196,
+          29
+        ],
+        [
+          110,
+          9,
+          229
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 29,
+    "loss": 0.18054941406684555,
+    "margin": 1.5,
+    "validation": {
+      "correct": 353,
+      "wrong_direction": 17,
+      "false_accepts": 6,
+      "confusion": [
+        [
+          1734,
+          3,
+          3
+        ],
+        [
+          159,
+          176,
+          13
+        ],
+        [
+          167,
+          4,
+          177
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 34,
+    "loss": 0.15825105274986165,
+    "margin": 2,
+    "validation": {
+      "correct": 325,
+      "wrong_direction": 16,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          3,
+          4
+        ],
+        [
+          181,
+          153,
+          14
+        ],
+        [
+          174,
+          2,
+          172
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 39,
+    "loss": 0.14919007877851354,
+    "margin": 2,
+    "validation": {
+      "correct": 319,
+      "wrong_direction": 16,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          178,
+          160,
+          10
+        ],
+        [
+          183,
+          6,
+          159
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 44,
+    "loss": 0.12981246074138603,
+    "margin": 0.5,
+    "validation": {
+      "correct": 456,
+      "wrong_direction": 25,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          111,
+          219,
+          18
+        ],
+        [
+          104,
+          7,
+          237
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 49,
+    "loss": 0.11766927553515129,
+    "margin": 0.5,
+    "validation": {
+      "correct": 406,
+      "wrong_direction": 29,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          140,
+          185,
+          23
+        ],
+        [
+          121,
+          6,
+          221
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 54,
+    "loss": 0.11201739366271812,
+    "margin": 3,
+    "validation": {
+      "correct": 298,
+      "wrong_direction": 24,
+      "false_accepts": 5,
+      "confusion": [
+        [
+          1735,
+          0,
+          5
+        ],
+        [
+          201,
+          123,
+          24
+        ],
+        [
+          173,
+          0,
+          175
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 59,
+    "loss": 0.10357767563735323,
+    "margin": 1.5,
+    "validation": {
+      "correct": 360,
+      "wrong_direction": 21,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          3,
+          5
+        ],
+        [
+          157,
+          175,
+          16
+        ],
+        [
+          158,
+          5,
+          185
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 64,
+    "loss": 0.09761219811189938,
+    "margin": 2,
+    "validation": {
+      "correct": 335,
+      "wrong_direction": 14,
+      "false_accepts": 6,
+      "confusion": [
+        [
+          1734,
+          2,
+          4
+        ],
+        [
+          179,
+          157,
+          12
+        ],
+        [
+          168,
+          2,
+          178
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 69,
+    "loss": 0.09376938402505931,
+    "margin": 0.5,
+    "validation": {
+      "correct": 413,
+      "wrong_direction": 33,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          3,
+          5
+        ],
+        [
+          131,
+          194,
+          23
+        ],
+        [
+          119,
+          10,
+          219
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 74,
+    "loss": 0.08920451774826191,
+    "margin": 1.5,
+    "validation": {
+      "correct": 375,
+      "wrong_direction": 27,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          3,
+          5
+        ],
+        [
+          157,
+          168,
+          23
+        ],
+        [
+          137,
+          4,
+          207
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 79,
+    "loss": 0.08324343584514604,
+    "margin": 1.5,
+    "validation": {
+      "correct": 394,
+      "wrong_direction": 33,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          144,
+          172,
+          32
+        ],
+        [
+          125,
+          1,
+          222
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 84,
+    "loss": 0.07882973425127016,
+    "margin": 3,
+    "validation": {
+      "correct": 329,
+      "wrong_direction": 16,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          2,
+          6
+        ],
+        [
+          171,
+          162,
+          15
+        ],
+        [
+          180,
+          1,
+          167
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 89,
+    "loss": 0.07747394218123312,
+    "margin": 3,
+    "validation": {
+      "correct": 322,
+      "wrong_direction": 13,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          2,
+          5
+        ],
+        [
+          166,
+          170,
+          12
+        ],
+        [
+          195,
+          1,
+          152
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 94,
+    "loss": 0.07436408706266305,
+    "margin": 1,
+    "validation": {
+      "correct": 411,
+      "wrong_direction": 32,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          3,
+          5
+        ],
+        [
+          122,
+          198,
+          28
+        ],
+        [
+          131,
+          4,
+          213
+        ]
+      ]
+    }
+  },
+  {
+    "epoch": 99,
+    "loss": 0.06800646426642469,
+    "margin": 1.5,
+    "validation": {
+      "correct": 414,
+      "wrong_direction": 26,
+      "false_accepts": 8,
+      "confusion": [
+        [
+          1732,
+          3,
+          5
+        ],
+        [
+          137,
+          188,
+          23
+        ],
+        [
+          119,
+          3,
+          226
+        ]
+      ]
+    }
+  }
+]

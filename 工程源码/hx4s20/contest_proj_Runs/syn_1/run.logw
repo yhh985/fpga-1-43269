@@ -1,0 +1,84 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = E:/Anlogic_fpga/bin/run.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     yhh
+   Run Date =   Sat Oct 31 00:20:49 2026
+
+   Run on =     LAPTOP-D7Q0PF8I
+============================================================
+HDL-5373 WARNING: identifier 'voice_active' is used before its declaration in ../../hdl/top_tf_hdmi_audio.v(90)
+HDL-5373 WARNING: identifier 'music_enable' is used before its declaration in ../../hdl/top_tf_hdmi_audio.v(262)
+HDL-5373 WARNING: identifier 'music_playing' is used before its declaration in ../../hdl/top_tf_hdmi_audio.v(262)
+HDL-5373 WARNING: identifier 'music_tone_enable' is used before its declaration in ../../hdl/top_tf_hdmi_audio.v(296)
+HDL-5373 WARNING: identifier 'music_tone_enable' is used before its declaration in ../../hdl/top_tf_hdmi_audio.v(301)
+HDL-5373 WARNING: identifier 'local_left' is used before its declaration in ../../hdl/top_tf_hdmi_audio.v(1289)
+HDL-5373 WARNING: identifier 'next_from_current' is used before its declaration in ../../hdl/SD/sd_card_bmp.v(148)
+HDL-5373 WARNING: identifier 'wav_req' is used before its declaration in ../../hdl/SD/sd_card_bmp.v(699)
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../hdl/include/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../hdl/include/sdr_wrrd.enc.v(283)
+HDL-5373 WARNING: identifier 'lookup_index' is used before its declaration in ../../hdl/SD/fat32_bmp_source.v(41)
+HDL-5373 WARNING: identifier 'wav_request_valid' is used before its declaration in ../../hdl/SD/fat32_bmp_source.v(42)
+HDL-5373 WARNING: identifier 'physical_valid' is used before its declaration in ../../hdl/SD/fat32_bmp_source.v(43)
+HDL-5373 WARNING: identifier 'address_is_file' is used before its declaration in ../../hdl/SD/fat32_bmp_source.v(43)
+HDL-5373 WARNING: identifier 'offset' is used before its declaration in ../../hdl/wav_pcm_parser.v(21)
+HDL-5007 WARNING: case equality operator always evaluates to false due to comparison with 'x' or 'z' in ../../hdl/SD/sd_card_bmp.v(128)
+HDL-5007 WARNING: case equality operator always evaluates to false due to comparison with 'x' or 'z' in ../../hdl/image_resizer_sd_quality.v(30)
+HDL-5007 WARNING: case equality operator always evaluates to false due to comparison with 'x' or 'z' in ../../hdl/SD/fat32_bmp_source.v(80)
+HDL-5314 WARNING: net 'scroll_font' does not have a driver in ../../hdl/osd_status_overlay.v(387)
+HDL-5317 WARNING: input port 'dib[31]' is not connected on this instance in ../../hdl/IP/afifo_16_32_256.v(231)
+HDL-5317 WARNING: input port 'dib[31]' is not connected on this instance in ../../hdl/IP/afifo_32_16_256.v(231)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../hdl/include/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../hdl/include/sdr_wrrd.enc.v(283)
+HDL-5317 WARNING: input port '**' is not connected on this instance in ../../hdl/include/sdr_as_ram.enc.v(17)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in ../../hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(3307)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in ../../hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(3318)
+HDL-5323 WARNING: input port 'write_rst' remains unconnected for this instance in ../../hdl/top_tf_hdmi_audio.v(1412)
+SYN-5013 WARNING: Undriven net: model "top" / net "g_memory_store$frame_read_write_m0/write_rst" in ../../hdl/SD/frame_read_write.v(20)
+		the net's pin: pin "sel" in ../../hdl/SD/frame_read_write.v(118)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$frame_read_write_m0/read_buf/ram_inst/ramread0_syn_4" in ../../hdl/IP/afifo_32_16_256.v(822) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$frame_read_write_m0/read_buf/ram_inst/ramread0_syn_4" in ../../hdl/IP/afifo_32_16_256.v(822) / pin "beb[0]"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-6577 WARNING: The clock signal "g_memory_store$U3/u2_ram/SDRAM_CLK" is added with the synthetic instruction (keep/mark_debug/dont_touch/max_fanout), which may create additional logic on this net
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[0]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[1]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[2]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[3]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[4]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[5]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[6]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[7]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[8]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[9]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[10]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[11]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[12]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[13]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[14]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[15]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[16]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[17]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[18]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[19]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[20]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[21]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[22]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[23]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[24]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[25]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[26]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[27]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[28]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[29]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[30]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "g_memory_store$U3/u2_ram/u2_wrrd/Sdr_rd_dout_reg[31]" in ../../hdl/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "top" / inst "u_return_checked/rx/ds_reg[0]" in ../../../common/music_fx_return.v(126) / pin "clk"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets

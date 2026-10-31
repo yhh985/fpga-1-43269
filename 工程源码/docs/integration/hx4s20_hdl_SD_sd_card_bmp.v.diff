@@ -1,0 +1,71 @@
+--- voice_test/hx4s20/hdl/SD/sd_card_bmp.v
+
++++ integrated/hx4s20/hdl/SD/sd_card_bmp.v
+
+@@ -25,10 +25,11 @@
+
+     input                       rst,
+     input                       key_next,
+     input                       audio_play_enable,
++    input                       background_music_enable,
+     input                       playback_pause,
+     input                       auto_play_enable, // 顶层持有播放状态，高电平启用
+     input                       test_mode,        // 高电平：仅暂停新任务，已开始的帧安全完成
+-    input                       audio_next_toggle, // 音调事件toggle，仅空闲时切换真实图片
++    input                       audio_next_toggle, // 音调事件toggle，忙时合并保留一次请求
+     input voice_next_toggle,voice_prev_toggle,
+     output [3:0]                state_code,
+     output [3:0]                status_code,  // display-only diagnostic, parser state is unchanged
+@@ -115,6 +116,7 @@
+
+ reg [1:0]        test_mode_sync;
+ wire             test_active = test_mode_sync[1];
+ reg [1:0] audio_play_sync, pause_sync;
++reg [1:0] background_music_sync;
+ reg [1:0] previous_mode;
+ wire [1:0] selected_mode = auto_play_en ? 2'd1 : audio_play_sync[1] ? 2'd2 : 2'd0;
+ wire controls_changed = selected_mode != previous_mode;
+@@ -275,13 +277,14 @@
+
+ // 自动播放是已消抖的状态，不应再次按低有效机械按键解释。
+ always @(posedge clk or posedge rst) begin
+     if (rst) begin
+-        auto_play_sync <= 2'b00;audio_play_sync<=0;pause_sync<=0;previous_mode<=0;
++        auto_play_sync <= 2'b00;audio_play_sync<=0;background_music_sync<=0;pause_sync<=0;previous_mode<=0;
+         // Fail closed until the video domain has selected its debounced mode.
+         test_mode_sync <= 2'b11;
+         audio_next_sync <= 3'b000;voice_next_sync<=0;voice_prev_sync<=0;
+     end else begin
+         auto_play_sync <= {auto_play_sync[0], auto_play_enable};
+         audio_play_sync <= {audio_play_sync[0], audio_play_enable};
++        background_music_sync <= {background_music_sync[0], background_music_enable === 1'b1};
+         pause_sync <= {pause_sync[0], playback_pause};
+         previous_mode <= selected_mode;
+         test_mode_sync <= {test_mode_sync[0], test_mode};
+@@ -451,10 +454,12 @@
+
+                     next_req_pending <= 1'b1;request_previous<=0;voice_request<=0;
+                     initial_load_failed <= 1'b0; // explicit retry after an invalid first header
+                 end
+-                else if (selected_mode == 2 && audio_next_event && scan_done && scheduler_ready && display_valid &&
+-                         first_image_committed && !load_busy && !switch_wait &&
++                else if (selected_mode == 2 && audio_next_event && scan_done && display_valid &&
++                         first_image_committed &&
+                          (img_found_count > 4'd1)) begin
+-                    // Only audio mode accepts tone-change events. Disabled/busy events are consumed.
++                    // Capture even while the next frame is being prefetched.
++                    // Launch/commit below still waits for source, memory and reader ownership.
++                    // Coalesce to one request; pause/mode change cancels it above.
+                     next_req_pending <= 1'b1;request_previous<=0;voice_request<=0;
+                 end
+ 
+@@ -726,7 +731,7 @@
+
+   else begin urgent<=fifo_used<13'd3072;end
+  end
+  wav_sector_reader u_music_reader(.clk(clk),.rst(rst),.mounted(fs_init_done),
+-  .found(music_found),.enabled(audio_play_sync[1]&&!switch_hold),.file_bytes(wav_bytes),
++  .found(music_found),.enabled((audio_play_sync[1] || background_music_sync[1])&&!switch_hold),.file_bytes(wav_bytes),
+   .fifo_used(fifo_used),.fifo_full(fifo_full),.read_req(wav_req),.read_addr(wav_addr),
+   .read_data(wav_data),.read_valid(wav_valid),.read_end(wav_end),
+   .pcm_valid(pcm_valid),.pcm_frame(pcm_frame),.stream_ok(session_ok),.error(music_error),.state_code());

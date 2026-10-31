@@ -1,0 +1,715 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = E:/Anlogic_fpga/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     yhh
+   Run Date =   Sat Oct 31 00:20:48 2026
+
+   Run on =     LAPTOP-D7Q0PF8I
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "open_project E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj.al"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file hdl/I2S_receiver.v
+HDL-1007 : analyze verilog file hdl/audio_arc_calculate.v
+HDL-1007 : analyze verilog file hdl/hdmi_audio_tone_i2s_64fs.v
+HDL-1007 : analyze verilog file hdl/hdmi_audio_tone_pcm_scale.v
+HDL-1007 : analyze verilog file hdl/hdmi_phy_warpper.v
+HDL-1007 : analyze verilog file hdl/key_remove_shakes.v
+HDL-1007 : analyze verilog file hdl/lane_lvds_10_1.v
+HDL-1007 : analyze verilog file hdl/startup_pulse.v
+HDL-1007 : analyze verilog file hdl/top_tf_hdmi_audio.v
+HDL-5373 WARNING: identifier 'voice_active' is used before its declaration in hdl/top_tf_hdmi_audio.v(90)
+HDL-5373 WARNING: identifier 'music_enable' is used before its declaration in hdl/top_tf_hdmi_audio.v(262)
+HDL-5373 WARNING: identifier 'music_playing' is used before its declaration in hdl/top_tf_hdmi_audio.v(262)
+HDL-5373 WARNING: identifier 'music_tone_enable' is used before its declaration in hdl/top_tf_hdmi_audio.v(296)
+HDL-5373 WARNING: identifier 'music_tone_enable' is used before its declaration in hdl/top_tf_hdmi_audio.v(301)
+HDL-5373 WARNING: identifier 'local_left' is used before its declaration in hdl/top_tf_hdmi_audio.v(1289)
+HDL-1007 : analyze verilog file hdl/video_rgb_to_axis_640x480.v
+HDL-1007 : analyze verilog file hdl/video_source_test.v
+HDL-1007 : analyze verilog file hdl/IP/PLL_HDMI_AUDIO.v
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open0', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(85)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open8', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open7', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open6', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open5', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open4', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open3', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open2', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open1', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(91)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open10', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(93)
+HDL-1007 : undeclared symbol 'PLL_HDMI_AUDIO_open9', assumed default net type 'wire' in hdl/IP/PLL_HDMI_AUDIO.v(93)
+HDL-1007 : analyze verilog file hdl/IP/afifo_16_256.v
+HDL-1007 : analyze verilog file hdl/IP/afifo_16_256_sim.v
+HDL-1007 : undeclared symbol 'open_n51', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1387)
+HDL-1007 : undeclared symbol 'open_n52', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1387)
+HDL-1007 : undeclared symbol 'open_n53', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1389)
+HDL-1007 : undeclared symbol 'open_n54', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1389)
+HDL-1007 : undeclared symbol 'open_n59', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1393)
+HDL-1007 : undeclared symbol 'open_n60', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1393)
+HDL-1007 : undeclared symbol 'open_n63', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1434)
+HDL-1007 : undeclared symbol 'open_n64', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1497)
+HDL-1007 : undeclared symbol 'open_n67', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1502)
+HDL-1007 : undeclared symbol 'open_n68', assumed default net type 'wire' in hdl/IP/afifo_16_256_sim.v(1565)
+HDL-1007 : analyze verilog file hdl/IP/afifo_16_32_256.v
+HDL-1007 : analyze verilog file hdl/IP/afifo_32_16_256.v
+HDL-1007 : analyze verilog file hdl/IP/sys_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in hdl/IP/sys_pll.v(101)
+HDL-1007 : analyze verilog file hdl/IP/video_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in hdl/IP/video_pll.v(78)
+HDL-1007 : analyze verilog file hdl/SD/ax_debounce.v
+HDL-1007 : analyze verilog file hdl/SD/bmp_read.v
+HDL-1007 : analyze verilog file hdl/SD/color_bar.v
+HDL-1007 : analyze included file hdl/SD/video_define.v in hdl/SD/color_bar.v(2)
+HDL-1007 : back to file 'hdl/SD/color_bar.v' in hdl/SD/color_bar.v(2)
+HDL-1007 : analyze verilog file hdl/SD/frame_fifo_read.v
+HDL-1007 : analyze verilog file hdl/SD/frame_fifo_write.v
+HDL-1007 : analyze verilog file hdl/SD/frame_read_write.v
+HDL-1007 : analyze verilog file hdl/SD/sd_card_bmp.v
+HDL-5373 WARNING: identifier 'next_from_current' is used before its declaration in hdl/SD/sd_card_bmp.v(148)
+HDL-5373 WARNING: identifier 'wav_req' is used before its declaration in hdl/SD/sd_card_bmp.v(699)
+HDL-1007 : analyze verilog file hdl/SD/sd_card_cmd.v
+HDL-1007 : analyze verilog file hdl/SD/sd_card_sec_read_write.v
+HDL-1007 : analyze verilog file hdl/SD/sd_card_top.v
+HDL-1007 : analyze verilog file hdl/SD/sdram.v
+HDL-1007 : analyze included file hdl/SD/../include/global_def.v in hdl/SD/sdram.v(10)
+HDL-1007 : back to file 'hdl/SD/sdram.v' in hdl/SD/sdram.v(10)
+HDL-1007 : undeclared symbol 'SDR_CKE', assumed default net type 'wire' in hdl/SD/sdram.v(89)
+HDL-1007 : analyze verilog file hdl/SD/seg_decoder.v
+HDL-1007 : analyze verilog file hdl/SD/seg_scan.v
+HDL-1007 : analyze verilog file hdl/SD/spi_master.v
+HDL-1007 : analyze verilog file hdl/SD/video_delay.v
+HDL-1007 : analyze verilog file hdl/SD/video_timing_data.v
+HDL-1007 : analyze verilog file hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(2614)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(2716)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(2724)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(4936)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(5989)
+HDL-1007 : back to file 'hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v' in hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v(77)
+HDL-1007 : analyze verilog file hdl/include/sdr_as_ram.enc.v
+HDL-1007 : analyze included file hdl/include/global_def.v in hdl/include/sdr_as_ram.enc.v(10)
+HDL-1007 : back to file 'hdl/include/sdr_as_ram.enc.v' in hdl/include/sdr_as_ram.enc.v(10)
+HDL-1007 : back to file 'hdl/include/sdr_as_ram.enc.v' in hdl/include/sdr_as_ram.enc.v(45)
+HDL-1007 : analyze verilog file hdl/include/sdr_init_ref.enc.v
+HDL-1007 : analyze included file hdl/include/../include/global_def.v in hdl/include/sdr_init_ref.enc.v(11)
+HDL-1007 : back to file 'hdl/include/sdr_init_ref.enc.v' in hdl/include/sdr_init_ref.enc.v(11)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in hdl/include/sdr_init_ref.enc.v(57)
+HDL-1007 : back to file 'hdl/include/sdr_init_ref.enc.v' in hdl/include/sdr_init_ref.enc.v(149)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in hdl/include/sdr_init_ref.enc.v(47)
+HDL-1007 : analyze verilog file hdl/include/sdr_wrrd.enc.v
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in hdl/include/sdr_wrrd.enc.v(283)
+HDL-1007 : back to file 'hdl/include/sdr_wrrd.enc.v' in hdl/include/sdr_wrrd.enc.v(19)
+HDL-1007 : analyze verilog file hdl/transition_fx.v
+HDL-1007 : analyze verilog file hdl/brightness_ctrl.v
+HDL-1007 : analyze verilog file hdl/osd_overlay.v
+HDL-1007 : analyze included file hdl/decimal_two_digits.vh in hdl/osd_overlay.v(101)
+HDL-1007 : back to file 'hdl/osd_overlay.v' in hdl/osd_overlay.v(101)
+HDL-1007 : analyze included file hdl/cn_font_rom_body.vh in hdl/osd_overlay.v(198)
+HDL-1007 : back to file 'hdl/osd_overlay.v' in hdl/osd_overlay.v(198)
+HDL-1007 : analyze verilog file hdl/audio_spectrum.v
+HDL-1007 : analyze verilog file hdl/image_scaler.v
+HDL-1007 : analyze verilog file hdl/color_filter.v
+HDL-1007 : analyze verilog file hdl/test_pattern_gen.v
+HDL-1007 : analyze verilog file hdl/image_enhance.v
+HDL-1007 : analyze verilog file hdl/reset_release.v
+HDL-1007 : analyze verilog file hdl/audio_goertzel.v
+HDL-1007 : analyze verilog file hdl/audio_visual_link.v
+HDL-1007 : analyze verilog file hdl/audio_band_overlay.v
+HDL-1007 : analyze verilog file hdl/osd_status_overlay.v
+HDL-1007 : analyze included file hdl/decimal_two_digits.vh in hdl/osd_status_overlay.v(76)
+HDL-1007 : back to file 'hdl/osd_status_overlay.v' in hdl/osd_status_overlay.v(76)
+HDL-1007 : analyze included file hdl/scroll_captions.vh in hdl/osd_status_overlay.v(381)
+HDL-1007 : back to file 'hdl/osd_status_overlay.v' in hdl/osd_status_overlay.v(381)
+HDL-1007 : analyze verilog file hdl/image_resizer.v
+HDL-1007 : analyze verilog file hdl/SD/fat32_bmp_source.v
+HDL-5373 WARNING: identifier 'lookup_index' is used before its declaration in hdl/SD/fat32_bmp_source.v(41)
+HDL-5373 WARNING: identifier 'wav_request_valid' is used before its declaration in hdl/SD/fat32_bmp_source.v(42)
+HDL-5373 WARNING: identifier 'physical_valid' is used before its declaration in hdl/SD/fat32_bmp_source.v(43)
+HDL-5373 WARNING: identifier 'address_is_file' is used before its declaration in hdl/SD/fat32_bmp_source.v(43)
+HDL-1007 : analyze verilog file hdl/image_resizer_sd_quality.v
+HDL-1007 : analyze verilog file hdl/image_number_2digit.v
+HDL-1007 : analyze included file hdl/decimal_two_digits.vh in hdl/image_number_2digit.v(15)
+HDL-1007 : back to file 'hdl/image_number_2digit.v' in hdl/image_number_2digit.v(15)
+HDL-1007 : analyze verilog file hdl/audio_pcm_fifo.v
+HDL-1007 : analyze verilog file hdl/audio_wav_i2s.v
+HDL-1007 : analyze verilog file hdl/wav_pcm_parser.v
+HDL-5373 WARNING: identifier 'offset' is used before its declaration in hdl/wav_pcm_parser.v(21)
+HDL-1007 : analyze verilog file hdl/SD/wav_sector_reader.v
+HDL-1007 : analyze verilog file hdl/SD/sd_media_arbiter.v
+HDL-1007 : analyze verilog file hdl/user_image_rom.v
+HDL-1007 : analyze included file hdl/user_image_geometry.vh in hdl/user_image_rom.v(41)
+HDL-1007 : back to file 'hdl/user_image_rom.v' in hdl/user_image_rom.v(41)
+HDL-1007 : analyze verilog file hdl/top_user_image_test.v
+HDL-1007 : analyze verilog file hdl/demo_bmp_card.v
+HDL-1007 : analyze verilog file hdl/user_bmp_card.v
+HDL-1007 : analyze verilog file hdl/top_user_bmp_test.v
+HDL-1007 : analyze verilog file ../common/link_host.v
+HDL-1007 : analyze verilog file ../common/link_packet.v
+HDL-1007 : analyze verilog file ../common/link_sensor.v
+HDL-1007 : analyze verilog file ../common/uart_rx.v
+HDL-1007 : analyze verilog file ../common/uart_tx.v
+HDL-1007 : analyze verilog file hdl/mic_overlay.v
+HDL-1007 : analyze verilog file ../common/link_snapshot_cdc.v
+HDL-1007 : analyze verilog file ../common/music_fx_return.v
+PRJ-1401 : Successfully analyzed 75 source files.
+RUN-1002 : start command "top_module top"
+PRJ-1501 : Current top model is top.
+RUN-1002 : start command "set_param -run syn_1 gate eram_init on"
+PRJ-1105 : Update param syn_1 gate::eram_init::on succeed.
+RUN-1002 : start command "set_param -run phy_1 place pr_strategy 2"
+PRJ-1105 : Update param phy_1 place::pr_strategy::2 succeed.
+RUN-1002 : start command "set_param -run phy_1 place seed 8"
+PRJ-1105 : Update param phy_1 place::seed::8 succeed.
+RUN-1002 : start command "set_param -run phy_1 flow thread 2"
+PRJ-1105 : Update param phy_1 flow::thread::2 succeed.
+RUN-1002 : start command "set_param -run phy_1 place effort high"
+PRJ-1105 : Update param phy_1 place::effort::high succeed.
+RUN-1002 : start command "set_param -run phy_1 place opt_timing high"
+PRJ-1105 : Update param phy_1 place::opt_timing::high succeed.
+RUN-1002 : start command "set_param -run phy_1 place logic_level_opt on"
+PRJ-1105 : Update param phy_1 place::logic_level_opt::on succeed.
+RUN-1002 : start command "set_param -run phy_1 place aggressive_opt 21"
+PRJ-1103 : Set run phy_1 param: place::aggressive_opt::21.
+PRJ-1106 : Update wild param phy_1 place::aggressive_opt::21 succeed.
+RUN-1002 : start command "set_param -run phy_1 place aggr_neighbor_dist 5"
+PRJ-1103 : Set run phy_1 param: place::aggr_neighbor_dist::5.
+PRJ-1106 : Update wild param phy_1 place::aggr_neighbor_dist::5 succeed.
+RUN-1002 : start command "set_param -run phy_1 place enhanced_beeline_opt 3"
+PRJ-1103 : Set run phy_1 param: place::enhanced_beeline_opt::3.
+PRJ-1106 : Update wild param phy_1 place::enhanced_beeline_opt::3 succeed.
+RUN-1002 : start command "set_param -run phy_1 place timing_driven_mode on"
+PRJ-1103 : Set run phy_1 param: place::timing_driven_mode::on.
+PRJ-1106 : Update wild param phy_1 place::timing_driven_mode::on succeed.
+RUN-1002 : start command "set_param -run phy_1 place shifter_opt off"
+PRJ-1103 : Set run phy_1 param: place::shifter_opt::off.
+PRJ-1106 : Update wild param phy_1 place::shifter_opt::off succeed.
+RUN-1002 : start command "set_param -run phy_1 place crit_path_opt on"
+PRJ-1103 : Set run phy_1 param: place::crit_path_opt::on.
+PRJ-1106 : Update wild param phy_1 place::crit_path_opt::on succeed.
+RUN-1002 : start command "set_param -run phy_1 place post_place_opt high"
+PRJ-1105 : Update param phy_1 place::post_place_opt::high succeed.
+RUN-1002 : start command "set_param -run phy_1 place hfn_opt_effort low"
+PRJ-1105 : Update param phy_1 place::hfn_opt_effort::low succeed.
+RUN-1002 : start command "set_param -run phy_1 place split_data_from_clock on"
+PRJ-1103 : Set run phy_1 param: place::split_data_from_clock::on.
+PRJ-1106 : Update wild param phy_1 place::split_data_from_clock::on succeed.
+RUN-1002 : start command "reset_runs syn_1 phy_1"
+PRJ-1412 : reset_run syn_1 phy_1.
+RUN-1002 : start command "launch_runs syn_1 -jobs 1"
+PRJ-1403 : syn_1 is launched.
+PRJ-1404 : Run log file is E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj_Runs/syn_1/run.log.
+RUN-1002 : start command "wait_run syn_1 -quiet"
+PRJ-1405 : Waiting for run syn_1 to finish.
+PRJ-1409 : launch_runs syn_1  -jobs 1.
+PRJ-1410 : Run syn_1 success.
+RUN-1002 : start command "save_best_bits"
+PRJ-1406 : Run syn_1 finished.
+RUN-1003 : finish command "wait_run syn_1 -quiet" in  110.082594s wall, 0.078125s user + 0.062500s system = 0.140625s CPU (0.1%)
+
+RUN-1004 : used memory is 89 MB, reserved memory is 101 MB, peak memory is 89 MB
+RUN-1002 : start command "launch_runs -step opt_place phy_1 -jobs 1"
+PRJ-1403 : phy_1 is launched.
+PRJ-1404 : Run log file is E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj_Runs/phy_1/run.log.
+RUN-1002 : start command "wait_run phy_1 -quiet"
+PRJ-1405 : Waiting for run phy_1 to finish.
+PRJ-1411 : launch_runs phy_1 -step opt_place.
+RUN-1002 : start command "save_best_bits"
+PRJ-1410 : Run phy_1 success.
+PRJ-1406 : Run phy_1 finished.
+RUN-1003 : finish command "wait_run phy_1 -quiet" in  120.078299s wall, 0.046875s user + 0.093750s system = 0.140625s CPU (0.1%)
+
+RUN-1004 : used memory is 90 MB, reserved memory is 102 MB, peak memory is 90 MB
+RUN-1002 : start command "close_project"
+RUN-1002 : start command "import_db E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj_Runs/phy_1/contest_proj_place.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V6.2.168116.
+RUN-1001 : Database version number 46207
+RUN-1002 : start command "set_param place ofv 70"
+RUN-1001 : Import flow parameters
+RUN-1001 : Import netlist
+RUN-1001 : Import phy database
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import ChipWatcher
+RUN-1001 : Import design success TD_VERSION=6.2.168116 , DB_VERSION=46207
+RUN-1003 : finish command "import_db E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj_Runs/phy_1/contest_proj_place.db" in  1.106816s wall, 0.406250s user + 0.078125s system = 0.484375s CPU (43.8%)
+
+RUN-1004 : used memory is 382 MB, reserved memory is 375 MB, peak memory is 382 MB
+RUN-1002 : start command "set_param flow qor_monitor off"
+RUN-1002 : start command "set_param route fix_hold off"
+RUN-1002 : start command "set_param route post_route_opt high"
+RUN-1002 : start command "set_param route postrt_opt_extra_round 4"
+RUN-1002 : start command "route"
+RUN-1001 : Open license file E:/Anlogic_fpga/license/Anlogic.lic
+PHY-1001 : Route runs in 2 thread(s)
+RUN-1001 : There are total 9988 instances
+RUN-1001 : 4896 mslices, 4896 lslices, 100 pads, 55 brams, 17 dsps
+RUN-1001 : There are total 23015 nets
+RUN-1001 : 14550 nets have 2 pins
+RUN-1001 : 6092 nets have [3 - 5] pins
+RUN-1001 : 1525 nets have [6 - 10] pins
+RUN-1001 : 463 nets have [11 - 20] pins
+RUN-1001 : 350 nets have [21 - 99] pins
+RUN-1001 : 35 nets have 100+ pins
+RUN-1002 : start command "start_timer"
+PHY-1001 : 4896 mslices, 4896 lslices, 100 pads, 55 brams, 17 dsps
+TMR-2502 : Net delay update with mode: Placed
+
+PHY-1001 : Stage 1 | Global Routing
+PHY-1001 : Start global routing, caller is route ...
+RUN-1001 : Generating global routing grids ...
+RUN-1001 : Building simple global routing graph ...
+PHY-1001 : Generate routing nets ...
+RUN-1001 : Generate nets statistics:
+RUN-1001 : ----------------------------
+RUN-1001 :        Type       |  Nets   
+RUN-1001 : ----------------------------
+RUN-1001 :   TotalRouteNets  |  20129  
+RUN-1001 :   DontRouteNets   |   701   
+RUN-1001 :     RouteNets     |  19428  
+RUN-1001 :     RouteSinks    |  47039  
+RUN-1001 : ----------------------------
+PHY-1001 : Global iterations in 2 thread ...
+PHY-1002 : len = 1.60007e+06, over cnt = 5017(14%), over = 9168, worst = 10
+PHY-1002 : len = 1.64779e+06, over cnt = 3740(10%), over = 5637, worst = 8
+PHY-1002 : len = 1.70536e+06, over cnt = 1940(5%), over = 2544, worst = 8
+PHY-1002 : len = 1.74029e+06, over cnt = 553(1%), over = 759, worst = 8
+PHY-1002 : len = 1.76443e+06, over cnt = 1(0%), over = 1, worst = 1
+PHY-1002 : len = 1.76446e+06, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  3.192905s wall, 3.562500s user + 0.046875s system = 3.609375s CPU (113.0%)
+
+PHY-1001 : Congestion index:
+PHY-1001 : top1  = 72.18(S 96.38, N 94.91, E 77.59, W 81.47, I 0.00, O 0.00)
+PHY-1001 : top5  = 67.46(S 87.35, N 87.21, E 69.66, W 71.25, I 0.00, O 0.00)
+PHY-1001 : top10 = 64.74(S 81.32, N 81.99, E 66.07, W 66.50, I 0.00, O 0.00)
+PHY-1001 : top15 = 62.82(S 77.37, N 78.37, E 63.51, W 63.77, I 0.00, O 0.00)
+PHY-1001 : End global routing;  3.461404s wall, 3.843750s user + 0.046875s system = 3.890625s CPU (112.4%)
+
+PHY-1001 : End Stage 1 | Global Routing; Time: 3.461485s wall, 3.843750s user + 0.046875s system = 3.890625s CPU (112.4%); Memory(MB): used = 605, reserved = 594, peak = 605;
+
+PHY-1001 : Stage 2 | Detail Routing
+PHY-1001 : Stage 2.1 | Build Routing Design
+PHY-1001 : Routing in high effort: false
+PHY-1001 : Routing Mode: normal
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : End build routing graph; 1.724455s wall, 1.640625s user + 0.093750s system = 1.734375s CPU (100.6%)
+
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net video_clk will be merged with clock video_pll_m0/clk0_buf
+PHY-1001 : clock net g_card_source$sd_card_bmp_m0/clk will be merged with clock sys_pll_m0/clk_sd_buf
+PHY-1001 : net g_memory_store$U3/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net g_memory_store$U3/u2_ram/u1_init_ref/Sdr_clk will be routed on clock mesh
+PHY-1001 : clock net sys_pll_m0/clk_feedback will be merged with clock sys_pll_m0/clk0_buf
+PHY-1001 : clock net u_audio_pll/clk0_out will be merged with clock u_audio_pll/clk0_buf
+PHY-1001 : net u_hdmi2phy_wrapper/u0_lane_lvds_8_1/I_serial_clk will be routed on clock mesh
+PHY-1001 : net u_music_i2s/mclk will be routed on clock mesh
+RUN-1001 : Generate nets statistics:
+RUN-1001 : ------------------------------
+RUN-1001 :         Type        |  Nets   
+RUN-1001 : ------------------------------
+RUN-1001 :        Route        |  20129  
+RUN-1001 :      DontRoute      |  2886   
+RUN-1001 :      RouteSinks     |  67805  
+RUN-1001 :   RouteEntitySinks  |    0    
+RUN-1001 :       Lut2Dff       |    0    
+RUN-1001 :       Ram2Dff       |    0    
+RUN-1001 :      Carry2Dff      |    0    
+RUN-1001 : ------------------------------
+RUN-1001 : DR clock net summary:
+RUN-1001 : -------------------------------------------------------------------------------
+RUN-1001 :   Net Idx  |                      Net Name                      |  Clock Type  
+RUN-1001 : -------------------------------------------------------------------------------
+RUN-1001 :      1     |                     clk_dup_1                      |    Normal    
+RUN-1001 :      2     |          g_card_source$sd_card_bmp_m0/clk          |    Normal    
+RUN-1001 :      3     |         g_memory_store$U3/u2_ram/SDRAM_CLK         |    Normal    
+RUN-1001 :      4     |    g_memory_store$U3/u2_ram/u1_init_ref/Sdr_clk    |    Normal    
+RUN-1001 :      5     |              sys_pll_m0/clk_feedback               |    Normal    
+RUN-1001 :      6     |                u_audio_pll/clk0_out                |    Normal    
+RUN-1001 :      7     |  u_hdmi2phy_wrapper/u0_lane_lvds_8_1/I_serial_clk  |    Normal    
+RUN-1001 :      8     |                  u_music_i2s/mclk                  |    Normal    
+RUN-1001 :      9     |                     video_clk                      |    Normal    
+RUN-1001 : -------------------------------------------------------------------------------
+RUN-1001 : DR clock buffer summary:
+RUN-1001 : ----------------
+RUN-1001 :   Idx  |  Name  
+RUN-1001 : ----------------
+RUN-1001 : ----------------
+PHY-1001 : End Stage 2.1 | Build Routing Design; Time: 2.089626s wall, 1.968750s user + 0.125000s system = 2.093750s CPU (100.2%); Memory(MB): used = 911, reserved = 901, peak = 911;
+
+RUN-1001 : Top Percentage Crit. Net Stat.
+RUN-1001 : -------------------------------------------------------
+RUN-1001 :   Top %  |  Net Count  |  Avg. Fanout  |  Avg. Slack   
+RUN-1001 : -------------------------------------------------------
+RUN-1001 :     1    |     230     |   4.817391    |  2940.800000  
+RUN-1001 :     2    |     460     |   4.945652    |  4599.995652  
+RUN-1001 :     3    |     690     |   4.347826    |  5423.646377  
+RUN-1001 :     4    |     920     |   4.611957    |  6008.527174  
+RUN-1001 :     5    |    1150     |   5.027826    |  6483.185217  
+RUN-1001 :     6    |    1380     |   4.860145    |  6891.007971  
+RUN-1001 :     7    |    1611     |   4.711980    |  7242.726257  
+RUN-1001 :     8    |    1841     |   4.497012    |  7545.202064  
+RUN-1001 :     9    |    2071     |   4.408498    |  7811.159343  
+RUN-1001 :    10    |    2301     |   4.303781    |  8049.396349  
+RUN-1001 : -------------------------------------------------------
+PHY-1001 : Stage 2.2 | Clock Nets Routing
+PHY-1001 : Routed 0% nets.
+PHY-1001 : len = 252424, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : End Stage 2.2 | Clock Nets Routing; Time: 5.329351s wall, 5.078125s user + 0.203125s system = 5.281250s CPU (99.1%); Memory(MB): used = 948, reserved = 937, peak = 948;
+
+PHY-1001 : Stage 2.3 | Routing Initialization
+PHY-1001 : Mark 1% net(place mode slack < 5652ps) as critical nets.
+PHY-1001 : Stage 2.3.1 | Normal Nets Routing
+PHY-1001 : Routed 87% nets.
+PHY-1001 : len = 2.35294e+06, over cnt = 5680(0%), over = 5738, worst = 3, crit = 0
+PHY-1001 : End Stage 2.3.1 | Normal Nets Routing; Time: 89.781529s wall, 114.906250s user + 3.937500s system = 118.843750s CPU (132.4%); Memory(MB): used = 976, reserved = 965, peak = 976;
+
+PHY-1001 : Stage 2.3.2 | Update Timing
+RUN-1002 : start command "start_timer"
+TMR-2502 : Net delay update with mode: Routed
+PHY-1001 : 0/20129(0%) critical/total net(s).
+PHY-1001 : Setup: WNS(ns) = 0.540, TNS(ns) = 0.000, FEP = 0 | Hold: WNS(ns) = -0.008, TNS(ns) = -0.012, FEP = 2.
+PHY-1001 : End Stage 2.3.2 | Update Timing; Time: 2.065468s wall, 2.031250s user + 0.031250s system = 2.062500s CPU (99.9%); Memory(MB): used = 989, reserved = 978, peak = 989;
+
+PHY-1001 : End Stage 2.3 | Routing Initialization; Time: 91.853819s wall, 116.984375s user + 4.140625s system = 121.125000s CPU (131.9%); Memory(MB): used = 990, reserved = 978, peak = 990;
+
+PHY-1001 : Stage 2.4 | Routing Optimization
+PHY-1001 : Build lut bridge;  0.078513s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (99.5%)
+
+PHY-1001 : Stage 2.4.1 | Phase 1
+PHY-1001 : Stage 2.4.1.1 | Setup TimeOptimization
+PHY-1001 : len = 2.35294e+06, over cnt = 5680(0%), over = 5738, worst = 3, crit = 0
+PHY-1001 : End Stage 2.4.1.1 | Setup TimeOptimization; Time: 0.117516s wall, 0.109375s user + 0.000000s system = 0.109375s CPU (93.1%); Memory(MB): used = 992, reserved = 981, peak = 992;
+
+PHY-1001 : Stage 2.4.1.2 | Rip-up And ReRoute
+PHY-1001 : Iter 1: len = 2.36982e+06, over cnt = 3747(0%), over = 3756, worst = 2, crit = 0, time(s) = 6.90
+PHY-1001 : Iter 2: len = 2.37457e+06, over cnt = 2963(0%), over = 2964, worst = 2, crit = 0, time(s) = 4.42
+PHY-1001 : Iter 3: len = 2.37658e+06, over cnt = 2541(0%), over = 2542, worst = 2, crit = 0, time(s) = 3.43
+PHY-1001 : Iter 4: len = 2.39549e+06, over cnt = 1542(0%), over = 1542, worst = 1, crit = 0, time(s) = 3.05
+PHY-1001 : Iter 5: len = 2.39972e+06, over cnt = 1306(0%), over = 1306, worst = 1, crit = 0, time(s) = 2.16
+PHY-1001 : Iter 6: len = 2.40081e+06, over cnt = 1231(0%), over = 1231, worst = 1, crit = 0, time(s) = 1.76
+PHY-1001 : Iter 7: len = 2.40125e+06, over cnt = 1203(0%), over = 1203, worst = 1, crit = 0, time(s) = 1.58
+PHY-1001 : Switch mode......
+PHY-1001 : Iter 8: len = 2.4304e+06, over cnt = 792(0%), over = 794, worst = 2, crit = 0, time(s) = 0.83
+PHY-1001 : Iter 9: len = 2.43778e+06, over cnt = 675(0%), over = 677, worst = 2, crit = 0, time(s) = 0.76
+PHY-1001 : Iter 10: len = 2.4404e+06, over cnt = 565(0%), over = 565, worst = 1, crit = 0, time(s) = 0.73
+PHY-1001 : Iter 11: len = 2.44204e+06, over cnt = 524(0%), over = 524, worst = 1, crit = 0, time(s) = 0.76
+PHY-1001 : Iter 12: len = 2.45906e+06, over cnt = 237(0%), over = 237, worst = 1, crit = 0, time(s) = 0.87
+PHY-1001 : Iter 13: len = 2.46501e+06, over cnt = 190(0%), over = 190, worst = 1, crit = 0, time(s) = 0.56
+PHY-1001 : Iter 14: len = 2.46846e+06, over cnt = 145(0%), over = 145, worst = 1, crit = 0, time(s) = 0.25
+PHY-1001 : Iter 15: len = 2.46985e+06, over cnt = 110(0%), over = 110, worst = 1, crit = 0, time(s) = 0.27
+PHY-1001 : Iter 16: len = 2.47473e+06, over cnt = 42(0%), over = 42, worst = 1, crit = 0, time(s) = 0.35
+PHY-1001 : Iter 17: len = 2.4753e+06, over cnt = 35(0%), over = 35, worst = 1, crit = 0, time(s) = 0.18
+PHY-1001 : Iter 18: len = 2.47536e+06, over cnt = 34(0%), over = 34, worst = 1, crit = 0, time(s) = 0.15
+PHY-1001 : Iter 19: len = 2.4767e+06, over cnt = 29(0%), over = 29, worst = 1, crit = 0, time(s) = 0.17
+PHY-1001 : Iter 20: len = 2.47864e+06, over cnt = 15(0%), over = 15, worst = 1, crit = 0, time(s) = 0.24
+PHY-1001 : Iter 21: len = 2.47959e+06, over cnt = 7(0%), over = 7, worst = 1, crit = 0, time(s) = 0.13
+PHY-1001 : Iter 22: len = 2.47974e+06, over cnt = 4(0%), over = 4, worst = 1, crit = 0, time(s) = 0.08
+PHY-1001 : Iter 23: len = 2.47974e+06, over cnt = 3(0%), over = 3, worst = 1, crit = 0, time(s) = 0.07
+PHY-1001 : Iter 24: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.15
+PHY-1001 : Iter 25: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.14
+PHY-1001 : Iter 26: len = 2.47996e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.12
+PHY-1001 : Iter 27: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.09
+PHY-1001 : Iter 28: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.27
+PHY-1001 : Iter 29: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.26
+PHY-1001 : Iter 30: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.25
+PHY-1001 : Iter 31: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.26
+PHY-1001 : Iter 32: len = 2.47994e+06, over cnt = 1(0%), over = 1, worst = 1, crit = 0, time(s) = 0.49
+PHY-1001 : Iter 33: len = 2.48004e+06, over cnt = 0(0%), over = 0, worst = 0, crit = 0, time(s) = 0.08
+PHY-1001 : End Stage 2.4.1.2 | Rip-up And ReRoute; Time: 31.858411s wall, 48.265625s user + 2.093750s system = 50.359375s CPU (158.1%); Memory(MB): used = 992, reserved = 982, peak = 992;
+
+PHY-1001 : Stage 2.4.1.3 | Update Timing
+RUN-1002 : start command "start_timer"
+PHY-1001 : 13/20129(0%) critical/total net(s).
+PHY-1001 : Setup: WNS(ns) = -0.646, TNS(ns) = -1.768, FEP = 3 | Hold: WNS(ns) = -0.008, TNS(ns) = -0.016, FEP = 3.
+PHY-1001 : End Stage 2.4.1.3 | Update Timing; Time: 2.317751s wall, 2.328125s user + 0.000000s system = 2.328125s CPU (100.4%); Memory(MB): used = 994, reserved = 983, peak = 994;
+
+PHY-1001 : Stage 2.4.1.4 | Commit Data
+PHY-1001 : Commit better result to database ...
+PHY-1001 : 3 feed throughs used by 3 nets
+PHY-1001 : End Stage 2.4.1.4 | Commit Data; Time: 1.276810s wall, 1.140625s user + 0.046875s system = 1.187500s CPU (93.0%); Memory(MB): used = 1077, reserved = 1066, peak = 1077;
+
+PHY-1001 : End Stage 2.4.1 | Phase 1; Time: 35.639484s wall, 51.890625s user + 2.156250s system = 54.046875s CPU (151.6%); Memory(MB): used = 1077, reserved = 1066, peak = 1077;
+
+PHY-1001 : Stage 2.4.2 | Phase 2
+PHY-1001 : Stage 2.4.2.1 | Setup TimeOptimization
+PHY-1001 : Start to optimize setup violation with net base ...
+PHY-1001 : Iter 1; Processed 2 pins with SWNS 0.130ns STNS 0.000ns FEP 0 took 0.0739092 seconds.
+PHY-1001 : len = 2.4803e+06, over cnt = 5(0%), over = 5, worst = 1, crit = 0
+PHY-1001 : End Stage 2.4.2.1 | Setup TimeOptimization; Time: 0.199286s wall, 0.218750s user + 0.015625s system = 0.234375s CPU (117.6%); Memory(MB): used = 1077, reserved = 1066, peak = 1077;
+
+PHY-1001 : Stage 2.4.2.2 | Rip-up And ReRoute
+PHY-0007 : Congestion: {73.57, 69.66, 67.45, 65.98}; Timing: {0.130ns, 0.000ns, 0}
+PHY-1001 : Iter 1: len = 2.4804e+06, over cnt = 0(0%), over = 0, worst = 0, crit = 0, time(s) = 0.06
+PHY-1001 : End Stage 2.4.2.2 | Rip-up And ReRoute; Time: 0.102043s wall, 0.140625s user + 0.015625s system = 0.156250s CPU (153.1%); Memory(MB): used = 1077, reserved = 1066, peak = 1077;
+
+PHY-1001 : Stage 2.4.2.3 | Update Timing
+RUN-1002 : start command "start_timer"
+PHY-1001 : 0/20129(0%) critical/total net(s).
+PHY-1001 : Setup: WNS(ns) = 0.130, TNS(ns) = 0.000, FEP = 0 | Hold: WNS(ns) = -0.008, TNS(ns) = -0.016, FEP = 3.
+PHY-1001 : End Stage 2.4.2.3 | Update Timing; Time: 2.396286s wall, 2.218750s user + 0.109375s system = 2.328125s CPU (97.2%); Memory(MB): used = 1079, reserved = 1067, peak = 1079;
+
+PHY-1001 : Stage 2.4.2.4 | Commit Data
+PHY-1001 : Commit better result to database ...
+PHY-1001 : 3 feed throughs used by 3 nets
+PHY-1001 : End Stage 2.4.2.4 | Commit Data; Time: 1.354067s wall, 1.312500s user + 0.046875s system = 1.359375s CPU (100.4%); Memory(MB): used = 1079, reserved = 1067, peak = 1079;
+
+PHY-1001 : End Stage 2.4.2 | Phase 2; Time: 4.113580s wall, 3.921875s user + 0.187500s system = 4.109375s CPU (99.9%); Memory(MB): used = 1079, reserved = 1067, peak = 1079;
+
+PHY-1001 : End Stage 2.4 | Routing Optimization; Time: 41.250460s wall, 57.281250s user + 2.390625s system = 59.671875s CPU (144.7%); Memory(MB): used = 1079, reserved = 1067, peak = 1079;
+
+PHY-1003 : Routed, final wirelength = 2.4804e+06
+PHY-1001 : Current memory(MB): used = 1080, reserved = 1068, peak = 1080.
+PHY-1001 : End export database. 0.047171s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (99.4%)
+
+PHY-1001 : End detail routing;  141.465229s wall, 182.234375s user + 6.875000s system = 189.109375s CPU (133.7%)
+
+PHY-1001 : End Stage 2 | Detail Routing; Time: 141.465358s wall, 182.234375s user + 6.875000s system = 189.109375s CPU (133.7%); Memory(MB): used = 1080, reserved = 1068, peak = 1080;
+
+PHY-1001 : Stage 3 | Routing DRC
+PHY-1001 : Start multi-drive drc check......
+PHY-1001 : No multi-drive.
+PHY-1001 : Stage 3.1 | Clock Net Status Check
+PHY-1001 : 1 clock net(s) utilize local routing resource.
+PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets.
+RUN-1001 : CTS Local Wire Summary
+RUN-1001 : -----------------------------------------------------------------------------------------------------------------------
+RUN-1001 :      ClockName      |  DriverType  |  Clock/Fanout  |  LocalWireNum  |               NetName                |  Marked  
+RUN-1001 : -----------------------------------------------------------------------------------------------------------------------
+RUN-1001 :   ext_mem_clk_sft   |  AL_PHY_PLL  |      0/1       |       1        |  g_memory_store$U3/u2_ram/SDRAM_CLK  |   true   
+RUN-1001 : -----------------------------------------------------------------------------------------------------------------------
+PHY-1001 : End Stage 3.1 | Clock Net Status Check; Time: 0.004176s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 1080, reserved = 1068, peak = 1080;
+
+PHY-1001 : Stage 3.2 | Abnormal Timing Path check
+RUN-1002 : start command "start_timer -keep_rs"
+PHY-1001 : No abnormal timing path.
+PHY-1001 : End Stage 3.2 | Abnormal Timing Path check; Time: 2.407304s wall, 2.343750s user + 0.046875s system = 2.390625s CPU (99.3%); Memory(MB): used = 1079, reserved = 1067, peak = 1080;
+
+PHY-1001 : End Stage 3 | Routing DRC; Time: 2.509678s wall, 2.437500s user + 0.046875s system = 2.484375s CPU (99.0%); Memory(MB): used = 1079, reserved = 1067, peak = 1080;
+
+RUN-1003 : finish command "route" in  149.060232s wall, 190.109375s user + 6.984375s system = 197.093750s CPU (132.2%)
+
+RUN-1004 : used memory is 1079 MB, reserved memory is 1067 MB, peak memory is 1080 MB
+RUN-1002 : start command "export_db E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/routed_unfixed.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported phy database
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "fix_hold"
+
+PHY-1001 : Stage 4 | Hold Fix
+PHY-1001 : Stage 4.1 | Load Design Data
+PHY-1034 : Refresh detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net video_clk will be merged with clock video_pll_m0/clk0_buf
+PHY-1001 : clock net g_card_source$sd_card_bmp_m0/clk will be merged with clock sys_pll_m0/clk_sd_buf
+PHY-1001 : net g_memory_store$U3/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : net g_memory_store$U3/u2_ram/u1_init_ref/Sdr_clk will be routed on clock mesh
+PHY-1001 : clock net sys_pll_m0/clk_feedback will be merged with clock sys_pll_m0/clk0_buf
+PHY-1001 : clock net u_audio_pll/clk0_out will be merged with clock u_audio_pll/clk0_buf
+PHY-1001 : net u_hdmi2phy_wrapper/u0_lane_lvds_8_1/I_serial_clk will be routed on clock mesh
+PHY-1001 : net u_music_i2s/mclk will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End Stage 4.1 | Load Design Data; Time: 1.155559s wall, 1.156250s user + 0.000000s system = 1.156250s CPU (100.1%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+PHY-1001 : Stage 4.2 | Hold Fix Optimization
+RUN-1002 : start command "start_timer"
+PHY-1001 : Timing info: SWNS 0.130ns | STNS 0.000ns | HWNS -0.008ns | HTNS -0.016ns.
+PHY-1001 : Processing hold violation on 5 end-point, worst slack = -8ps, best slack = 11ps.
+PHY-1001 : End timing refresh.  2.353217s wall, 2.281250s user + 0.046875s system = 2.328125s CPU (98.9%)
+
+PHY-1001 : Stage 4.2.1 | Phase 1
+PHY-1001 : Stage 4.2.1.1 | Hold Fix By LutBridge
+PHY-1001 : len = 2.4804e+06, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : Bridge count = 5; unresolved count = 0.
+PHY-1001 : 0 out of 5 ((0.00)%) EP fixed by LB.
+PHY-1001 : End Stage 4.2.1.1 | Hold Fix By LutBridge; Time: 0.052777s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (177.6%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+PHY-1001 : Timing info: SWNS 0.130ns | STNS 0.000ns | HWNS -0.008ns | HTNS -0.016ns.
+PHY-1001 : Processing hold violation on 5 end-point, worst slack = -8ps, best slack = 11ps.
+PHY-1001 : End timing refresh.  0.037522s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (83.3%)
+
+PHY-1001 : Stage 4.2.1.2 | Hold Fix By Pin
+PHY-1001 : len = 2.48126e+06, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : 5 out of 5 ((100.00)%) EP fixed by pin delay.
+PHY-1001 : End Stage 4.2.1.2 | Hold Fix By Pin; Time: 0.194438s wall, 0.203125s user + 0.000000s system = 0.203125s CPU (104.5%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+PHY-1001 : Timing info: SWNS 0.130ns | STNS 0.000ns | HWNS -0.004ns | HTNS -0.004ns.
+PHY-1001 : Processing hold violation on 1 end-point, worst slack = -4ps, best slack = -4ps.
+PHY-1001 : End timing refresh.  0.039255s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (119.4%)
+
+PHY-1001 : Stage 4.2.1.3 | Hold Fix By Net
+PHY-1001 : len = 2.48133e+06, over cnt = 0(0%), over = 0, worst = 0, crit = 0
+PHY-1001 : 1 out of 1 ((100.00)%) EP fixed by net delay.
+PHY-1001 : End Stage 4.2.1.3 | Hold Fix By Net; Time: 0.065451s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (143.2%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+PHY-1001 : Timing info: SWNS 0.130ns | STNS 0.000ns | HWNS 0.024ns | HTNS 0.000ns.
+PHY-1001 : End timing refresh.  0.040035s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (117.1%)
+
+PHY-1001 : End Stage 4.2.1 | Phase 1; Time: 0.441220s wall, 0.531250s user + 0.000000s system = 0.531250s CPU (120.4%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+PHY-1001 : End Stage 4.2 | Hold Fix Optimization; Time: 2.795768s wall, 2.812500s user + 0.046875s system = 2.859375s CPU (102.3%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+PHY-1001 : 3 feed throughs used by 3 nets
+PHY-1001 : End Stage 4 | Hold Fix; Time: 5.299035s wall, 5.265625s user + 0.093750s system = 5.359375s CPU (101.1%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+RUN-1003 : finish command "fix_hold" in  5.299738s wall, 5.265625s user + 0.093750s system = 5.359375s CPU (101.1%)
+
+RUN-1004 : used memory is 1101 MB, reserved memory is 1188 MB, peak memory is 1101 MB
+RUN-1002 : start command "update_timing -mode final"
+RUN-1002 : start command "start_timer"
+RUN-1003 : finish command "update_timing -mode final" in  2.403788s wall, 2.328125s user + 0.078125s system = 2.406250s CPU (100.1%)
+
+RUN-1004 : used memory is 1101 MB, reserved memory is 1188 MB, peak memory is 1101 MB
+RUN-1002 : start command "report_timing_status -file E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/final_timing_status.txt"
+RUN-1002 : start command "report_timing_summary -file E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/final_timing.rpt"
+RUN-1002 : start command "report_route_status -drc"
+PHY-1001 : Start multi-drive drc check......
+PHY-1001 : No multi-drive.
+PHY-1001 : Stage 5 | Clock Net Status Check
+PHY-1001 : 1 clock net(s) utilize local routing resource.
+PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets.
+RUN-1001 : CTS Local Wire Summary
+RUN-1001 : -----------------------------------------------------------------------------------------------------------------------
+RUN-1001 :      ClockName      |  DriverType  |  Clock/Fanout  |  LocalWireNum  |               NetName                |  Marked  
+RUN-1001 : -----------------------------------------------------------------------------------------------------------------------
+RUN-1001 :   ext_mem_clk_sft   |  AL_PHY_PLL  |      0/1       |       1        |  g_memory_store$U3/u2_ram/SDRAM_CLK  |   true   
+RUN-1001 : -----------------------------------------------------------------------------------------------------------------------
+PHY-1001 : End Stage 5 | Clock Net Status Check; Time: 0.002402s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+PHY-1001 : Stage 6 | Abnormal Timing Path check
+PHY-1001 : No abnormal timing path.
+PHY-1001 : End Stage 6 | Abnormal Timing Path check; Time: 0.086620s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (108.2%); Memory(MB): used = 1101, reserved = 1188, peak = 1101;
+
+RUN-1002 : start command "report_area -io_info -file E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/final_area.rpt"
+RUN-1001 : standard
+***Report Model: top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        41   out of    188   21.81%
+  #input                   12
+  #output                  28
+  #inout                    1
+
+Utilization Statistics
+#lut                    17665   out of  19600   90.13%
+#reg                    10049   out of  19600   51.27%
+#le                     18951
+  #lut only              8902   out of  18951   46.97%
+  #reg only              1286   out of  18951    6.79%
+  #lut&reg               8763   out of  18951   46.24%
+#bram                      55   out of     64   85.94%
+  #bram9k                  55
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       17   out of     29   58.62%
+#pad                       45   out of    188   23.94%
+  #ireg                     6
+  #oreg                    27
+  #treg                     1
+#pll                        3   out of      4   75.00%
+#gclk                       4   out of     16   25.00%
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets   
+    #1          1       14439  
+    #2          2       3724   
+    #3          3       1524   
+    #4          4        844   
+    #5        5-10      1605   
+    #6        11-50      660   
+    #7       51-100      73    
+    #8       101-500     26    
+    #9        >500        1    
+  Average     2.82             
+
+RUN-1002 : start command "export_db E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/final_routed.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported phy database
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "bitgen -bit E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj_Runs/best_result/contest_proj.bit"
+RUN-1002 : start command "export_bid top_inst.bid"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 2 threads.
+BIT-1002 : Init instances completely, inst num: 9974
+BIT-1002 : Init pips with 2 threads.
+BIT-1002 : Init pips completely, net num: 20126, pip num: 215639
+BIT-1002 : Init feedthrough completely, num: 3
+BIT-1003 : Multithreading accelaration with 2 threads.
+BIT-1003 : Generate bitstream completely, there are 620331 bits set as '1'.
+BIT-1004 : PLL setting string = 0111
+BIT-1004 : Generate bits file E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj_Runs/best_result/contest_proj.bit.
+RUN-1003 : finish command "bitgen -bit E:/anlo_project/liantiao/final_showcase_20261030/hx4s20/contest_proj_Runs/best_result/contest_proj.bit" in  6.747968s wall, 18.203125s user + 0.796875s system = 19.000000s CPU (281.6%)
+
+RUN-1004 : used memory is 1111 MB, reserved memory is 1188 MB, peak memory is 1111 MB
+RUN-1002 : start command "close_project"

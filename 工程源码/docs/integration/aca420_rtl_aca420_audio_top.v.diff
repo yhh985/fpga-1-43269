@@ -1,0 +1,42 @@
+--- voice_test/aca420/rtl/aca420_audio_top.v
+
++++ integrated/aca420/rtl/aca420_audio_top.v
+
+@@ -87,6 +87,7 @@
+
+     (* async_reg="true", syn_preserve=1 *) reg [1:0] enable_sync;
+     (* async_reg="true", syn_preserve=1 *) reg [1:0] monitor_sync;
+     reg monitor_enable;
++    reg background_music;
+     always @(posedge audio_mclk or posedge rst_audio) begin
+         if(rst_audio) begin enable_sync<=0; monitor_sync<=0; end
+         else begin
+@@ -188,7 +189,7 @@
+
+     // 32-byte payload: flags, selection+progress, learned, confidence,
+     // bars[8], waveform[16], peak16, noise16. Snapshot at packet admission.
+     wire [7:0] link_flags={analysis_overrun|analysis_overflow|frontend_fault|kws_fault,event_failed|queue_overflow,
+-        clipped,calibrated,cfg_error,cfg_done,learning,demo_enable};
++        clipped,calibrated,cfg_error,cfg_done,learning,background_music};
+     // Reuse inactive rhythm progress/slot fields only in voice mode. Marker
+     // slot=3 distinguishes these diagnostics from older ACA status packets.
+     wire [2:0] voice_stage=(cfg_error || frontend_fault || kws_fault)?3'd6:
+@@ -219,7 +220,7 @@
+
+     reg [22:0] report_timer;
+     always @(posedge clk or posedge rst_sys) begin
+         if(rst_sys) begin
+-            key_sync<=2'b11; key_stable<=1; key_count<=0; monitor_enable<=0;
++            key_sync<=2'b11; key_stable<=1; key_count<=0; monitor_enable<=0; background_music<=0;
+             heartbeat<=0; clap_hold<=0; sample_alive<=0; sample_count<=0;
+             report_peak<=0; report_timer<=0; clip_hold<=0;
+         end else begin
+@@ -227,6 +228,7 @@
+
+             if(key_sync[1]==key_stable) key_count<=0;
+             else if(key_count>=KEY_DEBOUNCE_CYCLES-1) begin
+                 key_count<=0; key_stable<=key_sync[1];
++                if(!key_sync[1]) background_music<=~background_music;
+                 monitor_enable<=0;
+             end else key_count<=key_count+1'b1;
+             if(heartbeat==24999999) heartbeat<=0;

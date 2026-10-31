@@ -1,0 +1,29 @@
+{
+  "epoch": 3,
+  "margin": 4,
+  "validation": {
+    "correct": 0,
+    "wrong_direction": 0,
+    "false_accepts": 0,
+    "confusion": [
+      [
+        1740,
+        0,
+        0
+      ],
+      [
+        348,
+        0,
+        0
+      ],
+      [
+        348,
+        0,
+        0
+      ]
+    ],
+    "next_correct": 0,
+    "next_reject": 348,
+    "other_false_next": 0
+  }
+}

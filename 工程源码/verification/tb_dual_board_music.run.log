@@ -1,0 +1,4 @@
+PASS voice delivery feedback: lost ACK, duplicate suppression, host receipt before NEXT, clear on new utterance and expiry
+PASS voice status handshake: actual S4/permission, READY/HEAR/THINK/AGAIN/NO PCM/ERROR, exit marker reset
+PASS dual board music: 330 HDMI PCM frames, actual S2/S3 next/prev, UART effect cycle, stereo, bypass/effects, corrupt wire mute/recovery, live clock interchange and restoration
+E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_dual_board_music.v:154: $finish called at 39840850000 (1ps)

@@ -1,0 +1,142 @@
+# TD 文件索引
+
+由 `tools/generate_code_inventory.py` 从当前 TD 工程与构建输入生成。
+
+“工程声明”表示 TD 文件条目，不保证模块实际实例化；其他条目包含保守收集的源码、模型和初始化依赖。
+
+## aca420
+
+| 文件 | 来源 |
+|---|---|
+| [aca420/build_verified.tcl](../aca420/build_verified.tcl) | 构建依赖扫描 |
+| [aca420/constraints/pin.adc](../aca420/constraints/pin.adc) | 工程声明 |
+| [aca420/constraints/timing.sdc](../aca420/constraints/timing.sdc) | 工程声明 |
+| [aca420/rtl/aca420_audio_top.v](../aca420/rtl/aca420_audio_top.v) | 工程声明 |
+| [aca420/rtl/aca_analysis.v](../aca420/rtl/aca_analysis.v) | 工程声明 |
+| [aca420/rtl/aca_audio_pll.v](../aca420/rtl/aca_audio_pll.v) | 工程声明 |
+| [aca420/rtl/aca_clap_detector.v](../aca420/rtl/aca_clap_detector.v) | 工程声明 |
+| [aca420/rtl/aca_demo.v](../aca420/rtl/aca_demo.v) | 工程声明 |
+| [aca420/rtl/aca_es8388_init.v](../aca420/rtl/aca_es8388_init.v) | 工程声明 |
+| [aca420/rtl/aca_i2c_bit_shift.v](../aca420/rtl/aca_i2c_bit_shift.v) | 工程声明 |
+| [aca420/rtl/aca_i2c_control.v](../aca420/rtl/aca_i2c_control.v) | 工程声明 |
+| [aca420/rtl/aca_i2s_capture.v](../aca420/rtl/aca_i2s_capture.v) | 工程声明 |
+| [aca420/rtl/aca_keys.v](../aca420/rtl/aca_keys.v) | 工程声明 |
+| [aca420/rtl/aca_kws_engine.v](../aca420/rtl/aca_kws_engine.v) | 工程声明 |
+| [aca420/rtl/aca_kws_frontend.v](../aca420/rtl/aca_kws_frontend.v) | 工程声明 |
+| [aca420/rtl/aca_rhythm.v](../aca420/rtl/aca_rhythm.v) | 工程声明 |
+| [aca420/rtl/aca_uart_report.v](../aca420/rtl/aca_uart_report.v) | 工程声明 |
+| [aca420/rtl/audio_goertzel.v](../aca420/rtl/audio_goertzel.v) | 工程声明 |
+| [aca420/rtl/kws_goertzel.v](../aca420/rtl/kws_goertzel.v) | 工程声明 |
+| [aca420/rtl/reset_release.v](../aca420/rtl/reset_release.v) | 工程声明 |
+| [common/link_host.v](../common/link_host.v) | 工程声明 |
+| [common/link_packet.v](../common/link_packet.v) | 工程声明 |
+| [common/link_sensor.v](../common/link_sensor.v) | 工程声明 |
+| [common/link_snapshot_cdc.v](../common/link_snapshot_cdc.v) | 构建依赖扫描 |
+| [common/music_fx_return.v](../common/music_fx_return.v) | 工程声明 |
+| [common/uart_rx.v](../common/uart_rx.v) | 工程声明 |
+| [common/uart_tx.v](../common/uart_tx.v) | 工程声明 |
+| [voice/model/bias.mem](../voice/model/bias.mem) | 构建依赖扫描 |
+| [voice/model/config.json](../voice/model/config.json) | 构建依赖扫描 |
+| [voice/model/kws_config.vh](../voice/model/kws_config.vh) | 构建依赖扫描 |
+| [voice/model/test_inputs.mem](../voice/model/test_inputs.mem) | 构建依赖扫描 |
+| [voice/model/test_logits.mem](../voice/model/test_logits.mem) | 构建依赖扫描 |
+| [voice/model/weights.mem](../voice/model/weights.mem) | 构建依赖扫描 |
+
+## hx4s20
+
+| 文件 | 来源 |
+|---|---|
+| [common/link_host.v](../common/link_host.v) | 工程声明 |
+| [common/link_packet.v](../common/link_packet.v) | 工程声明 |
+| [common/link_sensor.v](../common/link_sensor.v) | 工程声明 |
+| [common/link_snapshot_cdc.v](../common/link_snapshot_cdc.v) | 工程声明 |
+| [common/music_fx_return.v](../common/music_fx_return.v) | 工程声明 |
+| [common/uart_rx.v](../common/uart_rx.v) | 工程声明 |
+| [common/uart_tx.v](../common/uart_tx.v) | 工程声明 |
+| [hx4s20/build_verified_separate.tcl](../hx4s20/build_verified_separate.tcl) | 构建依赖扫描 |
+| [hx4s20/constraints/pin.adc](../hx4s20/constraints/pin.adc) | 工程声明 |
+| [hx4s20/constraints/timing.sdc](../hx4s20/constraints/timing.sdc) | 工程声明 |
+| [hx4s20/hdl/I2S_receiver.v](../hx4s20/hdl/I2S_receiver.v) | 工程声明 |
+| [hx4s20/hdl/IP/PLL_HDMI_AUDIO.v](../hx4s20/hdl/IP/PLL_HDMI_AUDIO.v) | 工程声明 |
+| [hx4s20/hdl/IP/afifo_16_256.v](../hx4s20/hdl/IP/afifo_16_256.v) | 工程声明 |
+| [hx4s20/hdl/IP/afifo_16_256_sim.v](../hx4s20/hdl/IP/afifo_16_256_sim.v) | 工程声明 |
+| [hx4s20/hdl/IP/afifo_16_32_256.v](../hx4s20/hdl/IP/afifo_16_32_256.v) | 工程声明 |
+| [hx4s20/hdl/IP/afifo_32_16_256.v](../hx4s20/hdl/IP/afifo_32_16_256.v) | 工程声明 |
+| [hx4s20/hdl/IP/sys_pll.v](../hx4s20/hdl/IP/sys_pll.v) | 工程声明 |
+| [hx4s20/hdl/IP/video_pll.v](../hx4s20/hdl/IP/video_pll.v) | 工程声明 |
+| [hx4s20/hdl/SD/ax_debounce.v](../hx4s20/hdl/SD/ax_debounce.v) | 工程声明 |
+| [hx4s20/hdl/SD/bmp_read.v](../hx4s20/hdl/SD/bmp_read.v) | 工程声明 |
+| [hx4s20/hdl/SD/color_bar.v](../hx4s20/hdl/SD/color_bar.v) | 工程声明 |
+| [hx4s20/hdl/SD/fat32_bmp_source.v](../hx4s20/hdl/SD/fat32_bmp_source.v) | 工程声明 |
+| [hx4s20/hdl/SD/frame_fifo_read.v](../hx4s20/hdl/SD/frame_fifo_read.v) | 工程声明 |
+| [hx4s20/hdl/SD/frame_fifo_write.v](../hx4s20/hdl/SD/frame_fifo_write.v) | 工程声明 |
+| [hx4s20/hdl/SD/frame_read_write.v](../hx4s20/hdl/SD/frame_read_write.v) | 工程声明 |
+| [hx4s20/hdl/SD/sd_card_bmp.v](../hx4s20/hdl/SD/sd_card_bmp.v) | 工程声明 |
+| [hx4s20/hdl/SD/sd_card_cmd.v](../hx4s20/hdl/SD/sd_card_cmd.v) | 工程声明 |
+| [hx4s20/hdl/SD/sd_card_sec_read_write.v](../hx4s20/hdl/SD/sd_card_sec_read_write.v) | 工程声明 |
+| [hx4s20/hdl/SD/sd_card_top.v](../hx4s20/hdl/SD/sd_card_top.v) | 工程声明 |
+| [hx4s20/hdl/SD/sd_media_arbiter.v](../hx4s20/hdl/SD/sd_media_arbiter.v) | 工程声明 |
+| [hx4s20/hdl/SD/sdram.v](../hx4s20/hdl/SD/sdram.v) | 工程声明 |
+| [hx4s20/hdl/SD/seg_decoder.v](../hx4s20/hdl/SD/seg_decoder.v) | 工程声明 |
+| [hx4s20/hdl/SD/seg_scan.v](../hx4s20/hdl/SD/seg_scan.v) | 工程声明 |
+| [hx4s20/hdl/SD/spi_master.v](../hx4s20/hdl/SD/spi_master.v) | 工程声明 |
+| [hx4s20/hdl/SD/video_define.v](../hx4s20/hdl/SD/video_define.v) | 工程声明 |
+| [hx4s20/hdl/SD/video_delay.v](../hx4s20/hdl/SD/video_delay.v) | 工程声明 |
+| [hx4s20/hdl/SD/video_timing_data.v](../hx4s20/hdl/SD/video_timing_data.v) | 工程声明 |
+| [hx4s20/hdl/SD/wav_sector_reader.v](../hx4s20/hdl/SD/wav_sector_reader.v) | 工程声明 |
+| [hx4s20/hdl/audio_arc_calculate.v](../hx4s20/hdl/audio_arc_calculate.v) | 工程声明 |
+| [hx4s20/hdl/audio_band_overlay.v](../hx4s20/hdl/audio_band_overlay.v) | 工程声明 |
+| [hx4s20/hdl/audio_goertzel.v](../hx4s20/hdl/audio_goertzel.v) | 工程声明 |
+| [hx4s20/hdl/audio_pcm_fifo.v](../hx4s20/hdl/audio_pcm_fifo.v) | 工程声明 |
+| [hx4s20/hdl/audio_spectrum.v](../hx4s20/hdl/audio_spectrum.v) | 工程声明 |
+| [hx4s20/hdl/audio_visual_link.v](../hx4s20/hdl/audio_visual_link.v) | 工程声明 |
+| [hx4s20/hdl/audio_wav_i2s.v](../hx4s20/hdl/audio_wav_i2s.v) | 工程声明 |
+| [hx4s20/hdl/brightness_ctrl.v](../hx4s20/hdl/brightness_ctrl.v) | 工程声明 |
+| [hx4s20/hdl/cn_font_rom_body.vh](../hx4s20/hdl/cn_font_rom_body.vh) | 构建依赖扫描 |
+| [hx4s20/hdl/color_filter.v](../hx4s20/hdl/color_filter.v) | 工程声明 |
+| [hx4s20/hdl/decimal_two_digits.vh](../hx4s20/hdl/decimal_two_digits.vh) | 构建依赖扫描 |
+| [hx4s20/hdl/demo_bmp_card.v](../hx4s20/hdl/demo_bmp_card.v) | 工程声明 |
+| [hx4s20/hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v](../hx4s20/hdl/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v) | 工程声明 |
+| [hx4s20/hdl/hdmi_audio_tone_i2s_64fs.v](../hx4s20/hdl/hdmi_audio_tone_i2s_64fs.v) | 工程声明 |
+| [hx4s20/hdl/hdmi_audio_tone_pcm_scale.v](../hx4s20/hdl/hdmi_audio_tone_pcm_scale.v) | 工程声明 |
+| [hx4s20/hdl/hdmi_phy_warpper.v](../hx4s20/hdl/hdmi_phy_warpper.v) | 工程声明 |
+| [hx4s20/hdl/image_enhance.v](../hx4s20/hdl/image_enhance.v) | 工程声明 |
+| [hx4s20/hdl/image_number_2digit.v](../hx4s20/hdl/image_number_2digit.v) | 工程声明 |
+| [hx4s20/hdl/image_resizer.v](../hx4s20/hdl/image_resizer.v) | 工程声明 |
+| [hx4s20/hdl/image_resizer_sd_quality.v](../hx4s20/hdl/image_resizer_sd_quality.v) | 工程声明 |
+| [hx4s20/hdl/image_scaler.v](../hx4s20/hdl/image_scaler.v) | 工程声明 |
+| [hx4s20/hdl/include/global_def.v](../hx4s20/hdl/include/global_def.v) | 工程声明 |
+| [hx4s20/hdl/include/sdr_as_ram.enc.v](../hx4s20/hdl/include/sdr_as_ram.enc.v) | 工程声明 |
+| [hx4s20/hdl/include/sdr_init_ref.enc.v](../hx4s20/hdl/include/sdr_init_ref.enc.v) | 工程声明 |
+| [hx4s20/hdl/include/sdr_wrrd.enc.v](../hx4s20/hdl/include/sdr_wrrd.enc.v) | 工程声明 |
+| [hx4s20/hdl/key_remove_shakes.v](../hx4s20/hdl/key_remove_shakes.v) | 工程声明 |
+| [hx4s20/hdl/lane_lvds_10_1.v](../hx4s20/hdl/lane_lvds_10_1.v) | 工程声明 |
+| [hx4s20/hdl/mic_overlay.v](../hx4s20/hdl/mic_overlay.v) | 工程声明 |
+| [hx4s20/hdl/osd_overlay.v](../hx4s20/hdl/osd_overlay.v) | 工程声明 |
+| [hx4s20/hdl/osd_status_overlay.v](../hx4s20/hdl/osd_status_overlay.v) | 工程声明 |
+| [hx4s20/hdl/reset_release.v](../hx4s20/hdl/reset_release.v) | 工程声明 |
+| [hx4s20/hdl/scroll_captions.vh](../hx4s20/hdl/scroll_captions.vh) | 构建依赖扫描 |
+| [hx4s20/hdl/scroll_font.mem](../hx4s20/hdl/scroll_font.mem) | 构建依赖扫描 |
+| [hx4s20/hdl/startup_pulse.v](../hx4s20/hdl/startup_pulse.v) | 工程声明 |
+| [hx4s20/hdl/test_pattern_gen.v](../hx4s20/hdl/test_pattern_gen.v) | 工程声明 |
+| [hx4s20/hdl/top_eight_image_demo.v](../hx4s20/hdl/top_eight_image_demo.v) | 构建依赖扫描 |
+| [hx4s20/hdl/top_tf_hdmi_audio.v](../hx4s20/hdl/top_tf_hdmi_audio.v) | 工程声明 |
+| [hx4s20/hdl/top_user_bmp_test.v](../hx4s20/hdl/top_user_bmp_test.v) | 工程声明 |
+| [hx4s20/hdl/top_user_image_test.v](../hx4s20/hdl/top_user_image_test.v) | 工程声明 |
+| [hx4s20/hdl/transition_fx.v](../hx4s20/hdl/transition_fx.v) | 工程声明 |
+| [hx4s20/hdl/user_bmp_card.v](../hx4s20/hdl/user_bmp_card.v) | 工程声明 |
+| [hx4s20/hdl/user_bmp_indices.mem](../hx4s20/hdl/user_bmp_indices.mem) | 构建依赖扫描 |
+| [hx4s20/hdl/user_bmp_palettes.mem](../hx4s20/hdl/user_bmp_palettes.mem) | 构建依赖扫描 |
+| [hx4s20/hdl/user_image_geometry.vh](../hx4s20/hdl/user_image_geometry.vh) | 构建依赖扫描 |
+| [hx4s20/hdl/user_image_rom.v](../hx4s20/hdl/user_image_rom.v) | 工程声明 |
+| [hx4s20/hdl/user_images_rgb444.mem](../hx4s20/hdl/user_images_rgb444.mem) | 构建依赖扫描 |
+| [hx4s20/hdl/video_rgb_to_axis_640x480.v](../hx4s20/hdl/video_rgb_to_axis_640x480.v) | 工程声明 |
+| [hx4s20/hdl/video_source_test.v](../hx4s20/hdl/video_source_test.v) | 工程声明 |
+| [hx4s20/hdl/wav_pcm_parser.v](../hx4s20/hdl/wav_pcm_parser.v) | 工程声明 |
+| [voice/model/bias.mem](../voice/model/bias.mem) | 构建依赖扫描 |
+| [voice/model/config.json](../voice/model/config.json) | 构建依赖扫描 |
+| [voice/model/kws_config.vh](../voice/model/kws_config.vh) | 构建依赖扫描 |
+| [voice/model/test_inputs.mem](../voice/model/test_inputs.mem) | 构建依赖扫描 |
+| [voice/model/test_logits.mem](../voice/model/test_logits.mem) | 构建依赖扫描 |
+| [voice/model/weights.mem](../voice/model/weights.mem) | 构建依赖扫描 |
+

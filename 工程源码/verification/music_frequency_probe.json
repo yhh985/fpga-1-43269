@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "simulation_only": true,
+  "sources": {
+    "hx4s20\\hdl\\audio_visual_link.v": "6596a8c8c170acc626ee6f92f12580155283357d362e21ce2b55121bb895f8dc",
+    "sim\\tb_music_frequency_probe.v": "d210ce1be3874327b9db300ae79c11b363be2c0a7e13ffeae87089e57160b82a"
+  },
+  "log_sha256": "47c3a56e9fbbc6a338787e4b7e15573b0984b1341d6fe825f2502ac18dda280f"
+}

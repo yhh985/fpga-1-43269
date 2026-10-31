@@ -1,0 +1,14 @@
+--- voice_test/aca420/rtl/aca_ctc_engine.v
+
++++ integrated/aca420/rtl/aca_ctc_engine.v
+
+@@ -1,7 +1,7 @@
+
+ `timescale 1ns/1ps
+ // V5 BN-folded INT8 temporal CNN, three time scales, full CTC phrase competition.
+ // Shared MAC and shared Q6 log-add unit; all state is local to one utterance.
+-module aca_ctc_engine #(parameter MODEL_DIR="../../voice/model_ctc/",parameter integer NEXT_ONLY=1,MIN_MARGIN_Q6=0,FLOOR_Q6_X30=1024)(
++module aca_ctc_engine #(parameter MODEL_DIR="E:/anlo_project/liantiao/development/audio_crc/voice/model_ctc/",parameter integer NEXT_ONLY=1,MIN_MARGIN_Q6=0,FLOOR_Q6_X30=1024)(
+  input wire clk,rst,feature_valid,input wire [3:0] feature_index,
+  input wire signed [7:0] feature_data,input wire feature_active,frame_done,
+  output reg result_valid,output reg [1:0] result_class,

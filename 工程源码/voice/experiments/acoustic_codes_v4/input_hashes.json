@@ -1,0 +1,9 @@
+{
+  "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_masked_acoustic_codes.py": "38e62140f7d804d45da9d920cde883352093686fe97379f635bcfadfc93473dd",
+  "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_acoustic_codes.py": "1f7dae029f1328323943319def1482374482578937f398d551115af3ab253f2a",
+  "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\train_sequence_ctc.py": "28fb14e2ffaef67b8f00cfa0751a18941a30266fd11184adbf5044dbe4f7f014",
+  "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\probe_vad_continuity.py": "291b75346bd907b5890d6a27c0256d0d286496e8cf54d465d30a19b811dcee40",
+  "E:\\anlo_project\\liantiao\\voice\\data\\manifest.json": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213",
+  "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v3\\full_clips.npz": "2bef389fd8dacd375aa1db44b67172421e0343d0aed8be8822376f38c205703c",
+  "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\sequence_ctc\\dataset.npz": "6ccc7c75c0d5964b82cce777d3f789933647c3b70aa697360f39832012d464b3"
+}

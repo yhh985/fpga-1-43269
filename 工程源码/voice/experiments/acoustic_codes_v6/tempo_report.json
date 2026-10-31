@@ -1,0 +1,64 @@
+{
+  "version": "v6",
+  "experimental_only": true,
+  "fpga_deployed": false,
+  "real_used_for_selection": false,
+  "test_previously_inspected": true,
+  "selected": {
+    "margin": 4,
+    "floor": -0.5,
+    "rates": [
+      0.8,
+      1.0,
+      1.25
+    ],
+    "validation": {
+      "correct": 506,
+      "wrong_direction": 15,
+      "false_accepts": 7,
+      "confusion": [
+        [
+          1733,
+          2,
+          5
+        ],
+        [
+          88,
+          249,
+          11
+        ],
+        [
+          87,
+          4,
+          257
+        ]
+      ]
+    }
+  },
+  "test": {
+    "correct": 509,
+    "wrong_direction": 16,
+    "false_accepts": 14,
+    "confusion": [
+      [
+        1726,
+        12,
+        2
+      ],
+      [
+        78,
+        266,
+        4
+      ],
+      [
+        93,
+        12,
+        243
+      ]
+    ]
+  },
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\evaluate_tempo_consensus.py": "6a006ecc9b5b6849f14eea3fe03b2b4c7c508059e40dc556bb26bbe8186012e7",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\acoustic_codes_v6\\candidate.pt": "bc425cdfaa29a1a990141e52aa6e6639564a3e09b0951068a08bd6b3b4015ca7"
+  }
+}

@@ -1,0 +1,14 @@
+--- voice_test/aca420/rtl/aca_kws_engine.v
+
++++ integrated/aca420/rtl/aca_kws_engine.v
+
+@@ -2,7 +2,7 @@
+
+ // One shared INT8 MAC, synchronous ROM reads, 768 -> 48 -> 3 MLP.
+ // Model paths and thresholds are explicitly passed by the generated top config.
+ module aca_kws_engine #(
+- parameter WEIGHTS_FILE="../voice/experiments/robust_normalized/model/weights.mem",BIAS_FILE="../voice/experiments/robust_normalized/model/bias.mem",
++ parameter WEIGHTS_FILE="E:/anlo_project/liantiao/development/audio_crc/voice/experiments/robust_normalized/model/weights.mem",BIAS_FILE="E:/anlo_project/liantiao/development/audio_crc/voice/experiments/robust_normalized/model/bias.mem",
+  parameter integer SHIFT=8,MIN_MARGIN=791,
+  parameter signed [31:0] MIN_WINNER_SCORE=32'sh80000000,
+  parameter integer RELAXED_MARGIN=650,RELAXED_TOTAL_MARGIN=3600,

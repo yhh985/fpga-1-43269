@@ -1,0 +1,8 @@
+iverilog.exe : E:\anlo_project\liantiao\final_showcase_20261030\aca420\rtl\kws_goertzel.v:4: warning: timescale for kws
+_goertzel inherited from another file.
+At E:\anlo_project\liantiao\final_showcase_20261030\aca420\sim\run_tests.ps1:29 char:3
++   & $IverilogPath -g2012 -Wall -s $name -o $binary @sources (Join-Pat ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (E:\anlo_project...m another file.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

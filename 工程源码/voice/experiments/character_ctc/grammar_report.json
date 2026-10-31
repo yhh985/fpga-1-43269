@@ -1,0 +1,76 @@
+{
+  "experimental_only": true,
+  "deployed": false,
+  "margin": 2,
+  "validation": {
+    "correct": 8,
+    "wrong_direction": 0,
+    "false_accepts": 5,
+    "confusion": [
+      [
+        1735,
+        0,
+        5
+      ],
+      [
+        348,
+        0,
+        0
+      ],
+      [
+        340,
+        0,
+        8
+      ]
+    ]
+  },
+  "changes": "Viterbi text-grammar search replaces greedy frame argmax",
+  "test_used_for_selection": false,
+  "test": {
+    "correct": 6,
+    "wrong_direction": 0,
+    "false_accepts": 9,
+    "confusion": [
+      [
+        1731,
+        0,
+        9
+      ],
+      [
+        348,
+        0,
+        0
+      ],
+      [
+        342,
+        0,
+        6
+      ]
+    ]
+  },
+  "real_replay": [
+    {
+      "prediction": 0,
+      "gap": 0.17156982421875,
+      "text": "上一张",
+      "command_scores": {
+        "下一张": 309.0924987792969,
+        "上一张": 309.2640686035156
+      }
+    },
+    {
+      "prediction": 0,
+      "gap": 0.17156982421875,
+      "text": "上一张",
+      "command_scores": {
+        "下一张": 280.4315490722656,
+        "上一张": 280.6031188964844
+      }
+    }
+  ],
+  "sources": {
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\tools\\evaluate_character_grammar.py": "f8296a31c6669120891cbcbba332dd98472299cb8e891727cc44152c5d435c96",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\voice\\experiments\\character_ctc\\candidate.pt": "28431220f26862857062fda83c75e2b0fb8538b952a4779bebca182b035d6d63",
+    "E:\\anlo_project\\liantiao\\development\\audio_crc\\verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3"
+  }
+}

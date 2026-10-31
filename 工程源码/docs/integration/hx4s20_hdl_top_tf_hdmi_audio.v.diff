@@ -1,0 +1,170 @@
+--- voice_test/hx4s20/hdl/top_tf_hdmi_audio.v
+
++++ integrated/hx4s20/hdl/top_tf_hdmi_audio.v
+
+@@ -226,6 +226,7 @@
+
+ wire [23:0] vout_data_status;
+ wire        audio_link_start;
+ reg         audio_next_toggle;
++reg audio_change_pending;
+ reg [1:0]   test_switch_sync;
+ reg [19:0]  test_switch_count;
+ reg         test_switch_candidate;
+@@ -234,27 +235,32 @@
+
+ reg [1:0]   test_mode_sync;
+ reg         test_mode;
+ 
+-// SW4: reject mechanical bounce in the 50MHz domain, then commit all
+-// overlay enables together at a complete video-frame boundary.
+-(* async_reg="true" *) reg [1:0] osd_pin_sync;
+-reg osd_db;
+-reg [19:0] osd_db_count;
+-reg [1:0] osd_video_sync;
+-reg osd_frame_enable;
++// Stable level must persist 20ms; all OSD layers share one frame-latched enable.
++(* async_reg="true" *) reg [1:0] osd_pin_sync,tone_pin_sync;
++reg osd_db,tone_db;
++reg [19:0] osd_db_count,tone_db_count;
++reg [1:0] osd_video_sync,tone_video_sync,music_enable_video,music_playing_video;
++reg osd_frame_enable,tone_frame_enable;
+ always @(posedge clk or posedge rst_all)begin
+- if(rst_all)begin osd_pin_sync<=0;osd_db<=0;osd_db_count<=0;end
+- else begin
+-  osd_pin_sync<={osd_pin_sync[0],~sw4};
++ if(rst_all)begin
++  osd_pin_sync<=0;tone_pin_sync<=0;osd_db<=0;tone_db<=0;
++  osd_db_count<=0;tone_db_count<=0;
++ end else begin
++  osd_pin_sync<={osd_pin_sync[0],~sw4};tone_pin_sync<={tone_pin_sync[0],~sw1};
+   if(osd_pin_sync[1]==osd_db)osd_db_count<=0;
+   else if(osd_db_count>=SWITCH_DEBOUNCE_CYCLES-1)begin osd_db<=osd_pin_sync[1];osd_db_count<=0;end
+   else osd_db_count<=osd_db_count+1'b1;
++  if(tone_pin_sync[1]==tone_db)tone_db_count<=0;
++  else if(tone_db_count>=SWITCH_DEBOUNCE_CYCLES-1)begin tone_db<=tone_pin_sync[1];tone_db_count<=0;end
++  else tone_db_count<=tone_db_count+1'b1;
+  end
+ end
+ always @(posedge video_clk or posedge rst_all)begin
+- if(rst_all)begin osd_video_sync<=0;osd_frame_enable<=0;end
++ if(rst_all)begin osd_video_sync<=0;tone_video_sync<=0;osd_frame_enable<=0;tone_frame_enable<=0;music_enable_video<=0;music_playing_video<=0;end
+  else begin
+-  osd_video_sync<={osd_video_sync[0],osd_db};
+-  if(transition_frame_start)osd_frame_enable<=osd_video_sync[1];
++  osd_video_sync<={osd_video_sync[0],osd_db};tone_video_sync<={tone_video_sync[0],tone_db};
++  music_enable_video<={music_enable_video[0],music_enable};music_playing_video<={music_playing_video[0],music_playing};
++  if(transition_frame_start)begin osd_frame_enable<=osd_video_sync[1];tone_frame_enable<=tone_video_sync[1];end
+  end
+ end
+ 
+@@ -282,16 +288,18 @@
+
+     if (rst_all) begin
+         test_mode_sync <= 2'b00;
+         test_mode <= 1'b0;
+-        audio_next_toggle <= 1'b0;
++        audio_next_toggle <= 1'b0;audio_change_pending<=0;
+         remote_next_sync<=0;remote_next_seen<=0;remote_next_pending<=0;
+     end else begin
+         test_mode_sync <= USER_IMAGE_TEST ? 2'b00 : {test_mode_sync[0], test_mode_db};
+         if (transition_frame_start) test_mode <= test_mode_sync[1];
++        if(!music_tone_enable)audio_change_pending<=0;
++        else if(audio_link_start)audio_change_pending<=1;
+         remote_next_sync<={remote_next_sync[0],remote_next_toggle};
+         if(remote_next_sync[1]!=remote_next_seen)begin remote_next_seen<=remote_next_sync[1];remote_next_pending<=1;end
+         if (!pause_video_sync[1] && !test_mode && !test_mode_sync[1] && !trans_active &&
+-            ((playback_video1==2 && audio_link_start) || remote_next_pending))begin
+-            audio_next_toggle<=~audio_next_toggle;remote_next_pending<=0;
++            ((music_tone_enable && (audio_link_start || audio_change_pending)) || remote_next_pending))begin
++            audio_next_toggle<=~audio_next_toggle;remote_next_pending<=0;audio_change_pending<=0;
+         end
+     end
+ end
+@@ -755,6 +763,10 @@
+
+ end
+ wire auto_play_en = playback_mode == 2'd1 && !voice_active;
+ wire audio_play_en = playback_mode == 2'd2 && !voice_active;
++// Absolute background state arrives in each CRC-protected ACA snapshot.
++// Legacy status has demo_enable=0; disconnected ACA fails closed.
++wire background_music_en = remote_online && remote_status[13] && remote_status[0];
++wire music_enable = !voice_active && (playback_mode==2'd2 || background_music_en);
+ always @(posedge clk or posedge rst_all) begin
+     if (rst_all) begin playback_mode<=0;playback_paused<=0;end
+     else begin
+@@ -817,6 +829,7 @@
+
+     .key_next          (key1_next_wide),   // 图片模式K1=下一张
+     .auto_play_enable  (auto_play_en),
+     .audio_play_enable (audio_play_en),
++    .background_music_enable(background_music_en && !voice_active),
+     .music_next_toggle(music_next_toggle),.music_prev_toggle(music_prev_toggle),
+     .audio_clk(audio_mclk),.music_pop(music_pop),.music_data(music_data),
+     .music_valid(music_valid),.music_empty(music_empty),.music_used(music_used),
+@@ -1266,8 +1279,22 @@
+
+  if(rst_all)remote_stage_rgb<=0;else remote_stage_rgb<=vout_data_spectrum;
+ end
+ assign vout_data_bands=remote_stage_rgb;
+-// No floating legacy trigger: rhythm NEXT uses remote_next_pending instead.
+-assign audio_link_start=1'b0;
++// Analyze the actual SD music PCM, never the microphone or amplitude bars.
++wire music_tone_enable=playback_video1==2 && music_enable_video[1] && music_playing_video[1] &&
++ tone_frame_enable && !pause_video_sync[1] && !test_mode && !test_mode_sync[1];
++wire tone_result,tone_overflow,tone_ready;
++wire [1:0] tone_peak_index;
++wire [31:0] tone_peak_power;
++// Hysteretic zero-crossing frequency bands; no extra multiplier on dense HX.
++wire signed [11:0] tone_sample=local_left[23:12];
++music_frequency_probe u_music_tone(
++ .clk(video_clk),.rst(rst_all || !music_tone_enable),.sample_valid(audio_valid && music_tone_enable),
++ .sample_in(tone_sample),.result_valid(tone_result),
++ .result_overflow(tone_overflow),.peak_index(tone_peak_index),.peak_power(tone_peak_power));
++audio_visual_link #(.INDEX_WIDTH(2),.COOLDOWN_FRAMES(120)) u_music_visual_link(
++ .clk(video_clk),.rst(rst_all),.enable(music_tone_enable),.frame_start(transition_frame_start),
++ .result_valid(tone_result),.result_overflow(tone_overflow),.peak_index(tone_peak_index),
++ .peak_power(tone_peak_power),.transition_start(audio_link_start));
+ reg [1:0] band_mode_sync;
+ always @(posedge video_clk or posedge rst_all)begin
+  if(rst_all)band_mode_sync<=0;else band_mode_sync<={band_mode_sync[0],~sw2};
+@@ -1322,7 +1349,7 @@
+
+  else begin
+   music_flags0<={music_error,music_found,music_playing,music_underflow,music_ok};
+   music_flags1<=music_flags0;
+-  if(playback_video1!=2)music_status<=0;
++  if(!music_enable_video[1])music_status<=0;
+   else if(music_flags1[4])music_status<=5;
+   else if(!music_flags1[3])music_status<=1;
+   else if(pause_video_sync[1])music_status<=4;
+@@ -1353,7 +1380,7 @@
+
+ 
+ wire [23:0] vout_data_mic;
+ mic_overlay u_mic_overlay(.clk(video_clk),.rst(rst_all),.vs(vs_pipe[9]),.de(de_pipe[9]),
+- .fx_return_state(music_return_state),.music_mode(playback_video1==2),.music_track(track_video1[2:0]),.music_tracks(track_video1[6:3]),
++ .fx_return_state(music_return_state),.music_mode(music_enable_video[1]),.music_track(track_video1[2:0]),.music_tracks(track_video1[6:3]),
+  .fx_requested(remote_video[20:19]!=0 && !remote_video[15]),.fx_return_ok(return_video_sync[1]),
+  .enable(osd_frame_enable),.online(remote_video[256]),.status(remote_video[255:0]),
+  .rgb(vout_data_status),.out_rgb(vout_data_mic));
+@@ -1466,7 +1493,7 @@
+
+ // 32 bits/channel keeps 48kHz PCM while halving external BCLK to 3.072MHz.
+ // ACA's synchronized return then has a full 162ns half-bit propagation budget.
+ audio_wav_i2s #(.SLOT_BITS(32),.CHECKSUM(1)) u_music_i2s(
+- .mclk(audio_mclk),.rst(rst_all),.enable(audio_play_en),.paused(playback_paused),.stream_ok(music_ok),
++ .mclk(audio_mclk),.rst(rst_all),.enable(music_enable),.paused(playback_paused),.stream_ok(music_ok),
+  .fifo_used(music_used),.fifo_empty(music_empty),.fifo_valid(music_valid),.fifo_data(music_data),.fifo_re(music_pop),
+  .bclk(audio_i2s_bclk),.lrck(audio_i2s_lrck),.dout(audio_i2s_dout),
+  .playing(music_playing),.underflow(music_underflow),.underruns(music_underruns));
+@@ -1481,7 +1508,7 @@
+
+ always @(posedge audio_mclk or posedge rst_all)begin
+  if(rst_all)begin effect_sync<=0;end
+  else begin
+-  effect_sync<={effect_sync[0],remote_online && !voice_active && audio_play_en && remote_status[20:19]!=0};
++  effect_sync<={effect_sync[0],remote_online && music_enable && remote_status[20:19]!=0};
+  end
+ end
+ wire [23:0] checked_left,checked_right,local_left,local_right;

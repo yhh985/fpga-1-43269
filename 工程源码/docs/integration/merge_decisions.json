@@ -1,0 +1,30 @@
+[
+  {
+    "path": "aca420/rtl/aca420_audio_top.v",
+    "decision": "main production implementation retained; includes later music/control fixes"
+  },
+  {
+    "path": "aca420/rtl/aca_ctc_engine.v",
+    "decision": "main production implementation retained; includes later music/control fixes"
+  },
+  {
+    "path": "aca420/rtl/aca_ctc_engine_stub.v",
+    "decision": "test-only simulation stub; excluded from hardware"
+  },
+  {
+    "path": "aca420/rtl/aca_kws_engine.v",
+    "decision": "main production implementation retained; includes later music/control fixes"
+  },
+  {
+    "path": "hx4s20/hdl/SD/sd_card_bmp.v",
+    "decision": "main production implementation retained; includes later music/control fixes"
+  },
+  {
+    "path": "hx4s20/hdl/audio_visual_link.v",
+    "decision": "main production implementation retained; includes later music/control fixes"
+  },
+  {
+    "path": "hx4s20/hdl/top_tf_hdmi_audio.v",
+    "decision": "main production implementation retained; includes later music/control fixes"
+  }
+]

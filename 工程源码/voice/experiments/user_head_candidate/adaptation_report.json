@@ -1,0 +1,423 @@
+{
+  "candidate_only": true,
+  "deployed_model_changed": false,
+  "real_training_utterances": 2,
+  "independent_real_validation_utterances": 0,
+  "real_training_source_sha256": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3",
+  "real_annotations_source": "verification\\real_voice_transient.json",
+  "synthetic_test_not_used": true,
+  "synthetic_training_features_are_legacy": true,
+  "baseline_validation": {
+    "correct": 410,
+    "wrong_direction": 13,
+    "false_accepts": 7,
+    "confusion": [
+      [
+        1733,
+        5,
+        2
+      ],
+      [
+        112,
+        224,
+        12
+      ],
+      [
+        161,
+        1,
+        186
+      ]
+    ]
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "validation": {
+        "correct": 410,
+        "wrong_direction": 13,
+        "false_accepts": 7,
+        "confusion": [
+          [
+            1733,
+            5,
+            2
+          ],
+          [
+            112,
+            224,
+            12
+          ],
+          [
+            161,
+            1,
+            186
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        0
+      ]
+    },
+    {
+      "epoch": 5,
+      "validation": {
+        "correct": 417,
+        "wrong_direction": 22,
+        "false_accepts": 6,
+        "confusion": [
+          [
+            1734,
+            4,
+            2
+          ],
+          [
+            106,
+            222,
+            20
+          ],
+          [
+            151,
+            2,
+            195
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        0
+      ]
+    },
+    {
+      "epoch": 10,
+      "validation": {
+        "correct": 415,
+        "wrong_direction": 23,
+        "false_accepts": 6,
+        "confusion": [
+          [
+            1734,
+            4,
+            2
+          ],
+          [
+            114,
+            213,
+            21
+          ],
+          [
+            144,
+            2,
+            202
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 15,
+      "validation": {
+        "correct": 419,
+        "wrong_direction": 22,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            3,
+            2
+          ],
+          [
+            117,
+            211,
+            20
+          ],
+          [
+            138,
+            2,
+            208
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 20,
+      "validation": {
+        "correct": 418,
+        "wrong_direction": 22,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            2,
+            3
+          ],
+          [
+            117,
+            211,
+            20
+          ],
+          [
+            139,
+            2,
+            207
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 25,
+      "validation": {
+        "correct": 419,
+        "wrong_direction": 23,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            2,
+            3
+          ],
+          [
+            111,
+            218,
+            19
+          ],
+          [
+            143,
+            4,
+            201
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 30,
+      "validation": {
+        "correct": 425,
+        "wrong_direction": 23,
+        "false_accepts": 6,
+        "confusion": [
+          [
+            1734,
+            1,
+            5
+          ],
+          [
+            115,
+            214,
+            19
+          ],
+          [
+            133,
+            4,
+            211
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 35,
+      "validation": {
+        "correct": 426,
+        "wrong_direction": 23,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            1,
+            4
+          ],
+          [
+            114,
+            215,
+            19
+          ],
+          [
+            133,
+            4,
+            211
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 40,
+      "validation": {
+        "correct": 430,
+        "wrong_direction": 24,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            2,
+            3
+          ],
+          [
+            110,
+            219,
+            19
+          ],
+          [
+            132,
+            5,
+            211
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 45,
+      "validation": {
+        "correct": 427,
+        "wrong_direction": 24,
+        "false_accepts": 6,
+        "confusion": [
+          [
+            1734,
+            3,
+            3
+          ],
+          [
+            112,
+            217,
+            19
+          ],
+          [
+            133,
+            5,
+            210
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 50,
+      "validation": {
+        "correct": 427,
+        "wrong_direction": 24,
+        "false_accepts": 4,
+        "confusion": [
+          [
+            1736,
+            1,
+            3
+          ],
+          [
+            111,
+            218,
+            19
+          ],
+          [
+            134,
+            5,
+            209
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 55,
+      "validation": {
+        "correct": 429,
+        "wrong_direction": 24,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            2,
+            3
+          ],
+          [
+            111,
+            218,
+            19
+          ],
+          [
+            132,
+            5,
+            211
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    },
+    {
+      "epoch": 60,
+      "validation": {
+        "correct": 429,
+        "wrong_direction": 22,
+        "false_accepts": 5,
+        "confusion": [
+          [
+            1735,
+            2,
+            3
+          ],
+          [
+            111,
+            220,
+            17
+          ],
+          [
+            134,
+            5,
+            209
+          ]
+        ]
+      },
+      "training_recording_predictions": [
+        2,
+        1
+      ]
+    }
+  ],
+  "eligible_candidate_found": false,
+  "sources": {
+    "voice\\tools\\adapt_user_head.py": "47608d4f520fe13f3e2d54cadaa9d6d7f978fef12f4014ad4378574065580d51",
+    "voice\\tools\\kws_common.py": "ab57151072c622a8d907525572638a78c40a3f13709414e24111dbf1faf0223c",
+    "voice\\tools\\robust_common.py": "2411cac0111e58b81afbffb68c2af2d790d6e55274cc0b2571b9ea4b421d512c",
+    "voice\\tools\\probe_vad_continuity.py": "291b75346bd907b5890d6a27c0256d0d286496e8cf54d465d30a19b811dcee40",
+    "voice\\experiments\\robust_normalized\\model\\weights.mem": "040bc3b532bec5d055608b5af9d2604bcdc947978a0e664736b0c0b18872fa87",
+    "voice\\experiments\\robust_normalized\\model\\bias.mem": "1e47e3df1453f9b5edf9dea5b6531e7f4d977488461ce9b676c8cd71430a6a89",
+    "verification\\user_20261021_170604.wav": "61363979ba3f98380165da1e9a28741faac5d0e8363a236745a116089508c6a3",
+    "verification\\real_voice_transient.json": "31a8979412e3d07e4d081ca13b0dbf45f430707316b5c1af5243056544cc7e09"
+  },
+  "synthetic_manifest_sha256": "cf9ddf5814903e29ed397f6ebf50b645c99116e591b73c810dffec342ad75213"
+}

@@ -1,0 +1,2 @@
+PASS music controls: OSD bounce and frame commits, background manual/auto/voice/offline, real PCM frequency changes, cooldown, pending transition and SW1 gates
+E:\anlo_project\liantiao\final_showcase_20261030\sim\tb_music_controls.v:57: $finish called at 53263900000 (1ps)
